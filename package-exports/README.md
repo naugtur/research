@@ -12,7 +12,7 @@ Top 1000 as of some time in the past, 3 years or so, because that's the last tim
 
 ## result
 
-### [export-formats.md](./export-formats.md)
+### [export-shapes.md](./export-shapes.md)
 
 A list of shapes exports can have, along with hints on their popularity.
 
