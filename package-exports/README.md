@@ -26,4 +26,6 @@ A list of shapes exports can have, along with hints on their popularity.
 
 
 `data.json` contains raw data of the ~1000 exports collected  
-`export-formats.md` is created by running `node exportformats.cjs`
+`export-shapes.md` is created by running `node exportshapes.cjs`
+
+To explore the raw data use `node lookup packagename`
