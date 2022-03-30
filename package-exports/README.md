@@ -29,3 +29,9 @@ A list of shapes exports can have, along with hints on their popularity.
 `export-shapes.md` is created by running `node exportshapes.cjs`
 
 To explore the raw data use `node lookup packagename`
+
+You can copy the pakcage list from an expanded block in export-shapes and feed it to lookup to get multiple
+
+```
+node lookup "side-channel,call-bind,es-value-fixtures,is-core-module,get-intrinsic,which-collection"
+```
