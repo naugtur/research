@@ -1,0 +1,16 @@
+{
+  "name": "research",
+  "version": "1.0.0",
+  "description": "Rabbit-holes and wild-goose chases.",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naugtur/research.git"
+  },
+  "author": "",
+  "license": "see LICENSE",
+  "devDependencies": {
+    "undici": "^5.0.0"
+  }
+}

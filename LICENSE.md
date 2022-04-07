@@ -1,11 +1,3 @@
-# Nautur's research
-
-Rabbit-holes and wild-goose chases.
-
-
-
-
-
 # License
 
 All source code licensed under LGPL-3.0
