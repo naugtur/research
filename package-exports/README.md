@@ -35,3 +35,14 @@ You can copy the pakcage list from an expanded block in export-shapes and feed i
 ```
 node lookup "side-channel,call-bind,es-value-fixtures,is-core-module,get-intrinsic,which-collection"
 ```
+
+### import behavior [summary.md](./behavior/summary.md)
+
+A list of example package.json exports definitions with results of importing them.
+
+To regenerate the summary.md:  
+
+```
+cd behavior
+node test.mjs
+```
