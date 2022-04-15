@@ -1,4 +1,4 @@
-const data = require("./data.json");
+const data = require("./exports-data.json");
 const util = require("util");
 const search = process.argv[2];
 if (!search) {

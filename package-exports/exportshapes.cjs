@@ -1,5 +1,5 @@
 const fs = require("fs");
-const data = require("./data.json");
+const data = require("./exports-data.json");
 
 const results = {};
 // random sample
