@@ -9,12 +9,27 @@ function load(jsonfile, fallback) {
     return fallback;
   }
 }
+const getPackageJsonMaker = (cacheOn) => {
+  if (cacheOn) {
+    let cacheArray = require('../_cache/cache-data.json');
+    const cache = cacheArray.reduce((caches, pkg) => {
+      caches.add(pkg.name, pkg);
+      return caches;
+    }, new Map());
+    cacheArray = null;
+    return cache.get.bind(cache)
+  } else {
+    return (i) => fetch(`https://registry.npmjs.org/${i}/latest`)
+  }
+}
 module.exports = async function recursiveScan({
   seed,
   name,
   dataCallback,
   parallel = 3,
+  cache = false,
 }) {
+  const getPackageJson = getPackageJsonMaker(cache);
   const state = load(`./${name}-progress.json`, {
     currentPass: seed,
     visited: [],
@@ -64,8 +79,7 @@ module.exports = async function recursiveScan({
             return Promise.allSettled(
               group.map((i) => {
                 if (!visited.has(i)) {
-                  return fetch(`https://registry.npmjs.org/${i}/latest`)
-                    .then((re) => re.json())
+                  return getPackageJson(i)
                     .then(cb);
                 } else {
                   process.stdout.write("-");
