@@ -1,5 +1,5 @@
 # Identifying git dependencies in popular packages
 
-> this is a work in progress
+10000 packages and their dependencies have been filtered and here are the git dependencies found.
 
-Check out the gits-data.json file for raw data. nicer report coming soon.
+[Scan results](gits.md)
