@@ -1,8 +1,8 @@
 
-TOC
+# TOC
 
-  [git dependencies](#git-dependencies)  
-  [git dev dependencies](#git-dev-dependencies)  
+  [465 packages with git dependencies](#git-dependencies)  
+  [0 packages with git dev dependencies](#git-dev-dependencies)  
   [non github](#non-github)  
 
 ## git dependencies
@@ -2405,7 +2405,7 @@ github:PolymerElements/iron-component-page
 
 ## git dev dependencies
 
-
+> rescan needed. on it.
 
 ## non github
 

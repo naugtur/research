@@ -32,8 +32,8 @@ function print(data) {
   return `
 # TOC
 
-  [git dependencies](#git-dependencies)  
-  [git dev dependencies](#git-dev-dependencies)  
+  [${data.filter(pkg => pkg.gitdeps).length} packages with git dependencies](#git-dependencies)  
+  [${data.filter(pkg => pkg.gitdevdeps).length} packages with git dev dependencies](#git-dev-dependencies)  
   [non github](#non-github)  
 
 ## git dependencies
