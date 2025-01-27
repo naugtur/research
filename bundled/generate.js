@@ -30,7 +30,7 @@ async function print(data) {
     )
     .join("\n");
 
-  return `${header}\n${rows}${depsTableHeader}\n${depsTableRows}`;
+  return `${depsTableHeader}\n${depsTableRows}\n----\n${header}\n${rows}`;
 }
 
 print(data).then((md) => {
