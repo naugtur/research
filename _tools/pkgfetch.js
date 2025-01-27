@@ -1,4 +1,3 @@
-const { fetch } = require("undici");
 const util = require("util");
 module.exports = async (name) =>
   await fetch(`https://registry.npmjs.org/${name}/latest`).then((re) =>
