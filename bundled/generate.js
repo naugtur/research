@@ -17,7 +17,7 @@ async function print(data) {
     .join("\n");
 
   const depsTableHeader =
-    "\n\n| Name | bundleDependencies |\n|--|--|";
+    "\n\n| Name | bundleDependencies | packument |\n|--|--|--|";
   const depsTableRows = data
     .filter(
       ({ bundleDependencies }) =>
@@ -26,7 +26,7 @@ async function print(data) {
     .sort((a, b) => b.bundleDependencies.length - a.bundleDependencies.length)
     .map(
       ({ name, bundleDependencies }) =>
-        `| ${name} | ${bundleDependencies.join(", ")} |`
+        `| ${name} | ${bundleDependencies.join(", ")} | [latest](https://registry.npmjs.org/${name}/latest)`
     )
     .join("\n");
 

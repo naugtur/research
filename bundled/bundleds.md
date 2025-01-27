@@ -1,51 +1,51 @@
 # Bundled Dependencies of top 10k npm packages and their dependencies
 
-> generated on 2025-01-27T11:56:32.959Z
+> generated on 2025-01-27T12:04:27.686Z
   
 
 
-| Name | bundleDependencies |
-|--|--|
-| npm | @isaacs/string-locale-compare, @npmcli/arborist, @npmcli/config, @npmcli/fs, @npmcli/map-workspaces, @npmcli/package-json, @npmcli/promise-spawn, @npmcli/redact, @npmcli/run-script, @sigstore/tuf, abbrev, archy, cacache, chalk, ci-info, cli-columns, fastest-levenshtein, fs-minipass, glob, graceful-fs, hosted-git-info, ini, init-package-json, is-cidr, json-parse-even-better-errors, libnpmaccess, libnpmdiff, libnpmexec, libnpmfund, libnpmorg, libnpmpack, libnpmpublish, libnpmsearch, libnpmteam, libnpmversion, make-fetch-happen, minimatch, minipass, minipass-pipeline, ms, node-gyp, nopt, normalize-package-data, npm-audit-report, npm-install-checks, npm-package-arg, npm-pick-manifest, npm-profile, npm-registry-fetch, npm-user-validate, p-map, pacote, parse-conflict-json, proc-log, qrcode-terminal, read, semver, spdx-expression-parse, ssri, supports-color, tar, text-table, tiny-relative-date, treeverse, validate-npm-package-name, which |
-| pragmatist | babel-plugin-add-module-exports, babel-plugin-check-es2015-constants, babel-plugin-lodash-modularize, babel-plugin-transform-class-properties, babel-plugin-transform-es2015-arrow-functions, babel-plugin-transform-es2015-block-scoped-functions, babel-plugin-transform-es2015-block-scoping, babel-plugin-transform-es2015-classes, babel-plugin-transform-es2015-computed-properties, babel-plugin-transform-es2015-destructuring, babel-plugin-transform-es2015-for-of, babel-plugin-transform-es2015-function-name, babel-plugin-transform-es2015-literals, babel-plugin-transform-es2015-modules-commonjs, babel-plugin-transform-es2015-object-super, babel-plugin-transform-es2015-parameters, babel-plugin-transform-es2015-shorthand-properties, babel-plugin-transform-es2015-spread, babel-plugin-transform-es2015-sticky-regex, babel-plugin-transform-es2015-template-literals, babel-plugin-transform-es2015-typeof-symbol, babel-plugin-transform-es2015-unicode-regex, babel-plugin-transform-object-set-prototype-of-to-assign, babel-plugin-transform-proto-to-assign, babel-plugin-transform-regenerator, babel-plugin-transform-strict-mode, babel-plugin-typecheck, babel-preset-react, babel-preset-stage-0, bluebird, chalk, csscomb, del, fancy-log, globby, gulp, gulp-babel, gulp-babel2, gulp-mocha, gulp-plumber, gulp-sourcemaps, lodash, pretty-hrtime, prettyjson, run-sequence, source-map-support, stack-trace, yargs |
-| ut-tools | @stoplight/spectral-cli, @rushstack/eslint-patch, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, ansi-to-html, conventional-changelog-angular, conventional-changelog-cli, conventional-recommended-bump, eslint, eslint-config-prettier, eslint-config-standard, eslint-config-standard-react, eslint-plugin-import, eslint-plugin-n, eslint-plugin-prettier, eslint-plugin-promise, eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-require-path-exists, findup-sync, git-semver-tags, glob, is-builtin-module, lodash.merge, markdownlint, minimist, package-json, pkg, pkg-versions, request, request-promise-native, resolve, semver, stylelint, typescript, ut-tsql-lexer, write-json-file |
-| eslint-config-chain-able | babel-eslint, eslint, eslint-plugin-flowtype, eslint-plugin-jsx-a11y, eslint-config-supermind, eslint-config-google, eslint-plugin-no-for-each, eslint-plugin-prefer-includes, eslint-plugin-react, eslint-plugin-inferno, eslint-plugin-import, eslint-plugin-jest, eslint-plugin-jsdoc, eslint-plugin-prettier, prettier |
-| projen | @iarna/toml, case, chalk, comment-json, conventional-changelog-config-spec, fast-json-patch, glob, ini, semver, shx, xmlbuilder2, yaml, yargs |
-| canonical | babel-eslint, chalk, css-lint, deep-sort-object, eslint, get-stdin, globby, lodash, lru-cache, pluralize, table, xmlbuilder, yargs |
-| crossbow | archy, js-yaml, once, rx, rx-node, traverse, immutable, hash-dir, tfunk, qs, debug, match-sorter |
-| aws-cdk-lib | @balena/dockerignore, case, fs-extra, ignore, jsonschema, minimatch, punycode, semver, table, yaml, mime-types |
-| cnpm | auto-correct, bagpipe, commander, cross-spawn, giturl, ini, npm, npm-request, npminstall, open, urllib |
-| antd-theme-generator | glob, hash.js, less, less-plugin-npm-import, postcss, strip-css-comments |
-| gaz | mout, url-join, qs, prime, prime-util |
-| @aws-cdk/core | fs-extra, minimatch, @balena/dockerignore, ignore |
-| ganache | @trufflesuite/bigint-buffer, keccak, leveldown, secp256k1 |
-| pdf3json | xmldom, underscore, optimist, async |
-| ganache-cli | source-map-support, yargs, ethereumjs-util |
-| tacks | @iarna/cli, mkdirp, rimraf |
-| cdk8s | fast-json-patch, follow-redirects, yaml |
-| testla | asserts.js, fn.js, observer.js |
-| cdktf | archiver, json-stable-stringify, semver |
-| npx | npm, libnpx |
-| @aws-cdk/cloud-assembly-schema | jsonschema, semver |
-| @cdk8s/projen-common | codemaker, deepmerge |
-| ralph | bundled-dependencies, semver |
-| ember-cli-ic-ajax | ic-ajax |
-| ganache-core | keccak |
-| wrtc | node-pre-gyp |
-| webpack-config-utils | webpack-combine-loaders |
-| shoe | sockjs-client |
-| zoidberg | mocha |
-| @aws-cdk/cx-api | semver |
-| pdf2json | @xmldom/xmldom |
-| @aws-cdk/assertions | fs-extra |
-| cdklabs-projen-project-types | yaml |
-| socksv5 | ipv6 |
-| @aws-cdk/aws-cognito | punycode |
-| lightningcss-wasm | napi-wasm |
-| @parcel/watcher-wasm | napi-wasm |
-| bundle-dependencies | yargs |
-| @libsql/client-wasm | @libsql/libsql-wasm-experimental |
-| lighter-emitter | lighter-type |
+| Name | bundleDependencies | packument |
+|--|--|--|
+| npm | @isaacs/string-locale-compare, @npmcli/arborist, @npmcli/config, @npmcli/fs, @npmcli/map-workspaces, @npmcli/package-json, @npmcli/promise-spawn, @npmcli/redact, @npmcli/run-script, @sigstore/tuf, abbrev, archy, cacache, chalk, ci-info, cli-columns, fastest-levenshtein, fs-minipass, glob, graceful-fs, hosted-git-info, ini, init-package-json, is-cidr, json-parse-even-better-errors, libnpmaccess, libnpmdiff, libnpmexec, libnpmfund, libnpmorg, libnpmpack, libnpmpublish, libnpmsearch, libnpmteam, libnpmversion, make-fetch-happen, minimatch, minipass, minipass-pipeline, ms, node-gyp, nopt, normalize-package-data, npm-audit-report, npm-install-checks, npm-package-arg, npm-pick-manifest, npm-profile, npm-registry-fetch, npm-user-validate, p-map, pacote, parse-conflict-json, proc-log, qrcode-terminal, read, semver, spdx-expression-parse, ssri, supports-color, tar, text-table, tiny-relative-date, treeverse, validate-npm-package-name, which | [latest](https://registry.npmjs.org/npm/latest)
+| pragmatist | babel-plugin-add-module-exports, babel-plugin-check-es2015-constants, babel-plugin-lodash-modularize, babel-plugin-transform-class-properties, babel-plugin-transform-es2015-arrow-functions, babel-plugin-transform-es2015-block-scoped-functions, babel-plugin-transform-es2015-block-scoping, babel-plugin-transform-es2015-classes, babel-plugin-transform-es2015-computed-properties, babel-plugin-transform-es2015-destructuring, babel-plugin-transform-es2015-for-of, babel-plugin-transform-es2015-function-name, babel-plugin-transform-es2015-literals, babel-plugin-transform-es2015-modules-commonjs, babel-plugin-transform-es2015-object-super, babel-plugin-transform-es2015-parameters, babel-plugin-transform-es2015-shorthand-properties, babel-plugin-transform-es2015-spread, babel-plugin-transform-es2015-sticky-regex, babel-plugin-transform-es2015-template-literals, babel-plugin-transform-es2015-typeof-symbol, babel-plugin-transform-es2015-unicode-regex, babel-plugin-transform-object-set-prototype-of-to-assign, babel-plugin-transform-proto-to-assign, babel-plugin-transform-regenerator, babel-plugin-transform-strict-mode, babel-plugin-typecheck, babel-preset-react, babel-preset-stage-0, bluebird, chalk, csscomb, del, fancy-log, globby, gulp, gulp-babel, gulp-babel2, gulp-mocha, gulp-plumber, gulp-sourcemaps, lodash, pretty-hrtime, prettyjson, run-sequence, source-map-support, stack-trace, yargs | [latest](https://registry.npmjs.org/pragmatist/latest)
+| ut-tools | @stoplight/spectral-cli, @rushstack/eslint-patch, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, ansi-to-html, conventional-changelog-angular, conventional-changelog-cli, conventional-recommended-bump, eslint, eslint-config-prettier, eslint-config-standard, eslint-config-standard-react, eslint-plugin-import, eslint-plugin-n, eslint-plugin-prettier, eslint-plugin-promise, eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-require-path-exists, findup-sync, git-semver-tags, glob, is-builtin-module, lodash.merge, markdownlint, minimist, package-json, pkg, pkg-versions, request, request-promise-native, resolve, semver, stylelint, typescript, ut-tsql-lexer, write-json-file | [latest](https://registry.npmjs.org/ut-tools/latest)
+| eslint-config-chain-able | babel-eslint, eslint, eslint-plugin-flowtype, eslint-plugin-jsx-a11y, eslint-config-supermind, eslint-config-google, eslint-plugin-no-for-each, eslint-plugin-prefer-includes, eslint-plugin-react, eslint-plugin-inferno, eslint-plugin-import, eslint-plugin-jest, eslint-plugin-jsdoc, eslint-plugin-prettier, prettier | [latest](https://registry.npmjs.org/eslint-config-chain-able/latest)
+| projen | @iarna/toml, case, chalk, comment-json, conventional-changelog-config-spec, fast-json-patch, glob, ini, semver, shx, xmlbuilder2, yaml, yargs | [latest](https://registry.npmjs.org/projen/latest)
+| canonical | babel-eslint, chalk, css-lint, deep-sort-object, eslint, get-stdin, globby, lodash, lru-cache, pluralize, table, xmlbuilder, yargs | [latest](https://registry.npmjs.org/canonical/latest)
+| crossbow | archy, js-yaml, once, rx, rx-node, traverse, immutable, hash-dir, tfunk, qs, debug, match-sorter | [latest](https://registry.npmjs.org/crossbow/latest)
+| aws-cdk-lib | @balena/dockerignore, case, fs-extra, ignore, jsonschema, minimatch, punycode, semver, table, yaml, mime-types | [latest](https://registry.npmjs.org/aws-cdk-lib/latest)
+| cnpm | auto-correct, bagpipe, commander, cross-spawn, giturl, ini, npm, npm-request, npminstall, open, urllib | [latest](https://registry.npmjs.org/cnpm/latest)
+| antd-theme-generator | glob, hash.js, less, less-plugin-npm-import, postcss, strip-css-comments | [latest](https://registry.npmjs.org/antd-theme-generator/latest)
+| gaz | mout, url-join, qs, prime, prime-util | [latest](https://registry.npmjs.org/gaz/latest)
+| @aws-cdk/core | fs-extra, minimatch, @balena/dockerignore, ignore | [latest](https://registry.npmjs.org/@aws-cdk/core/latest)
+| ganache | @trufflesuite/bigint-buffer, keccak, leveldown, secp256k1 | [latest](https://registry.npmjs.org/ganache/latest)
+| pdf3json | xmldom, underscore, optimist, async | [latest](https://registry.npmjs.org/pdf3json/latest)
+| ganache-cli | source-map-support, yargs, ethereumjs-util | [latest](https://registry.npmjs.org/ganache-cli/latest)
+| tacks | @iarna/cli, mkdirp, rimraf | [latest](https://registry.npmjs.org/tacks/latest)
+| cdk8s | fast-json-patch, follow-redirects, yaml | [latest](https://registry.npmjs.org/cdk8s/latest)
+| testla | asserts.js, fn.js, observer.js | [latest](https://registry.npmjs.org/testla/latest)
+| cdktf | archiver, json-stable-stringify, semver | [latest](https://registry.npmjs.org/cdktf/latest)
+| npx | npm, libnpx | [latest](https://registry.npmjs.org/npx/latest)
+| @aws-cdk/cloud-assembly-schema | jsonschema, semver | [latest](https://registry.npmjs.org/@aws-cdk/cloud-assembly-schema/latest)
+| @cdk8s/projen-common | codemaker, deepmerge | [latest](https://registry.npmjs.org/@cdk8s/projen-common/latest)
+| ralph | bundled-dependencies, semver | [latest](https://registry.npmjs.org/ralph/latest)
+| ember-cli-ic-ajax | ic-ajax | [latest](https://registry.npmjs.org/ember-cli-ic-ajax/latest)
+| ganache-core | keccak | [latest](https://registry.npmjs.org/ganache-core/latest)
+| wrtc | node-pre-gyp | [latest](https://registry.npmjs.org/wrtc/latest)
+| webpack-config-utils | webpack-combine-loaders | [latest](https://registry.npmjs.org/webpack-config-utils/latest)
+| shoe | sockjs-client | [latest](https://registry.npmjs.org/shoe/latest)
+| zoidberg | mocha | [latest](https://registry.npmjs.org/zoidberg/latest)
+| @aws-cdk/cx-api | semver | [latest](https://registry.npmjs.org/@aws-cdk/cx-api/latest)
+| pdf2json | @xmldom/xmldom | [latest](https://registry.npmjs.org/pdf2json/latest)
+| @aws-cdk/assertions | fs-extra | [latest](https://registry.npmjs.org/@aws-cdk/assertions/latest)
+| cdklabs-projen-project-types | yaml | [latest](https://registry.npmjs.org/cdklabs-projen-project-types/latest)
+| socksv5 | ipv6 | [latest](https://registry.npmjs.org/socksv5/latest)
+| @aws-cdk/aws-cognito | punycode | [latest](https://registry.npmjs.org/@aws-cdk/aws-cognito/latest)
+| lightningcss-wasm | napi-wasm | [latest](https://registry.npmjs.org/lightningcss-wasm/latest)
+| @parcel/watcher-wasm | napi-wasm | [latest](https://registry.npmjs.org/@parcel/watcher-wasm/latest)
+| bundle-dependencies | yargs | [latest](https://registry.npmjs.org/bundle-dependencies/latest)
+| @libsql/client-wasm | @libsql/libsql-wasm-experimental | [latest](https://registry.npmjs.org/@libsql/client-wasm/latest)
+| lighter-emitter | lighter-type | [latest](https://registry.npmjs.org/lighter-emitter/latest)
 ----
 | Dependency | Count | in NPM| parents |
 |--|--| -- | -- |
