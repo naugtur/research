@@ -19,12 +19,16 @@ async function nextSecondThrottle() {
 }
 
 const ONE_MINUTE = 60 * 1000;
+const LIMIT = 250; // can't do more than 250 at a time
 
 async function searchNpmPackages(text, pages = 1) {
   let allResults = [];
   for (let page = 0; page < pages; page++) {
     const results = await npmSearch(text, page);
     allResults = allResults.concat(results);
+    if (results.length < LIMIT) {
+      break;
+    }
   }
   return allResults;
 }
@@ -36,10 +40,10 @@ async function searchNpmPackages(text, pages = 1) {
  * @returns {Promise<Array>} - returns an array of npm packages
  */
 async function npmSearch(text, page = 0) {
-  const limit = 250; // can't do more than 250 at a time
-  const from = page * limit;
-  const cacheFile = path.join(SEARCH_CACHE_DIR, `${text}.json`);
+  const from = page * LIMIT;
+  const cacheFile = path.join(SEARCH_CACHE_DIR, `${text}_${page}.json`);
 
+  process.stdout.write(`.`);
   try {
     const cachedData = await fs.readFile(cacheFile, "utf8");
     return JSON.parse(cachedData);
@@ -51,13 +55,13 @@ async function npmSearch(text, page = 0) {
 
   await nextSecondThrottle();
 
-  const url = `https://registry.npmjs.org/-/v1/search?text=${text}&from=${from}&size=${limit}&popularity=1.0&quality=0.0&maintenance=0.0`;
+  const url = `https://registry.npmjs.org/-/v1/search?text=${text}&from=${from}&size=${LIMIT}&popularity=1.0&quality=0.0&maintenance=0.0`;
 
   try {
     const response = await fetch(url);
     if (!response.ok) {
       if (response.status === 429) {
-        console.error("Rate limited! Waiting for 1 minute...");
+        console.error(" Rate LIMITed! Waiting for 1 minute");
         await sleep(ONE_MINUTE);
         return npmSearch(text, page);
       }
@@ -68,7 +72,7 @@ async function npmSearch(text, page = 0) {
     await fs.writeFile(cacheFile, JSON.stringify(data.objects));
     return data.objects;
   } catch (error) {
-    console.error(`Error fetching data for "${text}":`, error);
+    console.error(` Error fetching data for "${text}":`, error);
     return [];
   }
 }
@@ -89,11 +93,25 @@ async function saveResults(packages) {
   await fs.writeFile(RESULTS_FILE, JSON.stringify(packages, null, 2));
 }
 
+const FILLED_RECTANGLE = "█";
+function displayProgress(progress) {
+  const progressPercent = Math.round(progress * 100);
+  process.stdout.clearLine(0);
+  process.stdout.cursorTo(0);
+  const bits = Math.floor(progressPercent / 2)
+  process.stdout.write(
+    `${progressPercent}% [${FILLED_RECTANGLE.repeat(bits)}${" ".repeat(50 - bits)}]`
+  );
+}
+
 const validChars = "abcdefghijklmnopqrstuvwxyz0123456789-_".split("");
+const total = validChars.length * validChars.length;
 // generator function creating all two-character combinations from the validChars set
 function* genPairs() {
   for (let i = 0; i < validChars.length; i++) {
     for (let j = 0; j < validChars.length; j++) {
+      const progress = (i * validChars.length + j + 1) / total;
+      displayProgress(progress);
       yield validChars[i] + validChars[j];
     }
   }
@@ -103,9 +121,8 @@ async function getAllTopPackages(pagesDeep = 1) {
   let packages = await loadExistingResults();
 
   for (const searchText of genPairs()) {
-    console.log(`Searching for "${searchText}"...`);
+    process.stdout.write(`  searching: ${searchText}`);
     const newPackages = await searchNpmPackages(searchText, pagesDeep);
-    console.log(`  found ${newPackages.length} results.`);
     newPackages.forEach((pkg) => {
       const name = pkg.package.name;
       if (!packages[name]) {
@@ -134,5 +151,5 @@ getAllTopPackages(depth)
     console.log("top:", sorted[0]);
   })
   .catch((error) => {
-    console.error("Error:", error.message);
+    console.error("Error:", error);
   });

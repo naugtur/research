@@ -30,6 +30,16 @@ fs.writeFileSync(
       .join("\n")
 );
 
+const prevDL = require("./names-per-monthly_dl.json");
+const whatsNewDL = sortedDL
+  .map((p) => p.name)
+  .filter((name) => !prevDL.includes(name));
+console.log(
+  `v ${whatsNewDL.length} new packages in top ${cutoff} by monthly downloads.`,
+  whatsNewDL,
+  `^ ${whatsNewDL.length} new packages in top ${cutoff} by monthly downloads.`
+);
+
 fs.writeFileSync(
   path.join(__dirname, "names-per-monthly_dl.json"),
   JSON.stringify(sortedDL.map((p) => p.name))
