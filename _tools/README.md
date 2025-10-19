@@ -6,4 +6,4 @@
 
 - `pkgfetch` - tiny tool to fetch package.json files from npm registry
 
-- `prepopulateCache` - run it in the `_cache` folder to fill the cache without running an actual scan
+- `prepopulateCache` - run it to fill the cache

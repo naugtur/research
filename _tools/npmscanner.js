@@ -48,7 +48,8 @@ async function promptUser(text) {
   return answer.toLowerCase() === "y";
 }
 
-module.exports = async function recursiveScan({
+async function recursiveScan({
+  targetPath = ".",
   seed,
   name,
   dataCallback,
@@ -66,7 +67,7 @@ module.exports = async function recursiveScan({
   }
 
   const getPackageJson = getPackageJsonMaker(cache);
-  const state = load(`./${name}-progress.json`, {
+  const state = load(path.join(targetPath, `./${name}-progress.json`), {
     currentPass: seed,
     visited: [],
   });
@@ -77,7 +78,7 @@ module.exports = async function recursiveScan({
   let currentPass;
   const errors = state.errors || [];
   const visited = new Set(state.visited);
-  const matches = load(`./${name}-data.json`, []);
+  const matches = load(path.join(targetPath, `./${name}-data.json`), []);
   let prevMatches = matches.length;
   console.log(
     `Starting. matches: ${matches.length} visited: ${visited.size} nextPass: ${nextPass.size}`
@@ -88,12 +89,12 @@ module.exports = async function recursiveScan({
       prevMatches = matches.length;
       process.stdout.write("" + matches.length);
       fs.writeFileSync(
-        `./${name}-data.json`,
+        path.join(targetPath, `./${name}-data.json`),
         JSON.stringify(Array.from(matches))
       );
     }
     fs.writeFileSync(
-      `./${name}-progress.json`,
+      path.join(targetPath, `./${name}-progress.json`),
       JSON.stringify({
         currentPass: Array.from(currentPass),
         visited: Array.from(visited),
@@ -166,4 +167,6 @@ module.exports = async function recursiveScan({
     visited,
     errors,
   };
-};
+}
+
+exports.recursiveScan = recursiveScan;

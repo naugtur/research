@@ -1,11 +1,13 @@
-const recursiveScan = require("./npmscanner");
+const { recursiveScan } = require("./npmscanner");
 const seed = require("../popular-pkgs/names-per-dependents_count.json");
+const path = require("path");
 
-recursiveScan({
+return recursiveScan({
+  targetPath: path.join(__dirname, "../_cache"),
   name: "cache",
   seed,
   dataCallback: (pkg) => {
-    return pkg
+    return pkg;
   },
-  parallel: 10
+  parallel: 10,
 });
