@@ -1,3 +1,5 @@
+//@ts-check
+
 const fs = require("fs").promises;
 const path = require("path");
 
@@ -18,8 +20,24 @@ async function nextSecondThrottle() {
 
 const ONE_MINUTE = 60 * 1000;
 
-async function searchNpmPackages(text) {
-  const limit = 250; // can't get more results in one request anyway
+async function searchNpmPackages(text, pages = 1) {
+  let allResults = [];
+  for (let page = 0; page < pages; page++) {
+    const results = await npmSearch(text, page);
+    allResults = allResults.concat(results);
+  }
+  return allResults;
+}
+
+/**
+ *
+ * @param {string} text
+ * @param {number} page - which page to grab
+ * @returns {Promise<Array>} - returns an array of npm packages
+ */
+async function npmSearch(text, page = 0) {
+  const limit = 250; // can't do more than 250 at a time
+  const from = page * limit;
   const cacheFile = path.join(SEARCH_CACHE_DIR, `${text}.json`);
 
   try {
@@ -33,7 +51,7 @@ async function searchNpmPackages(text) {
 
   await nextSecondThrottle();
 
-  const url = `https://registry.npmjs.org/-/v1/search?text=${text}&size=${limit}&popularity=1.0&quality=0.0&maintenance=0.0`;
+  const url = `https://registry.npmjs.org/-/v1/search?text=${text}&from=${from}&size=${limit}&popularity=1.0&quality=0.0&maintenance=0.0`;
 
   try {
     const response = await fetch(url);
@@ -41,7 +59,7 @@ async function searchNpmPackages(text) {
       if (response.status === 429) {
         console.error("Rate limited! Waiting for 1 minute...");
         await sleep(ONE_MINUTE);
-        return searchNpmPackages(text, limit);
+        return npmSearch(text, page);
       }
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -71,33 +89,41 @@ async function saveResults(packages) {
   await fs.writeFile(RESULTS_FILE, JSON.stringify(packages, null, 2));
 }
 
-async function getAllTopPackages() {
-  const validChars = "abcdefghijklmnopqrstuvwxyz0123456789-_".split("");
-  let packages = await loadExistingResults();
-
+const validChars = "abcdefghijklmnopqrstuvwxyz0123456789-_".split("");
+// generator function creating all two-character combinations from the validChars set
+function* genPairs() {
   for (let i = 0; i < validChars.length; i++) {
     for (let j = 0; j < validChars.length; j++) {
-      const searchText = validChars[i] + validChars[j];
-      console.log(`Searching for "${searchText}"...`);
-      const newPackages = await searchNpmPackages(searchText);
-      newPackages.forEach((pkg) => {
-        const name = pkg.package.name;
-        if (!packages[name]) {
-          packages[name] = {
-            name,
-            dl: pkg.downloads,
-            dp: pkg.dependents,
-          };
-        }
-      });
-      await saveResults(packages);
+      yield validChars[i] + validChars[j];
     }
+  }
+}
+
+async function getAllTopPackages(pagesDeep = 1) {
+  let packages = await loadExistingResults();
+
+  for (const searchText of genPairs()) {
+    console.log(`Searching for "${searchText}"...`);
+    const newPackages = await searchNpmPackages(searchText, pagesDeep);
+    newPackages.forEach((pkg) => {
+      const name = pkg.package.name;
+      if (!packages[name]) {
+        packages[name] = {
+          name,
+          dl: pkg.downloads,
+          dp: pkg.dependents,
+        };
+      }
+    });
+    await saveResults(packages);
   }
 
   return packages;
 }
 
-getAllTopPackages()
+const depth = process.argv[2] ? parseInt(process.argv[2], 10) : 1;
+
+getAllTopPackages(depth)
   .then((packages) => {
     const sorted = Object.values(packages).sort(
       (a, b) => b.dl.monthly - a.dl.monthly

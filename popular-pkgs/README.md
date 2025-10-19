@@ -11,3 +11,19 @@
 
 ----
 Note to self, the latest version of fetch.js is not what produced the data, so there might be bugs I introduced when improving.
+
+
+# Usage
+
+1. Run the download 
+```bash
+node fetch.js <depth>
+```
+2. Get a good night sleep
+3. Aggregate the results
+```bash
+node aggregate.js <cutoff>
+```
+
+- depth - how many search result pages to scan per query - default 1
+- cutoff - top N packages to keep - default 50000

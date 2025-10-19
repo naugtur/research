@@ -2,7 +2,7 @@ const recursiveScan = require("../_tools/npmscanner");
 const seed = require("../popular-pkgs/names-per-dependents_count.json");
 
 recursiveScan({
-  name: "exports3",
+  name: "exports",
   seed,
   dataCallback: (pkg) => {
     if (pkg.exports && typeof pkg.exports !== "string") {
