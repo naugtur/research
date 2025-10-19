@@ -105,6 +105,7 @@ async function getAllTopPackages(pagesDeep = 1) {
   for (const searchText of genPairs()) {
     console.log(`Searching for "${searchText}"...`);
     const newPackages = await searchNpmPackages(searchText, pagesDeep);
+    console.log(`  found ${newPackages.length} results.`);
     newPackages.forEach((pkg) => {
       const name = pkg.package.name;
       if (!packages[name]) {
