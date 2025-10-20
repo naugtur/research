@@ -5,6 +5,7 @@ const path = require("path");
 
 const RESULTS_FILE = "npm_packages_results.json";
 const SEARCH_CACHE_DIR = "search-cache";
+const MONTHLY_DL_THRESHOLD_TO_SAVE = 100;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -43,7 +44,6 @@ async function npmSearch(text, page = 0) {
   const from = page * LIMIT;
   const cacheFile = path.join(SEARCH_CACHE_DIR, `${text}_${page}.json`);
 
-  process.stdout.write(`.`);
   try {
     const cachedData = await fs.readFile(cacheFile, "utf8");
     return JSON.parse(cachedData);
@@ -52,7 +52,8 @@ async function npmSearch(text, page = 0) {
       console.error(`Error reading cache for "${text}":`, error);
     }
   }
-
+  
+  process.stdout.write(`.`);
   await nextSecondThrottle();
 
   const url = `https://registry.npmjs.org/-/v1/search?text=${text}&from=${from}&size=${LIMIT}&popularity=1.0&quality=0.0&maintenance=0.0`;
@@ -122,18 +123,22 @@ async function getAllTopPackages(pagesDeep = 1) {
 
   for (const searchText of genPairs()) {
     process.stdout.write(`  searching: ${searchText}`);
+    let newAdded = false
     const newPackages = await searchNpmPackages(searchText, pagesDeep);
     newPackages.forEach((pkg) => {
       const name = pkg.package.name;
-      if (!packages[name]) {
+      if (!packages[name] && pkg.downloads.monthly > MONTHLY_DL_THRESHOLD_TO_SAVE) {
         packages[name] = {
           name,
           dl: pkg.downloads,
           dp: pkg.dependents,
         };
+        newAdded = true;
       }
     });
-    await saveResults(packages);
+    if (newAdded) {
+      await saveResults(packages);
+    }
   }
 
   return packages;
@@ -146,7 +151,7 @@ getAllTopPackages(depth)
     const sorted = Object.values(packages).sort(
       (a, b) => b.dl.monthly - a.dl.monthly
     );
-
+    console.log("\nDone.");
     console.log("got:", sorted.length);
     console.log("top:", sorted[0]);
   })

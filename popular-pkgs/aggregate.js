@@ -35,9 +35,9 @@ const whatsNewDL = sortedDL
   .map((p) => p.name)
   .filter((name) => !prevDL.includes(name));
 console.log(
-  `v ${whatsNewDL.length} new packages in top ${cutoff} by monthly downloads.`,
   whatsNewDL,
-  `^ ${whatsNewDL.length} new packages in top ${cutoff} by monthly downloads.`
+  `
+^ ${whatsNewDL.length} new packages in top ${cutoff} by monthly downloads.`
 );
 
 fs.writeFileSync(
