@@ -11,5 +11,7 @@ return recursiveScan({
   dataCallback: (pkg) => {
     return pkg;
   },
+  // forceSeed: true,
+  cache: false,
   parallel: 10,
 });

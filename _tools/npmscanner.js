@@ -13,12 +13,12 @@ function load(jsonfile, fallback) {
 const getPackageJsonMaker = (cacheOn) => {
   if (cacheOn) {
     let cacheArray = require("../_cache/cache-data.json");
-    const cache = cacheArray.reduce((caches, pkg) => {
-      caches.add(pkg.name, pkg);
-      return caches;
-    }, new Map());
+    const cache = new Map();
+    cacheArray.forEach((pkg) => {
+      cache.set(pkg.name, pkg);
+    });
     cacheArray = null;
-    return cache.get.bind(cache);
+    return async (i) => cache.get(i);
   } else {
     return (i) =>
       fetch(`https://registry.npmjs.org/${i}/latest`).then((r) => {
@@ -54,16 +54,21 @@ async function recursiveScan({
   name,
   dataCallback,
   parallel = 3,
-  cache = false,
+  cache,
   forceSeed = true,
 }) {
-  if (fs.existsSync(path.join(__dirname, "../_cache/cache-data.json"))) {
+  if (
+    typeof cache === "undefined" &&
+    fs.existsSync(path.join(__dirname, "../_cache/cache-data.json"))
+  ) {
     const answer = await promptUser(
       "Do you want to use the cache from ../_cache/cache-data.json? (y/n)"
     );
     if (answer) {
       cache = true;
     }
+  } else {
+    cache = false;
   }
 
   const getPackageJson = getPackageJsonMaker(cache);
