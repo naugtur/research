@@ -1,6 +1,6 @@
 // @ts-check
 const fs = require("fs");
-const recursiveScan = require("../_tools/npmscanner");
+const { recursiveScan } = require("../_tools/npmscanner");
 const seed = require("../popular-pkgs/names-per-dependents_count.json");
 
 recursiveScan({

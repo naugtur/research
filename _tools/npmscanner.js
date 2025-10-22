@@ -13,12 +13,12 @@ function load(jsonfile, fallback) {
 const getPackageJsonMaker = (cacheOn) => {
   if (cacheOn) {
     let cacheArray = require("../_cache/cache-data.json");
-    const cache = cacheArray.reduce((caches, pkg) => {
-      caches.add(pkg.name, pkg);
-      return caches;
-    }, new Map());
+    const cache = new Map();
+    cacheArray.forEach((pkg) => {
+      cache.set(pkg.name, pkg);
+    });
     cacheArray = null;
-    return cache.get.bind(cache);
+    return async (i) => cache.get(i);
   } else {
     return (i) =>
       fetch(`https://registry.npmjs.org/${i}/latest`).then((r) => {
@@ -48,25 +48,31 @@ async function promptUser(text) {
   return answer.toLowerCase() === "y";
 }
 
-module.exports = async function recursiveScan({
+async function recursiveScan({
+  targetPath = ".",
   seed,
   name,
   dataCallback,
   parallel = 3,
-  cache = false,
+  cache,
   forceSeed = true,
 }) {
-  if (fs.existsSync(path.join(__dirname, "../_cache/cache-data.json"))) {
+  if (
+    typeof cache === "undefined" &&
+    fs.existsSync(path.join(__dirname, "../_cache/cache-data.json"))
+  ) {
     const answer = await promptUser(
       "Do you want to use the cache from ../_cache/cache-data.json? (y/n)"
     );
     if (answer) {
       cache = true;
     }
+  } else {
+    cache = false;
   }
 
   const getPackageJson = getPackageJsonMaker(cache);
-  const state = load(`./${name}-progress.json`, {
+  const state = load(path.join(targetPath, `./${name}-progress.json`), {
     currentPass: seed,
     visited: [],
   });
@@ -77,7 +83,7 @@ module.exports = async function recursiveScan({
   let currentPass;
   const errors = state.errors || [];
   const visited = new Set(state.visited);
-  const matches = load(`./${name}-data.json`, []);
+  const matches = load(path.join(targetPath, `./${name}-data.json`), []);
   let prevMatches = matches.length;
   console.log(
     `Starting. matches: ${matches.length} visited: ${visited.size} nextPass: ${nextPass.size}`
@@ -88,12 +94,12 @@ module.exports = async function recursiveScan({
       prevMatches = matches.length;
       process.stdout.write("" + matches.length);
       fs.writeFileSync(
-        `./${name}-data.json`,
+        path.join(targetPath, `./${name}-data.json`),
         JSON.stringify(Array.from(matches))
       );
     }
     fs.writeFileSync(
-      `./${name}-progress.json`,
+      path.join(targetPath, `./${name}-progress.json`),
       JSON.stringify({
         currentPass: Array.from(currentPass),
         visited: Array.from(visited),
@@ -166,4 +172,6 @@ module.exports = async function recursiveScan({
     visited,
     errors,
   };
-};
+}
+
+exports.recursiveScan = recursiveScan;

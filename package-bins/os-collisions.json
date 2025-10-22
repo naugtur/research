@@ -1,0 +1,89 @@
+{
+  "test": [
+    "(system: /usr/bin/test)",
+    "test",
+    "@jdeighan/base-utils",
+    "lionconfig",
+    "@leonzalion/configs",
+    "@rollup-umd/test"
+  ],
+  "yarn": [
+    "(system: /usr/local/bin/yarn)",
+    "yarn",
+    "corepack"
+  ],
+  "yarnpkg": [
+    "(system: /usr/local/bin/yarnpkg)",
+    "yarn",
+    "corepack"
+  ],
+  "watch": [
+    "(system: /usr/bin/watch)",
+    "watch",
+    "watch-cli"
+  ],
+  "wget": [
+    "(system: /usr/bin/wget)",
+    "node-wget",
+    "node-wget-fetch"
+  ],
+  "make": [
+    "(system: /usr/bin/make)",
+    "gnumake",
+    "make"
+  ],
+  "cat": [
+    "(system: /usr/bin/cat)",
+    "cat",
+    "cross-cat"
+  ],
+  "sg": [
+    "(system: /usr/bin/sg)",
+    "sgsg",
+    "@ast-grep/cli"
+  ],
+  "node": [
+    "(system: /usr/local/bin/node)",
+    "node"
+  ],
+  "base32": [
+    "(system: /usr/bin/base32)",
+    "base32"
+  ],
+  "link": [
+    "(system: /usr/bin/link)",
+    "link"
+  ],
+  "import": [
+    "(system: /usr/bin/import)",
+    "import"
+  ],
+  "convert": [
+    "(system: /usr/bin/convert)",
+    "@activeprospect/integration-dev-dependencies"
+  ],
+  "chg": [
+    "(system: /usr/bin/chg)",
+    "chg"
+  ],
+  "scalar": [
+    "(system: /usr/bin/scalar)",
+    "@scalar/cli"
+  ],
+  "clear": [
+    "(system: /usr/bin/clear)",
+    "clear-cli"
+  ],
+  "true": [
+    "(system: /usr/bin/true)",
+    "true"
+  ],
+  "cmp": [
+    "(system: /usr/bin/cmp)",
+    "cmp"
+  ],
+  "rm": [
+    "(system: /usr/bin/rm)",
+    "cash-rm"
+  ]
+}

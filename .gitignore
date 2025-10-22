@@ -108,4 +108,6 @@ dist
 ~*
 ?.json
 .env
-.npmrc
+
+_cache
+search-cache
