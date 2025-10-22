@@ -1,89 +1,4 @@
 {
-  "release": [
-    "release-script",
-    "release",
-    "please-release-me",
-    "@uirouter/publish-scripts",
-    "@mysticatea/tools",
-    "@ossjs/release",
-    "cli-release",
-    "rf-release",
-    "new-release",
-    "@tunnckocore/release-cli",
-    "@leonzalion/configs",
-    "lionconfig",
-    "twilio-release-tool",
-    "@daybrush/release",
-    "yarn-release"
-  ],
-  "build-storybook": [
-    "@storybook/react",
-    "@kadira/storybook",
-    "@storybook/vue",
-    "@beisen/storybook-react",
-    "@storybook/html",
-    "@open-wc/demoing-storybook",
-    "@storybook/angular",
-    "@storybook/svelte",
-    "@storybook/web-components",
-    "@storybook/vue3",
-    "@storybook/polymer",
-    "@web/dev-server-storybook",
-    "@storybook/preact"
-  ],
-  "start-storybook": [
-    "@storybook/react",
-    "@kadira/storybook",
-    "@storybook/vue",
-    "@beisen/storybook-react",
-    "@storybook/html",
-    "@open-wc/demoing-storybook",
-    "@storybook/angular",
-    "@storybook/svelte",
-    "@storybook/web-components",
-    "@storybook/vue3",
-    "@storybook/polymer",
-    "@storybook/preact"
-  ],
-  "storybook-server": [
-    "@storybook/react",
-    "@kadira/storybook",
-    "@storybook/vue",
-    "@beisen/storybook-react",
-    "@storybook/html",
-    "@storybook/angular",
-    "@storybook/svelte",
-    "@storybook/web-components",
-    "@storybook/vue3",
-    "@storybook/polymer",
-    "@storybook/preact",
-    "@storybook/react-native-server"
-  ],
-  "eslint": [
-    "eslint",
-    "eslint-cli",
-    "eslint-config-jonnybuchanan",
-    "@sailshq/eslint",
-    "eslint-defaults",
-    "@leonzalion/configs",
-    "@html-validate/eslint-config",
-    "@qiwi/substrate-infra",
-    "lionconfig",
-    "@diplodoc/lint",
-    "fluid-eslint"
-  ],
-  "local-functions-proxy": [
-    "@netlify/local-functions-proxy-darwin-x64",
-    "@netlify/local-functions-proxy-freebsd-x64",
-    "@netlify/local-functions-proxy-linux-arm",
-    "@netlify/local-functions-proxy-darwin-arm64",
-    "@netlify/local-functions-proxy-freebsd-arm64",
-    "@netlify/local-functions-proxy-openbsd-x64",
-    "@netlify/local-functions-proxy-linux-x64",
-    "@netlify/local-functions-proxy-linux-ppc64",
-    "@netlify/local-functions-proxy-linux-ia32",
-    "@netlify/local-functions-proxy-linux-arm64"
-  ],
   "xlsx": [
     "xlsx",
     "xlsx-style",
@@ -94,148 +9,99 @@
     "@e965/xlsx",
     "xlsx-style-vite"
   ],
+  "lint": [
+    "lint",
+    "@npmcli/eslint-config",
+    "@pvtnbr/eslint-config",
+    "lionconfig",
+    "@kibalabs/build",
+    "@diplodoc/lint",
+    "@leonzalion/configs",
+    "@patrickhulce/lint"
+  ],
+  "eslint": [
+    "eslint",
+    "lionconfig",
+    "eslint-cli",
+    "@diplodoc/lint",
+    "@leonzalion/configs",
+    "@qiwi/substrate-infra",
+    "fluid-eslint"
+  ],
+  "ts-node": [
+    "ts-node",
+    "ts-node-maintained",
+    "lionconfig",
+    "typescript-node",
+    "@isaacs/ts-node-temp-fork-for-pr-2009",
+    "@leondreamed/ts-node",
+    "@leonzalion/configs"
+  ],
   "playwright": [
     "playwright",
-    "playwright-core",
-    "playwright-chromium",
     "@playwright/test",
-    "playwright-firefox",
+    "playwright-chromium",
     "playwright-webkit",
+    "playwright-firefox",
     "@playwright/experimental-ct-react",
     "@playwright/experimental-ct-vue"
+  ],
+  "release": [
+    "@uirouter/publish-scripts",
+    "@ossjs/release",
+    "twilio-release-tool",
+    "@daybrush/release",
+    "yarn-release",
+    "lionconfig",
+    "@leonzalion/configs"
   ],
   "tsc": [
     "typescript",
     "tsc",
-    "yortus-typescript",
-    "@qiwi/lint-config-infra",
-    "@qiwi/substrate-infra",
     "@redwoodjs/web",
-    "@redwoodjs/api"
+    "@redwoodjs/api",
+    "typescript-temporary-fork-for-jsdoc",
+    "@qiwi/lint-config-infra"
   ],
   "rollup": [
     "rollup",
-    "pob-babel",
-    "steal-rollup",
-    "es2049package",
     "@rollup/wasm-node",
+    "pob-babel",
     "@pob/rollup-esbuild",
-    "@pob/rollup"
-  ],
-  "commitlint": [
-    "@commitlint/cli",
-    "commitlint",
-    "@pob/root",
-    "@pob/repo-config",
-    "@leonzalion/configs",
-    "@html-validate/commitlint-config",
-    "lionconfig"
-  ],
-  "changelog": [
-    "generate-changelog",
-    "mt-changelog",
-    "changelog",
-    "rf-changelog",
-    "keep-a-changelog",
-    "cli-changelog",
-    "@appliedblockchain/changelog"
-  ],
-  "lint": [
-    "lint",
-    "@npmcli/eslint-config",
-    "@patrickhulce/lint",
-    "@leonzalion/configs",
-    "lionconfig",
-    "@kibalabs/build",
-    "@diplodoc/lint"
-  ],
-  "prettier": [
-    "prettier",
-    "prettier-elastic",
-    "@pob/root",
-    "@leonzalion/configs",
-    "@html-validate/prettier-config",
-    "@diplodoc/lint"
-  ],
-  "lint-staged": [
-    "lint-staged",
-    "@pob/repo-config",
-    "@leonzalion/configs",
-    "@html-validate/prettier-config",
-    "lionconfig",
-    "@diplodoc/lint"
+    "@pob/rollup",
+    "@pob/rollup-typescript"
   ],
   "run-p": [
     "npm-run-all",
-    "yarn-run-all",
     "npm-run-all2",
+    "yarn-run-all",
     "@qiwi/npm-run-all",
     "@plasmohq/rps",
     "npm-run-all-v2"
   ],
   "run-s": [
     "npm-run-all",
-    "yarn-run-all",
     "npm-run-all2",
+    "yarn-run-all",
     "@qiwi/npm-run-all",
     "@plasmohq/rps",
     "npm-run-all-v2"
   ],
   "npm-run-all": [
     "npm-run-all",
-    "yarn-run-all",
     "npm-run-all2",
+    "yarn-run-all",
     "@qiwi/npm-run-all",
-    "@qiwi/substrate-infra",
-    "npm-run-all-v2"
+    "npm-run-all-v2",
+    "@qiwi/substrate-infra"
   ],
-  "bump": [
-    "version-bump-prompt",
-    "bump-cli",
-    "bump",
-    "@jsdevtools/version-bump-prompt",
-    "bump-file",
-    "version-bump"
-  ],
-  "eslint-config": [
-    "@werkzeugkiste/eslint-config",
-    "@html-validate/eslint-config",
-    "@morev/eslint-config",
-    "@isentinel/eslint-config",
-    "@mheob/eslint-config",
-    "@nirtamir2/eslint-config"
-  ],
-  "desktop-dark.css": [
-    "topcoat-radio-button",
-    "topcoat-checkbox",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
-  ],
-  "desktop-light.css": [
-    "topcoat-radio-button",
-    "topcoat-checkbox",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
-  ],
-  "mobile-dark.css": [
-    "topcoat-radio-button",
-    "topcoat-checkbox",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
-  ],
-  "mobile-light.css": [
-    "topcoat-radio-button",
-    "topcoat-checkbox",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
+  "commitlint": [
+    "@commitlint/cli",
+    "commitlint",
+    "lionconfig",
+    "@leonzalion/configs",
+    "@crowdstrike/commitlint",
+    "@pob/repo-config"
   ],
   "wijmo-esm": [
     "@grapecity/wijmo.angular2.directivebase",
@@ -245,96 +111,69 @@
     "@grapecity-software/wijmo.angular2.directivebase",
     "@grapecity-software/wijmo.angular2legacy.directivebase"
   ],
-  "mocha": [
-    "mocha",
-    "egg-bin",
-    "midway-bin",
-    "mocha-cli",
-    "mocha2"
+  "bump": [
+    "version-bump-prompt",
+    "bump-file",
+    "@jsdevtools/version-bump-prompt",
+    "bump-cli",
+    "bump",
+    "version-bump"
   ],
-  "jest": [
-    "jest",
-    "jest-cli",
-    "jest-expo",
-    "@qiwi/lint-config-infra",
-    "@qiwi/substrate-infra"
-  ],
-  "babel": [
-    "babel-cli",
-    "@babel/cli",
-    "babel",
-    "@gerhobbelt/babel-cli",
-    "@morlay/babel-preset"
-  ],
-  "babel-node": [
-    "babel-cli",
-    "babel",
-    "@babel/node",
-    "@morlay/babel-preset",
-    "@genx/babelnode"
-  ],
-  "ts-node": [
-    "ts-node",
-    "@leonzalion/configs",
-    "lionconfig",
-    "ts-node-maintained",
-    "typescript-node"
-  ],
-  "istanbul": [
-    "istanbul",
-    "istanbul-harmony",
-    "sc-istanbul",
-    "@antv/istanbul",
-    "macaca-istanbul"
-  ],
-  "uglifyjs": [
-    "uglify-js",
-    "uglify-es",
-    "uglify-js-harmony",
-    "@sheetjs/uglify-js",
-    "uglify-js-es6"
+  "prettier": [
+    "prettier",
+    "prettier-elastic",
+    "@pob/root",
+    "@diplodoc/lint",
+    "@leonzalion/configs"
   ],
   "coffee": [
-    "coffee-script",
     "coffeescript",
     "coffee-script-redux",
-    "decaffeinate-coffeescript2",
-    "decaffeinate-coffeescript"
+    "coffee-script",
+    "decaffeinate-coffeescript",
+    "decaffeinate-coffeescript2"
   ],
   "cake": [
-    "coffee-script",
     "coffeescript",
-    "decaffeinate-coffeescript2",
+    "coffee-script",
     "decaffeinate-coffeescript",
+    "decaffeinate-coffeescript2",
     "cake"
+  ],
+  "jsonlint": [
+    "jsonlint",
+    "jsonlint-mod",
+    "jsonlint-lines-primitives",
+    "@prantlf/jsonlint",
+    "jsonlint-lines"
+  ],
+  "eslint-config": [
+    "@antfu/eslint-config",
+    "@morev/eslint-config",
+    "@isentinel/eslint-config",
+    "@mheob/eslint-config",
+    "@nirtamir2/eslint-config"
   ],
   "live-server": [
     "live-server",
     "@compodoc/live-server",
-    "@gerhobbelt/live-server",
     "five-server",
+    "@gerhobbelt/live-server",
     "@pattern-lab/live-server"
   ],
-  "jsonlint": [
-    "jsonlint",
-    "@prantlf/jsonlint",
-    "jsonlint-mod",
-    "jsonlint-lines",
-    "jsonlint-lines-primitives"
+  "test": [
+    "test",
+    "@jdeighan/base-utils",
+    "lionconfig",
+    "@leonzalion/configs",
+    "@rollup-umd/test"
   ],
   "publish": [
     "publish",
     "abacus-publish",
-    "@invisible/publish",
     "publish-me-maybe",
-    "publish-cli"
-  ],
-  "test": [
-    "test",
-    "@leonzalion/configs",
-    "lionconfig",
-    "@jdeighan/base-utils",
-    "@rollup-umd/test"
+    "publish-cli",
+    "@invisible/publish"
   ],
   "protoc-gen-ts": [
     "ts-protoc-gen",
@@ -343,88 +182,54 @@
     "protoc-gen-ts",
     "@wangshijun/ts-protoc-gen"
   ],
-  "bazel": [
-    "@bazel/bazelisk",
-    "@bazel/bazel",
-    "@bazel/bazel-darwin_x64",
-    "@bazel/bazel-linux_x64",
-    "@bazel/bazel-win32_x64"
-  ],
-  "desktop-dark.min.css": [
-    "topcoat-radio-button",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
-  ],
-  "desktop-light.min.css": [
-    "topcoat-radio-button",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
-  ],
-  "mobile-dark.min.css": [
-    "topcoat-radio-button",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
-  ],
-  "mobile-light.min.css": [
-    "topcoat-radio-button",
-    "topcoat-search-input",
-    "topcoat-textarea",
-    "topcoat-text-input",
-    "topcoat-switch"
-  ],
-  "babel-external-helpers": [
-    "babel-cli",
-    "@babel/cli",
-    "babel",
-    "@gerhobbelt/babel-cli"
+  "istanbul": [
+    "sc-istanbul",
+    "istanbul",
+    "istanbul-harmony",
+    "@antv/istanbul",
+    "macaca-istanbul"
   ],
   "rimraf": [
     "rimraf",
-    "@qiwi/substrate-infra",
     "@alloc/fast-rimraf",
-    "@hazae41/rimraf"
-  ],
-  "tape": [
-    "tape",
-    "supertape",
-    "@putout/test",
-    "@pre-bundled/tape"
-  ],
-  "typedoc": [
-    "typedoc",
-    "@bitjson/typedoc",
-    "@qiwi/lint-config-infra",
+    "@hazae41/rimraf",
     "@qiwi/substrate-infra"
   ],
-  "jsdoc": [
-    "jsdoc",
-    "@openpgp/jsdoc",
-    "@daybrush/jsdoc",
-    "neo-jsdoc"
+  "ts-node-cwd": [
+    "ts-node",
+    "ts-node-maintained",
+    "@isaacs/ts-node-temp-fork-for-pr-2009",
+    "@leondreamed/ts-node"
   ],
-  "electron": [
-    "electron-lite",
-    "electron",
-    "electron-prebuilt",
-    "electron-prebuilt-compile"
+  "ts-node-esm": [
+    "ts-node",
+    "ts-node-maintained",
+    "@isaacs/ts-node-temp-fork-for-pr-2009",
+    "@leondreamed/ts-node"
   ],
-  "phantomjs": [
-    "phantomjs-prebuilt",
-    "phantomjs",
-    "phantomjs2",
-    "phantomjs2-ext"
+  "ts-node-script": [
+    "ts-node",
+    "ts-node-maintained",
+    "@isaacs/ts-node-temp-fork-for-pr-2009",
+    "@leondreamed/ts-node"
   ],
-  "microbundle": [
-    "microbundle",
-    "@mattdesl/microbundle",
-    "@micro-web/microbundle",
-    "@kne/microbundle"
+  "ts-node-transpile-only": [
+    "ts-node",
+    "ts-node-maintained",
+    "@isaacs/ts-node-temp-fork-for-pr-2009",
+    "@leondreamed/ts-node"
+  ],
+  "uglifyjs": [
+    "uglify-js",
+    "@sheetjs/uglify-js",
+    "uglify-es",
+    "uglify-js-es6"
+  ],
+  "babel-node": [
+    "babel-cli",
+    "@babel/node",
+    "babel",
+    "@genx/babelnode"
   ],
   "esparse": [
     "esprima",
@@ -438,29 +243,35 @@
     "esprima-next",
     "@gerhobbelt/esprima"
   ],
-  "minify": [
-    "babel-minify",
-    "minify",
-    "minifier",
-    "harp-minify"
+  "lint-staged": [
+    "lint-staged",
+    "@diplodoc/lint",
+    "@leonzalion/configs",
+    "@pob/repo-config"
   ],
-  "node-pre-gyp": [
-    "node-pre-gyp",
-    "@mapbox/node-pre-gyp",
-    "@discordjs/node-pre-gyp",
-    "@risingstack/node-pre-gyp"
+  "jest": [
+    "jest-cli",
+    "jest-expo",
+    "@qiwi/lint-config-infra",
+    "@qiwi/substrate-infra"
   ],
-  "bob": [
-    "@react-native-community/bob",
-    "react-native-builder-bob",
-    "bob-the-bundler",
-    "@bconnorwhite/bob"
+  "typedoc": [
+    "typedoc",
+    "@bitjson/typedoc",
+    "@qiwi/lint-config-infra",
+    "@qiwi/substrate-infra"
   ],
-  "json": [
-    "json",
-    "@buzuli/json",
-    "homebridge-lib",
-    "hb-lib-tools"
+  "jsdoc": [
+    "jsdoc",
+    "@openpgp/jsdoc",
+    "@daybrush/jsdoc",
+    "neo-jsdoc"
+  ],
+  "nuxt": [
+    "nuxt",
+    "@nuxt/cli",
+    "nuxt-edge",
+    "nuxi"
   ],
   "xml2json": [
     "xml2json",
@@ -468,29 +279,35 @@
     "vtk.js",
     "jgexml"
   ],
-  "ncc": [
-    "@zeit/ncc",
-    "@vercel/ncc",
-    "@midwayjs/ncc",
-    "@kkt/ncc"
+  "node-pre-gyp": [
+    "@mapbox/node-pre-gyp",
+    "@discordjs/node-pre-gyp",
+    "node-pre-gyp",
+    "@risingstack/node-pre-gyp"
+  ],
+  "microbundle": [
+    "microbundle",
+    "@micro-web/microbundle",
+    "@kne/microbundle",
+    "@mattdesl/microbundle"
+  ],
+  "minify": [
+    "minify",
+    "babel-minify",
+    "harp-minify",
+    "minifier"
   ],
   "flow-remove-types": [
     "flow-remove-types",
+    "flow-node",
     "@mapbox/flow-remove-types",
-    "flow-remove-types-no-whitespace",
-    "flow-node"
+    "flow-remove-types-no-whitespace"
   ],
   "flow-node": [
     "flow-remove-types",
+    "flow-node",
     "@mapbox/flow-remove-types",
-    "flow-remove-types-no-whitespace",
-    "flow-node"
-  ],
-  "run-node": [
-    "alfy",
-    "alfy-test",
-    "run-node",
-    "mora-scripts"
+    "flow-remove-types-no-whitespace"
   ],
   "builder": [
     "builder",
@@ -500,159 +317,117 @@
   ],
   "node-pre-gyp-github": [
     "node-pre-gyp-github",
-    "@mathquis/node-pre-gyp-github",
     "@mmomtchev/node-pre-gyp-github",
-    "@acalcutt/node-pre-gyp-github"
-  ],
-  "build": [
-    "@4c/build",
-    "compiled",
-    "xyvcard-wechat-build",
-    "@rollup-umd/build"
-  ],
-  "readme": [
-    "markserv",
-    "@appnest/readme",
-    "package-json-to-readme",
-    "readme-md-generator"
+    "@acalcutt/node-pre-gyp-github",
+    "@mathquis/node-pre-gyp-github"
   ],
   "gl-style-migrate": [
-    "mapbox-gl-style-spec",
-    "@mapbox/mapbox-gl-style-spec",
     "@maplibre/maplibre-gl-style-spec",
-    "mvt-basic-render"
+    "@mapbox/mapbox-gl-style-spec",
+    "mvt-basic-render",
+    "mapbox-gl-style-spec"
   ],
   "gl-style-validate": [
-    "mapbox-gl-style-spec",
-    "@mapbox/mapbox-gl-style-spec",
     "@maplibre/maplibre-gl-style-spec",
-    "mvt-basic-render"
+    "@mapbox/mapbox-gl-style-spec",
+    "mvt-basic-render",
+    "mapbox-gl-style-spec"
   ],
   "gl-style-format": [
-    "mapbox-gl-style-spec",
-    "@mapbox/mapbox-gl-style-spec",
     "@maplibre/maplibre-gl-style-spec",
-    "mvt-basic-render"
+    "@mapbox/mapbox-gl-style-spec",
+    "mvt-basic-render",
+    "mapbox-gl-style-spec"
+  ],
+  "bob": [
+    "react-native-builder-bob",
+    "@react-native-community/bob",
+    "bob-the-bundler",
+    "@bconnorwhite/bob"
+  ],
+  "build-storybook": [
+    "@open-wc/demoing-storybook",
+    "@kadira/storybook",
+    "@beisen/storybook-react",
+    "@web/dev-server-storybook"
+  ],
+  "changelog": [
+    "generate-changelog",
+    "keep-a-changelog",
+    "changelog",
+    "@appliedblockchain/changelog"
+  ],
+  "readme": [
+    "readme-md-generator",
+    "markserv",
+    "@appnest/readme",
+    "package-json-to-readme"
+  ],
+  "lefthook": [
+    "lefthook",
+    "@arkweid/lefthook",
+    "@evilmartians/lefthook",
+    "lionconfig"
+  ],
+  "uuid": [
+    "uuid",
+    "@aigne/uuid",
+    "node-uuid"
   ],
   "webpack": [
     "webpack",
     "webpack-command",
     "webpack2"
   ],
-  "cross-env": [
-    "cross-env",
-    "@qiwi/substrate-infra",
-    "@redwoodjs/web"
-  ],
   "mkdirp": [
     "mkdirp",
-    "@qiwi/substrate-infra",
-    "node-mkdirp"
+    "node-mkdirp",
+    "@qiwi/substrate-infra"
   ],
-  "standard": [
-    "standard",
-    "uber-standard",
-    "standard-esnext"
-  ],
-  "uuid": [
-    "uuid",
-    "node-uuid",
-    "@aigne/uuid"
-  ],
-  "semantic-release": [
-    "semantic-release",
-    "semantic-release-plus",
-    "@html-validate/semantic-release-config"
-  ],
-  "js-yaml": [
-    "js-yaml",
-    "@zkochan/js-yaml",
-    "@gerhobbelt/js-yaml"
-  ],
-  "git-cz": [
-    "commitizen",
-    "git-cz",
-    "@ryansonshine/commitizen"
-  ],
-  "react-native": [
-    "react-native",
-    "@react-native-community/cli",
-    "react-native-cli"
+  "mocha": [
+    "mocha",
+    "mocha2",
+    "mocha-cli"
   ],
   "resolve": [
     "resolve",
     "oas-resolver",
     "oas-resolver-browser"
   ],
-  "lerna": [
-    "lerna",
-    "@pob/lerna-light",
-    "@lerna-lite/cli"
+  "cross-env": [
+    "cross-env",
+    "@redwoodjs/web",
+    "@qiwi/substrate-infra"
   ],
-  "watch": [
-    "watch",
-    "watch-cli",
-    "@cnakazawa/watch"
+  "react-native": [
+    "react-native",
+    "react-native-cli",
+    "react-native-macos"
   ],
-  "nodeunit": [
-    "nodeunit",
-    "nodeunit-x",
-    "nodeunit-v1"
+  "babel": [
+    "@babel/cli",
+    "babel-cli",
+    "babel"
   ],
-  "documentation": [
-    "documentation",
-    "documentation-markdown-themes",
-    "documentation-custom-markdown"
+  "babel-external-helpers": [
+    "@babel/cli",
+    "babel-cli",
+    "babel"
   ],
-  "serve": [
-    "serve",
-    "@ungoldman/serve",
-    "https-localhost"
-  ],
-  "npm-check-updates": [
-    "npm-check-updates",
-    "npm-check-updates-lite",
-    "npm4-check-updates"
-  ],
-  "ncu": [
-    "npm-check-updates",
-    "npm-check-updates-lite",
-    "npm4-check-updates"
-  ],
-  "tailwindcss": [
-    "tailwindcss",
-    "@tailwindcss/cli",
-    "@tailwindcss/postcss7-compat"
+  "vite": [
+    "vite",
+    "rolldown-vite",
+    "oc-vite"
   ],
   "random": [
     "mockjs",
     "mockjs2",
     "better-mock"
   ],
-  "envify": [
-    "envify",
-    "@browserify/envify",
-    "@goto-bus-stop/envify"
-  ],
-  "qunit": [
-    "qunitjs",
-    "qunit",
-    "node-qunit"
-  ],
-  "bsc": [
-    "bs-platform",
-    "rescript",
-    "brighterscript"
-  ],
-  "dtslint": [
-    "dtslint",
-    "@definitelytyped/dtslint",
-    "@qiwi/substrate-infra"
-  ],
-  "static": [
-    "node-static",
-    "@brettz9/node-static",
-    "static-cling"
+  "is-ci": [
+    "is-ci",
+    "is-ci-cli",
+    "@comandeer/is-ci"
   ],
   "detect": [
     "detect-port",
@@ -664,280 +439,180 @@
     "detect-port-alt",
     "@timer/detect-port"
   ],
-  "markdownlint": [
-    "markdownlint-cli",
-    "@leonzalion/configs",
-    "lionconfig"
-  ],
-  "ganache-cli": [
-    "ganache-cli",
-    "ganache",
-    "@ganache/cli"
-  ],
-  "sass-lint": [
-    "sass-lint",
-    "@blueprintjs/node-build-scripts",
-    "css-lint"
-  ],
-  "esbuild": [
-    "esbuild",
-    "esbuild-wasm",
-    "@netlify/esbuild"
-  ],
-  "is-ci": [
-    "is-ci",
-    "is-ci-cli",
-    "@comandeer/is-ci"
-  ],
-  "pkg": [
-    "pkg",
-    "@yao-pkg/pkg",
-    "@sanity/pkg-utils"
-  ],
-  "nuxt": [
-    "nuxt",
-    "nuxt-edge",
-    "nuxi"
-  ],
-  "vite": [
-    "vite",
-    "rolldown-vite",
-    "oc-vite"
-  ],
-  "eslint-find-rules": [
-    "eslint-find-rules",
-    "@xotic750/eslint-find-rules",
-    "@akameco/eslint-find-rules"
-  ],
-  "eslint-diff-rules": [
-    "eslint-find-rules",
-    "@xotic750/eslint-find-rules",
-    "@akameco/eslint-find-rules"
-  ],
-  "fixpack": [
-    "fixpack",
-    "@okunishinishi/fixpack",
-    "@oclif/fixpack"
-  ],
-  "rlp": [
-    "rlp",
-    "@nomicfoundation/ethereumjs-rlp",
-    "@ethereumjs/rlp"
-  ],
-  "chroma": [
-    "chromatic",
-    "storybook-chromatic",
-    "chromadb"
-  ],
-  "opencollective": [
-    "opencollective",
-    "@nuxtjs/opencollective",
-    "@nuxt/opencollective"
-  ],
-  "stryker": [
-    "@stryker-mutator/core",
-    "stryker",
-    "stryker-cli"
-  ],
-  "ansi-html": [
-    "ansi-html",
-    "ansi-html-community",
-    "ansi-html-stream"
-  ],
-  "ps-tree": [
-    "ps-tree",
-    "@apify/ps-tree",
-    "@fengmk2/ps-tree"
-  ],
-  "cdk": [
-    "aws-cdk",
-    "cdk",
-    "sst-aws-cdk"
-  ],
-  "run": [
-    "runjs",
-    "mora-scripts",
-    "@mpis/run"
+  "tape": [
+    "tape",
+    "supertape",
+    "@putout/test"
   ],
   "crc32": [
     "crc-32",
     "crc32",
     "cyclic-32"
   ],
-  "module-deps": [
-    "module-deps",
-    "module-deps-sortable",
-    "@cljs-oss/module-deps"
+  "git-cz": [
+    "commitizen",
+    "git-cz",
+    "@ryansonshine/commitizen"
   ],
-  "ts": [
-    "@platform/ts",
-    "zfbndp",
-    "ts"
+  "nuxi": [
+    "nuxt",
+    "@nuxt/cli",
+    "nuxi"
   ],
-  "ci": [
-    "smokesignals",
-    "ci-scripts",
-    "ci"
+  "rlp": [
+    "rlp",
+    "@ethereumjs/rlp",
+    "@nomicfoundation/ethereumjs-rlp"
+  ],
+  "npm-check-updates": [
+    "npm-check-updates",
+    "npm-check-updates-lite",
+    "npm4-check-updates"
+  ],
+  "ncu": [
+    "npm-check-updates",
+    "npm-check-updates-lite",
+    "npm4-check-updates"
+  ],
+  "standard": [
+    "standard",
+    "uber-standard",
+    "standard-esnext"
+  ],
+  "ansi-html": [
+    "ansi-html",
+    "ansi-html-community",
+    "ansi-html-stream"
+  ],
+  "tsc-alias": [
+    "tsc-alias",
+    "lionconfig",
+    "@leonzalion/configs"
+  ],
+  "ps-tree": [
+    "ps-tree",
+    "@apify/ps-tree",
+    "@fengmk2/ps-tree"
+  ],
+  "opencollective": [
+    "opencollective",
+    "@nuxt/opencollective",
+    "@nuxtjs/opencollective"
+  ],
+  "pkg": [
+    "pkg",
+    "@yao-pkg/pkg",
+    "@sanity/pkg-utils"
+  ],
+  "cdk": [
+    "aws-cdk",
+    "cdk",
+    "sst-aws-cdk"
+  ],
+  "json": [
+    "json",
+    "homebridge-lib",
+    "hb-lib-tools"
+  ],
+  "bsc": [
+    "rescript",
+    "bs-platform",
+    "brighterscript"
   ],
   "kill-port": [
     "kill-port",
     "cross-port-killer",
     "kill-port-process"
   ],
-  "relay-compiler": [
-    "relay-compiler",
-    "@ardatan/relay-compiler",
-    "@gatsbyjs/relay-compiler"
+  "sass-lint": [
+    "sass-lint",
+    "@blueprintjs/node-build-scripts",
+    "css-lint"
   ],
-  "gren": [
-    "github-release-notes",
-    "@cjbarth/github-release-notes",
-    "@femessage/github-release-notes"
+  "auto": [
+    "auto",
+    "autorepo",
+    "@auto-canary/auto"
   ],
-  "velocity": [
-    "velocityjs",
-    "amplify-velocity-template",
-    "velocity"
-  ],
-  "zopflipng": [
-    "zopflipng-bin",
-    "node-zopfli-es",
-    "node-zopfli"
-  ],
-  "markdown": [
-    "markdown-magic",
-    "markdown-to-html",
-    "cli-markdown"
-  ],
-  "zeus": [
-    "zeus",
-    "zeusjs",
-    "graphql-zeus"
-  ],
-  "scripts": [
-    "shared-scripts",
-    "@material-design-icons/scripts",
-    "@tunnckocore/scripts"
-  ],
-  "tap-out": [
-    "tap-out",
-    "@small-tech/tap-out",
-    "@randomgoods/tap-out"
-  ],
-  "dtsgen": [
-    "@alifd/dts-generator",
-    "dtsgenerator",
-    "@anttiviljami/dtsgenerator"
-  ],
-  "puml": [
-    "egg-plugin-puml",
-    "node-plantuml",
-    "node-plantuml-latest"
-  ],
-  "cat": [
-    "cash-cat",
-    "cat",
-    "cross-cat"
-  ],
-  "nuxt-cli": [
-    "@nuxt/cli",
-    "@nuxt/cli-edge",
-    "nuxi"
-  ],
-  "lefthook": [
-    "@evilmartians/lefthook",
-    "@arkweid/lefthook",
-    "lefthook"
-  ],
-  "tsc-alias": [
-    "tsc-alias",
-    "@leonzalion/configs",
-    "lionconfig"
-  ],
-  "bump-version": [
-    "@mysticatea/tools",
-    "@dschau/bump-version-ci",
-    "@ls-age/bump-version"
-  ],
-  "beemo": [
-    "@beemo/cli",
-    "@niieani/scaffold",
-    "vega-lite-dev-config"
-  ],
-  "migrate": [
-    "mjml-migrate",
-    "migrate",
-    "@entur/typography"
-  ],
-  "degit": [
-    "degit",
-    "degitto",
-    "tiged"
-  ],
-  "nwget": [
-    "wget",
-    "wget-improved",
-    "wget-improved-2"
-  ],
-  "gl-style-composite": [
-    "mapbox-gl-style-spec",
-    "@mapbox/mapbox-gl-style-spec",
-    "mvt-basic-render"
+  "module-deps": [
+    "module-deps",
+    "@cljs-oss/module-deps",
+    "module-deps-sortable"
   ],
   "wake": [
-    "wake",
     "wake_on_lan",
-    "wol"
-  ],
-  "commitlint-circle": [
-    "@timbeyer/commitlint-circle",
-    "commitlint-circle",
-    "@ls-age/commitlint-circle"
-  ],
-  "tsdoc": [
-    "@gitzone/tsdoc",
-    "tsdoc-markdown",
-    "@git.zone/tsdoc"
-  ],
-  "tsc-esm": [
-    "typescript-esm",
-    "tsc-esm",
-    "@digitak/tsc-esm"
-  ],
-  "lionp": [
-    "@leonzalion/configs",
-    "lionp",
-    "lionconfig"
-  ],
-  "lion-git-hooks": [
-    "@leonzalion/configs",
-    "lion-git-hooks",
-    "lionconfig"
-  ],
-  "buildstamp": [
-    "@qiwi/lint-config-infra",
-    "@qiwi/substrate-infra",
-    "buildstamp"
+    "wol",
+    "wake"
   ],
   "go-npm": [
     "go-npm",
     "@go-task/go-npm",
     "@gzuidhof/go-npm"
   ],
+  "migrate": [
+    "migrate",
+    "mjml-migrate",
+    "@entur/typography"
+  ],
+  "markdownlint": [
+    "markdownlint-cli",
+    "lionconfig",
+    "@leonzalion/configs"
+  ],
   "mcp": [
     "mcp-framework",
     "@vercel/sdk",
     "unstructured-client"
+  ],
+  "relay-compiler": [
+    "relay-compiler",
+    "@gatsbyjs/relay-compiler",
+    "@ardatan/relay-compiler"
+  ],
+  "ci": [
+    "ci",
+    "smokesignals",
+    "ci-scripts"
   ],
   "openapi": [
     "openapi-typescript-codegen",
     "@redocly/cli",
     "openapi"
   ],
+  "gl-style-composite": [
+    "@mapbox/mapbox-gl-style-spec",
+    "mvt-basic-render",
+    "mapbox-gl-style-spec"
+  ],
+  "nwget": [
+    "wget-improved",
+    "wget",
+    "wget-improved-2"
+  ],
+  "start-storybook": [
+    "@open-wc/demoing-storybook",
+    "@kadira/storybook",
+    "@beisen/storybook-react"
+  ],
+  "storybook-server": [
+    "@kadira/storybook",
+    "@storybook/react-native-server",
+    "@beisen/storybook-react"
+  ],
+  "zopflipng": [
+    "node-zopfli",
+    "zopflipng-bin",
+    "node-zopfli-es"
+  ],
   "errors": [
     "@solana/errors",
     "@kinobi-so/errors",
     "@wallet-standard/errors"
+  ],
+  "markdown": [
+    "cli-markdown",
+    "markdown-to-html",
+    "markdown-magic"
   ],
   "i18n": [
     "@plone/scripts",
@@ -959,226 +634,108 @@
     "mini-program-iconfont-cli",
     "react-native-iconfont-cli"
   ],
+  "stryker": [
+    "@stryker-mutator/core",
+    "stryker",
+    "stryker-cli"
+  ],
+  "gren": [
+    "github-release-notes",
+    "@cjbarth/github-release-notes",
+    "@femessage/github-release-notes"
+  ],
+  "tsc-esm": [
+    "tsc-esm",
+    "typescript-esm",
+    "@digitak/tsc-esm"
+  ],
+  "dtslint": [
+    "dtslint",
+    "@definitelytyped/dtslint",
+    "@qiwi/substrate-infra"
+  ],
+  "nuxt-cli": [
+    "@nuxt/cli",
+    "nuxi",
+    "@nuxt/cli-edge"
+  ],
+  "buddy": [
+    "repobuddy",
+    "buddy",
+    "buddy-cli"
+  ],
+  "lionp": [
+    "lionconfig",
+    "lionp",
+    "@leonzalion/configs"
+  ],
+  "tsdoc": [
+    "tsdoc-markdown",
+    "@gitzone/tsdoc",
+    "@git.zone/tsdoc"
+  ],
+  "build": [
+    "xyvcard-wechat-build",
+    "@4c/build",
+    "@rollup-umd/build"
+  ],
+  "buildstamp": [
+    "@qiwi/lint-config-infra",
+    "@qiwi/substrate-infra",
+    "buildstamp"
+  ],
   "nice-move": [
     "@nice-move/cli",
     "@nice-move/all-in-web",
     "@nice-move/all-in-base"
   ],
-  "_mocha": [
-    "mocha",
-    "mocha2"
-  ],
   "tsserver": [
     "typescript",
-    "yortus-typescript"
-  ],
-  "gulp": [
-    "gulp",
-    "gulp-cli"
-  ],
-  "tslint": [
-    "tslint",
-    "ts-lint"
-  ],
-  "node-sass": [
-    "node-sass",
-    "node-sass-china"
-  ],
-  "ts-node-cwd": [
-    "ts-node",
-    "ts-node-maintained"
-  ],
-  "ts-node-esm": [
-    "ts-node",
-    "ts-node-maintained"
-  ],
-  "ts-node-script": [
-    "ts-node",
-    "ts-node-maintained"
-  ],
-  "ts-node-transpile-only": [
-    "ts-node",
-    "ts-node-maintained"
-  ],
-  "ts-script": [
-    "ts-node",
-    "ts-node-maintained"
-  ],
-  "husky": [
-    "husky",
-    "@diplodoc/lint"
-  ],
-  "coveralls": [
-    "coveralls",
-    "coveralls-next"
-  ],
-  "grunt": [
-    "grunt",
-    "grunt-cli"
-  ],
-  "karma": [
-    "karma",
-    "karma-cli"
+    "typescript-temporary-fork-for-jsdoc"
   ],
   "semver": [
     "semver",
     "@storybook/semver"
   ],
-  "jshint": [
-    "jshint",
-    "test-support"
+  "js-yaml": [
+    "js-yaml",
+    "@gerhobbelt/js-yaml"
   ],
-  "codecov": [
-    "codecov",
-    "codecov.io"
+  "ts-script": [
+    "ts-node",
+    "ts-node-maintained"
   ],
-  "webdriver-manager": [
-    "protractor",
-    "webdriver-manager"
-  ],
-  "cz": [
-    "commitizen",
-    "@ryansonshine/commitizen"
-  ],
-  "commitizen": [
-    "commitizen",
-    "@ryansonshine/commitizen"
-  ],
-  "jasmine": [
-    "jasmine",
-    "jasmine-es6"
-  ],
-  "ng": [
-    "@angular/cli",
-    "angular-cli"
-  ],
-  "concurrently": [
-    "concurrently",
-    "@qiwi/substrate-infra"
-  ],
-  "stylelint": [
-    "stylelint",
-    "@diplodoc/lint"
+  "figlet": [
+    "figlet",
+    "figlet-cli"
   ],
   "npx": [
     "npm",
     "npx"
   ],
-  "tspec": [
-    "tap-spec",
-    "@randomgoods/tap-spec"
+  "sass": [
+    "sass",
+    "sass-embedded"
   ],
-  "tap-spec": [
-    "tap-spec",
-    "@randomgoods/tap-spec"
+  "_mocha": [
+    "mocha",
+    "mocha2"
   ],
-  "parcel": [
-    "parcel-bundler",
-    "parcel"
+  "gulp": [
+    "gulp",
+    "gulp-cli"
   ],
-  "markdown-it": [
-    "markdown-it",
-    "@gerhobbelt/markdown-it"
-  ],
-  "release-it": [
-    "release-it",
-    "@uploadcare/release-it"
-  ],
-  "terser": [
-    "terser",
-    "@qiwi/substrate-infra"
-  ],
-  "chromedriver": [
-    "chromedriver",
-    "electron-chromedriver"
-  ],
-  "bunyan": [
-    "bunyan",
-    "@salesforce/bunyan"
-  ],
-  "cpx": [
-    "cpx",
-    "cpx2"
-  ],
-  "css-beautify": [
-    "js-beautify",
-    "js-beautify-ejsx"
-  ],
-  "html-beautify": [
-    "js-beautify",
-    "js-beautify-ejsx"
-  ],
-  "js-beautify": [
-    "js-beautify",
-    "js-beautify-ejsx"
-  ],
-  "validate-commit-msg": [
-    "validate-commit-msg",
-    "validate-commit-message"
-  ],
-  "node-which": [
-    "which",
-    "@zkochan/which"
-  ],
-  "lab": [
-    "lab",
-    "@hapi/lab"
-  ],
-  "esdoc": [
-    "esdoc",
-    "@itsjamie/esdoc-cli"
-  ],
-  "selenium": [
-    "selenium-server",
-    "selenium"
-  ],
-  "tailwind": [
-    "tailwindcss",
-    "@tailwindcss/postcss7-compat"
-  ],
-  "faucet": [
-    "faucet",
-    "faucet-pipeline-core"
+  "esbuild": [
+    "esbuild",
+    "esbuild-wasm"
   ],
   "json5": [
     "json5",
     "@gerhobbelt/json5"
   ],
-  "egg-bin": [
-    "egg-bin",
-    "@eggjs/bin"
-  ],
-  "ets": [
-    "egg-bin",
-    "egg-ts-helper"
-  ],
-  "c8": [
-    "egg-bin",
-    "c8"
-  ],
-  "esgenerate": [
-    "escodegen",
-    "escodegen-wallaby"
-  ],
-  "escodegen": [
-    "escodegen",
-    "escodegen-wallaby"
-  ],
-  "gatsby": [
-    "gatsby",
-    "gatsby-cli"
-  ],
-  "json2yaml": [
-    "yamljs",
-    "json2yaml"
-  ],
-  "yarn": [
-    "yarn",
-    "corepack"
-  ],
-  "yarnpkg": [
-    "yarn",
-    "corepack"
+  "markdown-it": [
+    "markdown-it",
+    "@gerhobbelt/markdown-it"
   ],
   "mqtt_pub": [
     "mqtt",
@@ -1192,349 +749,109 @@
     "mqtt",
     "@taoqf/react-native-mqtt"
   ],
-  "compodoc": [
-    "@compodoc/compodoc",
-    "compodoc"
-  ],
-  "cpy": [
-    "cpy-cli",
+  "terser": [
+    "terser",
     "@qiwi/substrate-infra"
   ],
-  "coffeelint": [
-    "coffeelint",
-    "@fellow/coffeelint2"
+  "stylelint": [
+    "stylelint",
+    "@diplodoc/lint"
   ],
-  "storybook-to-ghpages": [
-    "@storybook/storybook-deployer",
-    "@kadira/storybook-deployer"
+  "esgenerate": [
+    "escodegen",
+    "escodegen-wallaby"
   ],
-  "bundlesize": [
-    "bundlesize",
-    "bundlesize2"
+  "escodegen": [
+    "escodegen",
+    "escodegen-wallaby"
   ],
-  "bsb": [
-    "bs-platform",
-    "@bettercorp/service-base"
+  "grunt": [
+    "grunt",
+    "grunt-cli"
   ],
-  "bstracing": [
-    "bs-platform",
-    "rescript"
+  "yarn": [
+    "yarn",
+    "corepack"
   ],
-  "open-cli": [
-    "opn-cli",
-    "open-cli"
+  "yarnpkg": [
+    "yarn",
+    "corepack"
   ],
-  "buble": [
-    "buble",
-    "@philpl/buble"
+  "json2yaml": [
+    "yamljs",
+    "json2yaml"
   ],
-  "replace": [
-    "replace",
-    "node-replace"
+  "concurrently": [
+    "concurrently",
+    "@qiwi/substrate-infra"
   ],
-  "search": [
-    "replace",
-    "node-replace"
+  "fingerprint": [
+    "expo",
+    "@expo/fingerprint"
   ],
-  "showdown": [
-    "showdown",
-    "devextreme-showdown"
-  ],
-  "prettier-standard": [
-    "prettier-standard",
-    "@ksmithut/prettier-standard"
-  ],
-  "truffle": [
-    "truffle",
-    "@truffle/core"
-  ],
-  "rollup-plugin-visualizer": [
-    "rollup-plugin-visualizer",
-    "@aklinker1/rollup-plugin-visualizer"
-  ],
-  "swig": [
-    "swig",
-    "swig-templates"
-  ],
-  "cucumber-js": [
-    "cucumber",
-    "@cucumber/cucumber"
-  ],
-  "jsx": [
-    "react-tools",
-    "@a-la/jsx"
-  ],
-  "dts-bundle": [
-    "dts-bundle",
-    "@qiwi/dts-bundle"
-  ],
-  "auto-changelog": [
-    "auto-changelog",
-    "@metamask/auto-changelog"
-  ],
-  "sbl": [
-    "@beisen/storybook",
-    "@beisen/storybook-lib"
-  ],
-  "ttsc": [
-    "ttypescript",
-    "ttsc"
-  ],
-  "ttsserver": [
-    "ttypescript",
-    "ttsc"
-  ],
-  "gitbook": [
-    "gitbook-cli",
-    "gitbook"
-  ],
-  "jison": [
-    "jison",
-    "jison-gho"
-  ],
-  "sb": [
-    "@storybook/cli",
-    "storybook"
-  ],
-  "lsc": [
-    "livescript",
-    "LiveScript"
-  ],
-  "electron-packager": [
-    "electron-packager",
-    "@electron/packager"
-  ],
-  "dottojs": [
-    "dot",
-    "@deque/dot"
+  "expo-modules-autolinking": [
+    "expo",
+    "expo-modules-autolinking"
   ],
   "json2csv": [
     "json2csv",
     "d3-dsv"
   ],
-  "nps": [
-    "nps",
-    "p-s"
+  "electron": [
+    "electron",
+    "electron-prebuilt"
   ],
-  "mqpacker": [
-    "css-mqpacker",
-    "mqpacker"
+  "showdown": [
+    "showdown",
+    "devextreme-showdown"
   ],
-  "commit-msg": [
-    "pre-git",
-    "@plasma-platform/tm-message-hook"
-  ],
-  "dox": [
-    "dox",
-    "doxxx"
-  ],
-  "build-scripts": [
-    "@alib/build-scripts",
-    "build-scripts"
-  ],
-  "auto": [
-    "auto",
-    "@auto-canary/auto"
-  ],
-  "ngrok": [
-    "ngrok",
-    "@expo/ngrok-bin"
+  "karma": [
+    "karma",
+    "karma-cli"
   ],
   "patch-package": [
     "patch-package",
     "@milahu/patch-package"
   ],
-  "babel-env": [
-    "babel-env",
-    "generic-js-env"
+  "watch": [
+    "watch",
+    "watch-cli"
   ],
-  "livereload": [
-    "livereload",
-    "gulp-server-livereload"
+  "jshint": [
+    "jshint",
+    "test-support"
   ],
-  "wp": [
-    "webpack-command",
-    "webpack-nano"
+  "gatsby": [
+    "gatsby",
+    "gatsby-cli"
   ],
-  "electron-rebuild": [
-    "electron-rebuild",
-    "@electron/rebuild"
+  "serve": [
+    "serve",
+    "https-localhost"
+  ],
+  "cz": [
+    "commitizen",
+    "@ryansonshine/commitizen"
+  ],
+  "commitizen": [
+    "commitizen",
+    "@ryansonshine/commitizen"
+  ],
+  "degit": [
+    "degit",
+    "tiged"
+  ],
+  "lerna": [
+    "lerna",
+    "@lerna-lite/cli"
+  ],
+  "conventional-changelog": [
+    "conventional-changelog",
+    "conventional-changelog-cli"
   ],
   "json2ts": [
     "json-schema-to-typescript",
     "@kickstartds/json-schema-to-typescript"
-  ],
-  "commit": [
-    "@commitlint/prompt-cli",
-    "alvamind-tools"
-  ],
-  "matcha": [
-    "matcha",
-    "@c4312/matcha"
-  ],
-  "gql-gen": [
-    "@graphql-codegen/cli",
-    "graphql-code-generator"
-  ],
-  "sequelize": [
-    "sequelize-cli",
-    "sequelize-cli-typescript"
-  ],
-  "tap-dot": [
-    "tap-dot",
-    "tap-spot"
-  ],
-  "node--test": [
-    "test",
-    "node-core-test"
-  ],
-  "win-spawn": [
-    "win-spawn",
-    "win-fork"
-  ],
-  "typescript-json-schema": [
-    "typescript-json-schema",
-    "@mark.probst/typescript-json-schema"
-  ],
-  "storybook": [
-    "storybook",
-    "@redwoodjs/web"
-  ],
-  "promises-aplus-tests": [
-    "promises-aplus-tests",
-    "promises-aplus-tests-phantom"
-  ],
-  "tap-diff": [
-    "tap-diff",
-    "@zkochan/tap-diff"
-  ],
-  "ospec": [
-    "mithril",
-    "ospec"
-  ],
-  "html": [
-    "html",
-    "cli-html"
-  ],
-  "geckodriver": [
-    "geckodriver",
-    "@testplane/geckodriver"
-  ],
-  "buster": [
-    "buster",
-    "test-support"
-  ],
-  "buster-static": [
-    "buster",
-    "buster-static"
-  ],
-  "chromatic": [
-    "chromatic",
-    "storybook-chromatic"
-  ],
-  "chromatic-cli": [
-    "chromatic",
-    "storybook-chromatic"
-  ],
-  "npm-scripts-info": [
-    "@bitjson/npm-scripts-info",
-    "npm-scripts-info"
-  ],
-  "vm2": [
-    "vm2",
-    "@n8n/vm2"
-  ],
-  "vue": [
-    "@vue/cli",
-    "vue-cli"
-  ],
-  "gen-typescript-declarations": [
-    "@polymer/gen-typescript-declarations",
-    "@web-padawan/gen-typescript-declarations"
-  ],
-  "standard-changelog": [
-    "standard-changelog",
-    "pob-release"
-  ],
-  "node-dev": [
-    "node-dev",
-    "dev"
-  ],
-  "lerna-changelog": [
-    "lerna-changelog",
-    "@kazupon/lerna-changelog"
-  ],
-  "xyz": [
-    "xyz",
-    "@mapbox/sphericalmercator"
-  ],
-  "solium": [
-    "solium",
-    "ethlint"
-  ],
-  "static-server": [
-    "static-server",
-    "server-static"
-  ],
-  "lt": [
-    "localtunnel",
-    "@chromaui/localtunnel"
-  ],
-  "targz": [
-    "tar.gz",
-    "tar.gz2"
-  ],
-  "findup": [
-    "findup",
-    "@choojs/findup"
-  ],
-  "node-minify": [
-    "node-minify",
-    "@node-minify/cli"
-  ],
-  "csv2json": [
-    "d3-dsv",
-    "csv2json"
-  ],
-  "csv2tsv": [
-    "d3-dsv",
-    "dsv"
-  ],
-  "antd-tools": [
-    "antd-tools",
-    "@ant-design/tools"
-  ],
-  "antd-tools-run": [
-    "antd-tools",
-    "@ant-design/tools"
-  ],
-  "geo2topo": [
-    "topojson",
-    "topojson-server"
-  ],
-  "toposimplify": [
-    "topojson",
-    "topojson-simplify"
-  ],
-  "topo2geo": [
-    "topojson",
-    "topojson-client"
-  ],
-  "topomerge": [
-    "topojson",
-    "topojson-client"
-  ],
-  "topoquantize": [
-    "topojson",
-    "topojson-client"
-  ],
-  "electron-mocha": [
-    "electron-mocha",
-    "electron-mocha-main"
-  ],
-  "hexo": [
-    "hexo",
-    "hexo-cli"
   ],
   "cowsay": [
     "cowsay",
@@ -1544,317 +861,89 @@
     "cowsay",
     "cowsay-browser"
   ],
-  "sloc": [
-    "sloc",
-    "node-sloc"
+  "coveralls": [
+    "coveralls",
+    "coveralls-next"
   ],
-  "neon": [
-    "neon-cli",
-    "@neon-rs/cli"
+  "rollup-plugin-visualizer": [
+    "rollup-plugin-visualizer",
+    "@aklinker1/rollup-plugin-visualizer"
   ],
-  "svg-sprite": [
-    "svg-sprite",
-    "@vusion/svg-sprite"
+  "sequelize": [
+    "sequelize-cli",
+    "sequelize-cli-typescript"
   ],
-  "sonar-scanner": [
-    "sonarqube-scanner",
-    "sonar-scanner"
+  "replace": [
+    "replace",
+    "node-replace"
   ],
-  "asar": [
-    "asar",
-    "@electron/asar"
+  "search": [
+    "replace",
+    "node-replace"
   ],
-  "gh-release": [
-    "gh-release",
-    "changesets-github-release"
+  "static": [
+    "node-static",
+    "static-cling"
+  ],
+  "chromedriver": [
+    "chromedriver",
+    "electron-chromedriver"
+  ],
+  "ngrok": [
+    "ngrok",
+    "@expo/ngrok-bin"
   ],
   "ot": [
     "opentype.js",
     "@shuding/opentype.js"
   ],
-  "smokestack": [
-    "smokestack",
-    "@mattdesl/smokestack-webgl2"
-  ],
-  "tap-parser": [
-    "tap-parser",
-    "tap-parser-yaml"
-  ],
-  "the-script-build": [
-    "the-script-build",
-    "@the-/script-build"
-  ],
-  "json-refs": [
-    "json-refs",
-    "@axway/json-refs"
-  ],
-  "tsbuild": [
-    "@gitzone/tsbuild",
-    "@git.zone/tsbuild"
-  ],
-  "pkgfiles": [
-    "pkgfiles",
-    "ypkgfiles"
-  ],
-  "tstest": [
-    "@gitzone/tstest",
-    "@git.zone/tstest"
-  ],
-  "typal": [
-    "documentary",
-    "typal"
-  ],
-  "syncfusion-license": [
-    "@syncfusion/ej2-base",
-    "@syncfusion/react-base"
-  ],
-  "mrm": [
-    "mrm",
-    "manta"
-  ],
-  "discify": [
-    "disc",
-    "@citation-js/browserify-disc"
-  ],
   "msw": [
     "msw",
     "@redwoodjs/web"
-  ],
-  "jsonstream": [
-    "jsonstream",
-    "jsonstream2"
-  ],
-  "the-script-test": [
-    "@the-/script-test",
-    "the-script-test"
   ],
   "craco": [
     "@craco/craco",
     "@tilework/mosaic-craco"
   ],
-  "ttf2woff2": [
-    "ttf2woff2",
-    "ttf2woff2-no-gyp"
+  "release-it": [
+    "release-it",
+    "@uploadcare/release-it"
   ],
-  "flowgen": [
-    "flowgen",
-    "flowgen2"
+  "csv2json": [
+    "d3-dsv",
+    "csv2json"
   ],
-  "gherkin-javascript": [
-    "gherkin",
-    "@cucumber/gherkin-streams"
+  "csv2tsv": [
+    "d3-dsv",
+    "dsv"
   ],
-  "jscover": [
-    "jscover",
-    "node-jscover"
+  "cpx": [
+    "cpx",
+    "cpx2"
   ],
-  "rdfjs-data-model-test": [
-    "@rdfjs/data-model",
-    "@rdf-esm/data-model"
+  "typescript-json-schema": [
+    "typescript-json-schema",
+    "@mark.probst/typescript-json-schema"
   ],
-  "ntl": [
-    "netlify-cli",
-    "ntl"
+  "parcel": [
+    "parcel",
+    "parcel-bundler"
   ],
-  "tcm": [
-    "typed-css-modules",
-    "@beisen/typed-css-modules"
+  "nr": [
+    "@antfu/ni",
+    "fuzz-run"
   ],
-  "base": [
-    "@dword-design/base",
-    "base-app"
+  "nd": [
+    "@antfu/ni",
+    "@favware/npm-deprecate"
   ],
-  "gonzales": [
-    "gonzales-pe",
-    "gonzales-pe-sl"
+  "gql-gen": [
+    "@graphql-codegen/cli",
+    "graphql-code-generator"
   ],
-  "precise-commits": [
-    "precise-commits",
-    "@softwareventures/precise-commits"
-  ],
-  "proxy": [
-    "proxy",
-    "@newrelic/proxy"
-  ],
-  "sjs": [
-    "sweet.js",
-    "@sweet-js/cli"
-  ],
-  "fly": [
-    "fly",
-    "flightplan"
-  ],
-  "test-runner": [
-    "test-runner",
-    "@b08/test-runner"
-  ],
-  "vsce": [
-    "vsce",
-    "@vscode/vsce"
-  ],
-  "zb": [
-    "zombiebox",
-    "zombiebox-cli"
-  ],
-  "license-check": [
-    "license-check",
-    "@js-soft/license-check"
-  ],
-  "precommit": [
-    "precommit",
-    "@mongodb-js/monorepo-tools"
-  ],
-  "donejs": [
-    "donejs-cli",
-    "donejs"
-  ],
-  "graphql": [
-    "graphql-cli",
-    "graphql-language-service"
-  ],
-  "compileProtos": [
-    "google-gax",
-    "gapic-tools"
-  ],
-  "minifyProtoJson": [
-    "google-gax",
-    "gapic-tools"
-  ],
-  "asciify": [
-    "asciify",
-    "asciify-image"
-  ],
-  "prisma": [
-    "@prisma/cli",
-    "prisma"
-  ],
-  "nf": [
-    "foreman",
-    "@heroku/foreman"
-  ],
-  "gulp4": [
-    "gulp4",
-    "gulp-cli4"
-  ],
-  "ionic": [
-    "ionic",
-    "@ionic/cli"
-  ],
-  "zooniverse-readymade": [
-    "zooniverse-kelp-readymade",
-    "zooniverse-readymade"
-  ],
-  "vcl-preprocessor": [
-    "@vcl/preprocessor",
-    "vcl-preprocessor"
-  ],
-  "zonefile": [
-    "zonefile-parser",
-    "dns-zonefile"
-  ],
-  "node-tick-processor": [
-    "tick",
-    "node-tick-processor"
-  ],
-  "hugo": [
-    "hugo-bin",
-    "hugo-cli"
-  ],
-  "html-differ": [
-    "@markedjs/html-differ",
-    "html-differ"
-  ],
-  "docdown": [
-    "docdown",
-    "@gerhobbelt/docdown"
-  ],
-  "oe": [
-    "open-in-editor",
-    "@generalov/open-in-editor"
-  ],
-  "nx": [
-    "nx",
-    "@antfu/ni"
-  ],
-  "browserstack-runner": [
-    "browserstack-runner",
-    "@qunitjs/browserstack-runner"
-  ],
-  "husky-run": [
-    "husky-v4",
-    "@moyuyc/husky"
-  ],
-  "husky-upgrade": [
-    "husky-v4",
-    "@moyuyc/husky"
-  ],
-  "simplifyify": [
-    "simplifyify",
-    "@jsdevtools/simplifyify"
-  ],
-  "eslint-docs": [
-    "eslint-docs",
-    "@infctr/eslint-docs"
-  ],
-  "browserslist-lint": [
-    "update-browserslist-db",
-    "browserslist-lint"
-  ],
-  "ganache": [
-    "ganache",
-    "@ganache/cli"
-  ],
-  "ethereumjs-config-coverage": [
-    "@ethereumjs/config-nyc",
-    "@ethereumjs/config-coverage"
-  ],
-  "ethereumjs-config-lint": [
-    "@ethereumjs/config-tslint",
-    "@ethereumjs/eslint-config-defaults"
-  ],
-  "ethereumjs-config-lint-fix": [
-    "@ethereumjs/config-tslint",
-    "@ethereumjs/eslint-config-defaults"
-  ],
-  "globify": [
-    "globify",
-    "@jsdevtools/globify"
-  ],
-  "pkg-fetch": [
-    "pkg-fetch",
-    "@yao-pkg/pkg-fetch"
-  ],
-  "esno": [
-    "esno",
-    "esmo"
-  ],
-  "browser-launcher": [
-    "browser-launcher",
-    "@httptoolkit/browser-launcher"
-  ],
-  "electron-osx-flat": [
-    "@electron/osx-sign",
-    "electron-osx-sign"
-  ],
-  "electron-osx-sign": [
-    "@electron/osx-sign",
-    "electron-osx-sign"
-  ],
-  "geojson-rewind": [
-    "@mapbox/geojson-rewind",
-    "geojson-rewind"
-  ],
-  "pdf2json": [
-    "pdf2json",
-    "pdf3json"
-  ],
-  "torch-coverage": [
-    "@antv/torch",
-    "torchjs"
-  ],
-  "torch": [
-    "@antv/torch",
-    "torchjs"
+  "json-refs": [
+    "json-refs",
+    "@axway/json-refs"
   ],
   "pnpm": [
     "pnpm",
@@ -1864,413 +953,65 @@
     "pnpm",
     "corepack"
   ],
-  "start": [
-    "travis-multirunner",
-    "@4c/start"
-  ],
-  "lzmajs": [
-    "lzma-native",
-    "lzma-purejs"
-  ],
-  "picture-tube": [
-    "picture-tuber",
-    "picture-tube"
-  ],
-  "versions": [
-    "available-versions",
-    "versions"
-  ],
-  "digdugEnvironments": [
-    "@theintern/digdug",
-    "digdug"
-  ],
-  "ipfs": [
-    "go-ipfs",
-    "kubo"
-  ],
-  "changelog-version": [
-    "@theo.gravity/changelog-version",
-    "changelog-version"
-  ],
-  "toc-md": [
-    "toc-md-alt",
-    "toc-md"
-  ],
-  "squash": [
-    "butternut",
-    "squash"
-  ],
-  "pbjs": [
-    "protobufjs-cli",
-    "pbjs"
-  ],
-  "b": [
-    "@surmon-china/libundler",
-    "bestie"
-  ],
-  "libundler": [
-    "@surmon-china/libundler",
-    "libundler"
-  ],
-  "foundry": [
-    "foundry",
-    "@sumup/foundry"
-  ],
-  "pretty-eslint-config": [
-    "@pob/root",
-    "@pob/pretty-eslint-config"
-  ],
-  "pretty-pkg": [
-    "@pob/root",
-    "@pob/pretty-pkg"
-  ],
-  "repository-check-dirty": [
-    "@pob/root",
-    "repository-check-dirty"
-  ],
-  "yarnhook": [
-    "@pob/root",
-    "yarnhook"
-  ],
-  "download": [
-    "download-cli",
-    "whisper-node"
-  ],
-  "html-validator": [
-    "html-validator-cli",
-    "w3c-html-validator"
-  ],
-  "eyes-setup": [
-    "@applitools/eyes-cypress",
-    "@applitools/eyes-storybook"
-  ],
-  "hela": [
-    "hela",
-    "@hela/cli"
-  ],
-  "hela-cli": [
-    "hela",
-    "@hela/cli"
-  ],
-  "as-i-preach": [
-    "@novemberborn/as-i-preach",
-    "@novemberborn/eslint-plugin-as-i-preach"
-  ],
-  "the-code": [
-    "the-code",
-    "@the-/code"
-  ],
-  "dbus2js": [
-    "@homebridge/dbus-native",
-    "dbus-native"
-  ],
-  "npm-publish": [
-    "@jsdevtools/npm-publish",
-    "npm-publish"
-  ],
-  "tsrun": [
-    "@gitzone/tsrun",
-    "@git.zone/tsrun"
-  ],
-  "tsbundle": [
-    "@gitzone/tsbundle",
-    "@git.zone/tsbundle"
-  ],
-  "repo-tools": [
-    "repo-tools",
-    "js-data-repo-tools"
-  ],
-  "bench": [
-    "bench-cli",
-    "bench-it"
-  ],
-  "seek-bunzip": [
-    "@openpgp/seek-bzip",
-    "seek-bzip"
-  ],
-  "seek-table": [
-    "@openpgp/seek-bzip",
-    "seek-bzip"
-  ],
-  "find-dev-deps": [
-    "@telerik/semantic-prerelease",
-    "@progress/semantic-prerelease"
-  ],
-  "semantic-prerelease": [
-    "@telerik/semantic-prerelease",
-    "@progress/semantic-prerelease"
-  ],
-  "release-master": [
-    "@telerik/semantic-prerelease",
-    "@progress/semantic-prerelease"
-  ],
-  "wasm-opt": [
-    "binaryen",
-    "wasm-opt"
-  ],
-  "init": [
-    "cypress-react-unit-test",
-    "@4c/init"
-  ],
-  "mrbuilder-clean": [
-    "mrbuilder-plugin-clean",
-    "mrbuilder"
-  ],
-  "clap": [
-    "xclap",
-    "@xarc/run"
-  ],
-  "xclap": [
-    "xclap",
-    "@xarc/run"
-  ],
-  "update-badge": [
-    "check-code-coverage",
-    "dependency-version-badge"
-  ],
-  "just-scripts": [
-    "just-scripts",
-    "@fluentui/scripts"
-  ],
-  "happo": [
-    "happo",
-    "happo.io"
-  ],
-  "grizzly": [
-    "grizzly",
-    "@gooddata/grunt-grizzly"
-  ],
-  "clean": [
-    "es2049package",
-    "alvamind-tools"
-  ],
-  "lint-trap": [
-    "lint-trap",
-    "uber-standard"
-  ],
-  "resave-snapshots": [
-    "snap-shot-core",
-    "@smpx/snap-shot-core"
-  ],
-  "tree": [
-    "tree-node-cli",
-    "tree-cli"
-  ],
-  "treee": [
-    "tree-node-cli",
-    "tree-cli"
-  ],
-  "r": [
-    "@pkgr/rollup",
-    "@1stg/rollup-config"
-  ],
-  "percy-storybook": [
-    "@percy-io/percy-storybook",
-    "@percy/storybook"
-  ],
-  "nr": [
-    "@antfu/ni",
-    "fuzz-run"
-  ],
-  "geojsonhint": [
-    "@mapbox/geojsonhint",
-    "geojsonhint"
-  ],
-  "citation-js": [
-    "citation-js",
-    "@citation-js/cli"
-  ],
-  "gen": [
-    "generate",
-    "@turbo/gen"
-  ],
-  "generate": [
-    "generate",
-    "abi-wan-kanabi"
-  ],
-  "ci-utils": [
-    "@progress/kendo-common-tasks",
-    "vis-dev-utils"
-  ],
-  "demitasse": [
-    "@pipobscure/demitasse",
-    "@pipobscure/demitasse-run"
-  ],
-  "dmn": [
-    "dmn",
-    "dm-npm"
-  ],
-  "sui-precommit": [
-    "@schibstedspain/sui-precommit",
-    "@s-ui/precommit"
-  ],
-  "sui-mono": [
-    "@schibstedspain/sui-mono",
-    "@s-ui/mono"
-  ],
-  "sui-lint": [
-    "@schibstedspain/sui-lint",
-    "@s-ui/lint"
-  ],
-  "multi-semantic-release": [
-    "multi-semantic-release",
-    "@dylanvann/multi-semantic-release"
-  ],
-  "shp2json": [
-    "shapefile",
-    "shp2json"
-  ],
-  "tunnckocore-release": [
-    "new-release",
-    "@tunnckocore/release-cli"
-  ],
-  "agreed-server": [
-    "agreed",
-    "agreed-server"
-  ],
-  "agreed-client": [
-    "agreed",
-    "agreed-client"
-  ],
-  "agreed-ui": [
-    "agreed",
-    "agreed-ui"
-  ],
-  "domcompare": [
-    "dom-compare",
-    "dom-compare-temp"
-  ],
-  "wget": [
-    "node-wget",
-    "node-wget-fetch"
-  ],
-  "yankee": [
-    "yankee",
-    "@postman/yankee"
-  ],
-  "local-functions-proxy.exe": [
-    "@netlify/local-functions-proxy-win32-ia32",
-    "@netlify/local-functions-proxy-win32-x64"
-  ],
-  "compile": [
-    "@matthewp/compile",
-    "compiled"
-  ],
-  "mrbuilder-babel-cli": [
-    "mrbuilder-plugin-babel",
-    "mrbuilder-plugin-babel-7"
-  ],
-  "nico": [
-    "nico-spm",
-    "nico"
-  ],
-  "dts": [
-    "dts-cli",
-    "@hyrious/dts"
-  ],
-  "geojson-normalize": [
-    "geojson-normalize",
-    "@mapbox/geojson-normalize"
-  ],
-  "benchmark": [
-    "@dapplion/benchmark",
-    "@chainsafe/benchmark"
-  ],
-  "rush-api-extractor": [
-    "@microsoft/rush-stack-compiler-4.5",
-    "@microsoft/rush-stack-compiler-3.9"
-  ],
-  "rush-eslint": [
-    "@microsoft/rush-stack-compiler-4.5",
-    "@microsoft/rush-stack-compiler-3.9"
-  ],
-  "rush-tsc": [
-    "@microsoft/rush-stack-compiler-4.5",
-    "@microsoft/rush-stack-compiler-3.9"
-  ],
-  "rush-tslint": [
-    "@microsoft/rush-stack-compiler-4.5",
-    "@microsoft/rush-stack-compiler-3.9"
-  ],
-  "dns-discovery": [
-    "dns-discovery",
-    "ut-dns-discovery"
-  ],
-  "android-emu-travis-post": [
-    "@appium/test-support",
-    "appium-test-support"
-  ],
-  "android-emu-travis-pre": [
-    "@appium/test-support",
-    "appium-test-support"
-  ],
-  "magic": [
-    "enb-magic-platform",
-    "@magic/core"
-  ],
-  "gemini": [
-    "gemini",
-    "@google/gemini-cli"
-  ],
-  "ts-ignore-import": [
-    "@hdsydsvenskan/ts-ignore-import",
-    "ts-ignore-import"
-  ],
-  "watch-tree": [
-    "fl-watch-tree",
-    "watch-tree-maintained"
-  ],
-  "tsp": [
-    "ts-publisher",
-    "@typespec/compiler"
-  ],
-  "zopfli": [
-    "node-zopfli-es",
-    "node-zopfli"
-  ],
-  "adbkit": [
-    "@devicefarmer/adbkit",
-    "adbkit"
-  ],
-  "tsc-esm-fix": [
-    "tsc-esm-fix",
-    "@qiwi/substrate-infra"
-  ],
-  "lookpath": [
-    "lookpath",
-    "find-bin"
-  ],
-  "mmdc": [
-    "mermaid.cli",
-    "@mermaid-js/mermaid-cli"
-  ],
-  "peeky": [
-    "@peeky/test",
-    "@peeky/cli"
-  ],
-  "node-ts": [
-    "@leonzalion/configs",
-    "lionconfig"
-  ],
-  "format": [
-    "@leonzalion/configs",
-    "@magic/format"
-  ],
-  "run-bin": [
-    "@leonzalion/configs",
-    "lionconfig"
-  ],
-  "typecheck": [
-    "@leonzalion/configs",
-    "lionconfig"
-  ],
-  "ometajs2js": [
-    "ometajs",
-    "ometa-js"
+  "cucumber-js": [
+    "@cucumber/cucumber",
+    "cucumber"
+  ],
+  "syncfusion-license": [
+    "@syncfusion/ej2-base",
+    "@syncfusion/react-base"
+  ],
+  "jison": [
+    "jison",
+    "jison-gho"
+  ],
+  "findup": [
+    "findup",
+    "@choojs/findup"
+  ],
+  "ttf2woff2": [
+    "ttf2woff2",
+    "ttf2woff2-no-gyp"
+  ],
+  "tailwindcss": [
+    "@tailwindcss/cli",
+    "@tailwindcss/postcss7-compat"
+  ],
+  "html": [
+    "html",
+    "cli-html"
+  ],
+  "markdown-toc": [
+    "markdown-toc",
+    "@effect/markdown-toc"
   ],
   "biome": [
     "@biomejs/biome",
     "biome"
+  ],
+  "bstracing": [
+    "rescript",
+    "bs-platform"
+  ],
+  "vue": [
+    "@vue/cli",
+    "vue-cli"
+  ],
+  "geckodriver": [
+    "geckodriver",
+    "@testplane/geckodriver"
+  ],
+  "rdfjs-data-model-test": [
+    "@rdfjs/data-model",
+    "@rdf-esm/data-model"
+  ],
+  "documentation": [
+    "documentation",
+    "documentation-custom-markdown"
+  ],
+  "buble": [
+    "buble",
+    "@philpl/buble"
   ],
   "hap": [
     "homebridge-lib",
@@ -2284,6 +1025,18 @@
     "homebridge-lib",
     "hb-lib-tools"
   ],
+  "svg-sprite": [
+    "svg-sprite",
+    "@vusion/svg-sprite"
+  ],
+  "ncc": [
+    "@vercel/ncc",
+    "@zeit/ncc"
+  ],
+  "nx-cloud": [
+    "nx",
+    "nx-cloud"
+  ],
   "migrate-oz-cli-project": [
     "@openzeppelin/hardhat-upgrades",
     "@openzeppelin/truffle-upgrades"
@@ -2292,9 +1045,149 @@
     "@hanzo/ui",
     "@shadcn/ui"
   ],
+  "tap-parser": [
+    "tap-parser",
+    "tap-parser-yaml"
+  ],
+  "geojson-rewind": [
+    "@mapbox/geojson-rewind",
+    "geojson-rewind"
+  ],
+  "cpy": [
+    "cpy-cli",
+    "@qiwi/substrate-infra"
+  ],
+  "chroma": [
+    "chromatic",
+    "chromadb"
+  ],
+  "webdriver-manager": [
+    "webdriver-manager",
+    "protractor"
+  ],
+  "ttsc": [
+    "ttypescript",
+    "ttsc"
+  ],
+  "ttsserver": [
+    "ttypescript",
+    "ttsc"
+  ],
+  "shp2json": [
+    "shapefile",
+    "shp2json"
+  ],
+  "hexo": [
+    "hexo",
+    "hexo-cli"
+  ],
+  "node-minify": [
+    "node-minify",
+    "@node-minify/cli"
+  ],
+  "geojson-normalize": [
+    "@mapbox/geojson-normalize",
+    "geojson-normalize"
+  ],
+  "lsc": [
+    "livescript",
+    "LiveScript"
+  ],
+  "dox": [
+    "dox",
+    "doxxx"
+  ],
+  "lookpath": [
+    "lookpath",
+    "find-bin"
+  ],
+  "bsb": [
+    "bs-platform",
+    "@bettercorp/service-base"
+  ],
+  "gonzales": [
+    "gonzales-pe",
+    "gonzales-pe-sl"
+  ],
   "turbo": [
     "turbo",
     "@ardrive/turbo-sdk"
+  ],
+  "esno": [
+    "esno",
+    "esmo"
+  ],
+  "asciify": [
+    "asciify",
+    "asciify-image"
+  ],
+  "sonar-scanner": [
+    "sonarqube-scanner",
+    "sonar-scanner"
+  ],
+  "storybook-to-ghpages": [
+    "@storybook/storybook-deployer",
+    "@kadira/storybook-deployer"
+  ],
+  "wasm-opt": [
+    "binaryen",
+    "wasm-opt"
+  ],
+  "tcm": [
+    "typed-css-modules",
+    "@beisen/typed-css-modules"
+  ],
+  "ganache-cli": [
+    "ganache",
+    "ganache-cli"
+  ],
+  "tspec": [
+    "tap-spec",
+    "@randomgoods/tap-spec"
+  ],
+  "tap-spec": [
+    "tap-spec",
+    "@randomgoods/tap-spec"
+  ],
+  "adbkit": [
+    "adbkit",
+    "@devicefarmer/adbkit"
+  ],
+  "static-server": [
+    "static-server",
+    "server-static"
+  ],
+  "lzmajs": [
+    "lzma-native",
+    "lzma-purejs"
+  ],
+  "codecov": [
+    "codecov.io",
+    "codecov"
+  ],
+  "ember": [
+    "ember-cli",
+    "ember"
+  ],
+  "mmdc": [
+    "@mermaid-js/mermaid-cli",
+    "mermaid.cli"
+  ],
+  "oe": [
+    "open-in-editor",
+    "@generalov/open-in-editor"
+  ],
+  "tree": [
+    "tree-node-cli",
+    "tree-cli"
+  ],
+  "treee": [
+    "tree-node-cli",
+    "tree-cli"
+  ],
+  "sloc": [
+    "sloc",
+    "node-sloc"
   ],
   "bodiless": [
     "@bodiless/cli",
@@ -2304,13 +1197,37 @@
     "@graphprotocol/graph-cli",
     "@nevermined-io/graph-cli"
   ],
+  "geojsonhint": [
+    "@mapbox/geojsonhint",
+    "geojsonhint"
+  ],
   "ray": [
     "@raycast/api",
     "@ray-js/cli"
   ],
+  "qunit": [
+    "qunit",
+    "qunitjs"
+  ],
   "7z": [
     "7zip",
     "win-7zip"
+  ],
+  "velocity": [
+    "velocity",
+    "amplify-velocity-template"
+  ],
+  "node-dev": [
+    "node-dev",
+    "dev"
+  ],
+  "puml": [
+    "node-plantuml",
+    "node-plantuml-latest"
+  ],
+  "selenium": [
+    "selenium-server",
+    "selenium"
   ],
   "vtkDataConverter": [
     "@kitware/vtk.js",
@@ -2320,13 +1237,85 @@
     "openapi-to-postmanv2",
     "@paloaltonetworks/openapi-to-postmanv2"
   ],
+  "nf": [
+    "foreman",
+    "@heroku/foreman"
+  ],
+  "run-node": [
+    "run-node",
+    "mora-scripts"
+  ],
+  "ntl": [
+    "netlify-cli",
+    "ntl"
+  ],
+  "nps": [
+    "nps",
+    "p-s"
+  ],
   "paragon": [
     "@edx/paragon",
     "@openedx/paragon"
   ],
+  "open-cli": [
+    "open-cli",
+    "opn-cli"
+  ],
+  "faucet": [
+    "faucet",
+    "faucet-pipeline-core"
+  ],
+  "zopfli": [
+    "node-zopfli",
+    "node-zopfli-es"
+  ],
+  "wget": [
+    "node-wget",
+    "node-wget-fetch"
+  ],
+  "tslint": [
+    "ts-lint",
+    "tslint"
+  ],
+  "gh-release": [
+    "gh-release",
+    "changesets-github-release"
+  ],
+  "bundlesize": [
+    "bundlesize",
+    "bundlesize2"
+  ],
+  "win-spawn": [
+    "win-fork",
+    "win-spawn"
+  ],
+  "pkg-fetch": [
+    "pkg-fetch",
+    "@yao-pkg/pkg-fetch"
+  ],
+  "dtsgen": [
+    "dtsgenerator",
+    "@anttiviljami/dtsgenerator"
+  ],
+  "eslint-find-rules": [
+    "eslint-find-rules",
+    "@xotic750/eslint-find-rules"
+  ],
+  "eslint-diff-rules": [
+    "eslint-find-rules",
+    "@xotic750/eslint-find-rules"
+  ],
+  "egg-bin": [
+    "egg-bin",
+    "@eggjs/bin"
+  ],
   "badge": [
     "badge-maker",
     "gh-badges"
+  ],
+  "fixpack": [
+    "fixpack",
+    "@oclif/fixpack"
   ],
   "build-i18n-src": [
     "scratch-l10n",
@@ -2340,6 +1329,10 @@
     "@connectrpc/protoc-gen-connect-es",
     "@bufbuild/protoc-gen-connect-es"
   ],
+  "electron-rebuild": [
+    "@electron/rebuild",
+    "electron-rebuild"
+  ],
   "papi": [
     "polkadot-api",
     "@polkadot-api/cli"
@@ -2347,6 +1340,10 @@
   "polkadot-api": [
     "polkadot-api",
     "@polkadot-api/cli"
+  ],
+  "picture-tube": [
+    "picture-tube",
+    "picture-tuber"
   ],
   "s3urls": [
     "@mapbox/s3urls",
@@ -2356,9 +1353,41 @@
     "esrun",
     "@digitak/esrun"
   ],
+  "commit-msg": [
+    "@plasma-platform/tm-message-hook",
+    "pre-git"
+  ],
+  "run": [
+    "mora-scripts",
+    "@mpis/run"
+  ],
+  "tap-out": [
+    "tap-out",
+    "@randomgoods/tap-out"
+  ],
+  "tsc-esm-fix": [
+    "tsc-esm-fix",
+    "@qiwi/substrate-infra"
+  ],
+  "pkgfiles": [
+    "ypkgfiles",
+    "pkgfiles"
+  ],
   "components": [
     "@serverless/components",
     "@serverless/cli"
+  ],
+  "vsce": [
+    "@vscode/vsce",
+    "vsce"
+  ],
+  "commit": [
+    "@commitlint/prompt-cli",
+    "alvamind-tools"
+  ],
+  "solium": [
+    "solium",
+    "ethlint"
   ],
   "readability": [
     "node-readability",
@@ -2372,9 +1401,33 @@
     "formulajs",
     "@handsontable/formulajs"
   ],
+  "wp": [
+    "webpack-command",
+    "webpack-nano"
+  ],
+  "vm2": [
+    "@n8n/vm2",
+    "vm2"
+  ],
+  "browser-launcher": [
+    "browser-launcher",
+    "@httptoolkit/browser-launcher"
+  ],
+  "gherkin-javascript": [
+    "@cucumber/gherkin-streams",
+    "gherkin"
+  ],
   "make": [
     "gnumake",
     "make"
+  ],
+  "standard-changelog": [
+    "standard-changelog",
+    "pob-release"
+  ],
+  "lab": [
+    "@hapi/lab",
+    "lab"
   ],
   "mcp-adapter": [
     "@vercel/mcp-adapter",
@@ -2452,6 +1505,10 @@
     "@polkadot/dev",
     "@open-web3/dev-config"
   ],
+  "mrm": [
+    "manta",
+    "mrm"
+  ],
   "mrmdir": [
     "manta",
     "monaco-plugin-helpers"
@@ -2468,13 +1525,49 @@
     "@cosmology/telescope",
     "@osmonauts/telescope"
   ],
+  "cat": [
+    "cat",
+    "cross-cat"
+  ],
+  "npm-publish": [
+    "@jsdevtools/npm-publish",
+    "npm-publish"
+  ],
   "sg": [
     "sgsg",
     "@ast-grep/cli"
   ],
+  "gemini": [
+    "@google/gemini-cli",
+    "gemini"
+  ],
+  "versions": [
+    "versions",
+    "available-versions"
+  ],
+  "mdm": [
+    "markdown-magic",
+    "mdmanifest"
+  ],
   "swagger-cli": [
     "swagger-cli",
     "@apidevtools/swagger-cli"
+  ],
+  "base": [
+    "@dword-design/base",
+    "base-app"
+  ],
+  "gen": [
+    "generate",
+    "@turbo/gen"
+  ],
+  "generate": [
+    "generate",
+    "abi-wan-kanabi"
+  ],
+  "foundry": [
+    "@sumup/foundry",
+    "foundry"
   ],
   "wunderctl": [
     "@wundergraph/sdk",
@@ -2524,13 +1617,37 @@
     "@jcoreio/toolchain",
     "tc"
   ],
+  "mqpacker": [
+    "mqpacker",
+    "css-mqpacker"
+  ],
+  "node-sass": [
+    "node-sass-china",
+    "node-sass"
+  ],
   "remax": [
     "remax",
     "@ray-core/ray"
   ],
+  "ipfs": [
+    "kubo",
+    "go-ipfs"
+  ],
+  "dns-discovery": [
+    "dns-discovery",
+    "ut-dns-discovery"
+  ],
+  "antd-tools": [
+    "@ant-design/tools",
+    "antd-tools"
+  ],
   "abi-gen": [
     "@0xproject/abi-gen",
     "@0x/abi-gen"
+  ],
+  "watch-tree": [
+    "watch-tree-maintained",
+    "fl-watch-tree"
   ],
   "rw": [
     "@redwoodjs/web",
@@ -2544,29 +1661,269 @@
     "@redwoodjs/web",
     "@redwoodjs/api"
   ],
+  "npm-scripts-info": [
+    "npm-scripts-info",
+    "@bitjson/npm-scripts-info"
+  ],
+  "multi-semantic-release": [
+    "multi-semantic-release",
+    "@dylanvann/multi-semantic-release"
+  ],
+  "grizzly": [
+    "grizzly",
+    "@gooddata/grunt-grizzly"
+  ],
+  "electron-packager": [
+    "@electron/packager",
+    "electron-packager"
+  ],
   "tp": [
     "tpjs",
     "testpass"
+  ],
+  "resave-snapshots": [
+    "snap-shot-core",
+    "@smpx/snap-shot-core"
   ],
   "alloy": [
     "alloy",
     "@alloy-js/cli"
   ],
+  "husky": [
+    "husky",
+    "@diplodoc/lint"
+  ],
+  "dts": [
+    "dts-cli",
+    "@hyrious/dts"
+  ],
+  "nodeunit": [
+    "nodeunit",
+    "nodeunit-v1"
+  ],
+  "mochify": [
+    "@mochify/cli",
+    "mochify"
+  ],
+  "node-tick-processor": [
+    "node-tick-processor",
+    "tick"
+  ],
+  "test-runner": [
+    "test-runner",
+    "@b08/test-runner"
+  ],
+  "phantomjs": [
+    "phantomjs-prebuilt",
+    "phantomjs"
+  ],
+  "ts-ignore-import": [
+    "ts-ignore-import",
+    "@hdsydsvenskan/ts-ignore-import"
+  ],
+  "swig": [
+    "swig",
+    "swig-templates"
+  ],
+  "buster": [
+    "buster",
+    "test-support"
+  ],
+  "buster-static": [
+    "buster",
+    "buster-static"
+  ],
+  "precommit": [
+    "precommit",
+    "@mongodb-js/monorepo-tools"
+  ],
+  "nuxi-ng": [
+    "@nuxt/cli",
+    "nuxi"
+  ],
+  "docdown": [
+    "docdown",
+    "@gerhobbelt/docdown"
+  ],
+  "torch": [
+    "@antv/torch",
+    "torchjs"
+  ],
+  "torch-coverage": [
+    "@antv/torch",
+    "torchjs"
+  ],
+  "prettier-standard": [
+    "prettier-standard",
+    "@ksmithut/prettier-standard"
+  ],
+  "gitbook": [
+    "gitbook",
+    "gitbook-cli"
+  ],
+  "repo-tools": [
+    "repo-tools",
+    "js-data-repo-tools"
+  ],
+  "download": [
+    "download-cli",
+    "whisper-node"
+  ],
+  "glint-language-server": [
+    "@glint/core",
+    "@glint/ember-tsc"
+  ],
+  "husky-run": [
+    "husky-v4",
+    "@moyuyc/husky"
+  ],
+  "husky-upgrade": [
+    "husky-v4",
+    "@moyuyc/husky"
+  ],
+  "jsx": [
+    "react-tools",
+    "@a-la/jsx"
+  ],
+  "smokestack": [
+    "smokestack",
+    "@mattdesl/smokestack-webgl2"
+  ],
+  "sbl": [
+    "@beisen/storybook",
+    "@beisen/storybook-lib"
+  ],
+  "tap-diff": [
+    "tap-diff",
+    "@zkochan/tap-diff"
+  ],
+  "benchmark": [
+    "@dapplion/benchmark",
+    "@chainsafe/benchmark"
+  ],
   "lerna-helper": [
     "@daybrush/release",
     "@egjs/release-helper"
+  ],
+  "babel-env": [
+    "babel-env",
+    "generic-js-env"
+  ],
+  "android-emu-travis-post": [
+    "@appium/test-support",
+    "appium-test-support"
+  ],
+  "android-emu-travis-pre": [
+    "@appium/test-support",
+    "appium-test-support"
+  ],
+  "donejs": [
+    "donejs-cli",
+    "donejs"
+  ],
+  "tsbuild": [
+    "@git.zone/tsbuild",
+    "@gitzone/tsbuild"
+  ],
+  "tsrun": [
+    "@git.zone/tsrun",
+    "@gitzone/tsrun"
+  ],
+  "tstest": [
+    "@git.zone/tstest",
+    "@gitzone/tstest"
   ],
   "run-scripts": [
     "run-scripts",
     "run-scripts-util"
   ],
+  "tsbundle": [
+    "@gitzone/tsbundle",
+    "@git.zone/tsbundle"
+  ],
+  "lint-trap": [
+    "lint-trap",
+    "uber-standard"
+  ],
+  "start": [
+    "travis-multirunner",
+    "@4c/start"
+  ],
+  "find-dev-deps": [
+    "@telerik/semantic-prerelease",
+    "@progress/semantic-prerelease"
+  ],
+  "semantic-prerelease": [
+    "@telerik/semantic-prerelease",
+    "@progress/semantic-prerelease"
+  ],
+  "release-master": [
+    "@telerik/semantic-prerelease",
+    "@progress/semantic-prerelease"
+  ],
+  "yankee": [
+    "yankee",
+    "@postman/yankee"
+  ],
+  "run-bin": [
+    "lionconfig",
+    "@leonzalion/configs"
+  ],
+  "typecheck": [
+    "lionconfig",
+    "@leonzalion/configs"
+  ],
+  "precise-commits": [
+    "precise-commits",
+    "@softwareventures/precise-commits"
+  ],
+  "typal": [
+    "documentary",
+    "typal"
+  ],
+  "simplifyify": [
+    "@jsdevtools/simplifyify",
+    "simplifyify"
+  ],
+  "commitlint-circle": [
+    "@ls-age/commitlint-circle",
+    "commitlint-circle"
+  ],
+  "format": [
+    "@magic/format",
+    "@leonzalion/configs"
+  ],
+  "license-check": [
+    "@js-soft/license-check",
+    "license-check"
+  ],
   "webtest": [
     "web-test",
     "webtest"
   ],
-  "buddy": [
-    "buddy",
-    "buddy-cli"
+  "ethereumjs-config-lint": [
+    "@ethereumjs/config-tslint",
+    "@ethereumjs/eslint-config-defaults"
+  ],
+  "ethereumjs-config-lint-fix": [
+    "@ethereumjs/config-tslint",
+    "@ethereumjs/eslint-config-defaults"
+  ],
+  "ethereumjs-config-coverage": [
+    "@ethereumjs/config-nyc",
+    "@ethereumjs/config-coverage"
+  ],
+  "bump-version": [
+    "@ls-age/bump-version",
+    "@dschau/bump-version-ci"
+  ],
+  "pob-esbuild-clean-out": [
+    "@pob/rollup-esbuild",
+    "@pob/esbuild"
+  ],
+  "lion-git-hooks": [
+    "@leonzalion/configs",
+    "lion-git-hooks"
   ],
   "publisher": [
     "@kev_nz/publisher",

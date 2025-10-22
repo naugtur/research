@@ -1,4 +1,3 @@
-// @ts-check
 const { spawnSync } = require("child_process");
 const { realpathSync } = require("fs");
 const data = require("./bins1-data.json");
