@@ -110,3 +110,4 @@ dist
 .env
 
 _cache
+search-cache
