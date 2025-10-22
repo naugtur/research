@@ -1,0 +1,99 @@
+{
+  "test": [
+    "(system: /usr/bin/test)",
+    "test",
+    "@leonzalion/configs",
+    "lionconfig",
+    "@jdeighan/base-utils",
+    "@rollup-umd/test"
+  ],
+  "watch": [
+    "(system: /usr/bin/watch)",
+    "watch",
+    "watch-cli",
+    "@cnakazawa/watch"
+  ],
+  "cat": [
+    "(system: /usr/bin/cat)",
+    "cash-cat",
+    "cat",
+    "cross-cat"
+  ],
+  "yarn": [
+    "(system: /usr/local/bin/yarn)",
+    "yarn",
+    "corepack"
+  ],
+  "yarnpkg": [
+    "(system: /usr/local/bin/yarnpkg)",
+    "yarn",
+    "corepack"
+  ],
+  "wget": [
+    "(system: /usr/bin/wget)",
+    "node-wget",
+    "node-wget-fetch"
+  ],
+  "make": [
+    "(system: /usr/bin/make)",
+    "gnumake",
+    "make"
+  ],
+  "sg": [
+    "(system: /usr/bin/sg)",
+    "sgsg",
+    "@ast-grep/cli"
+  ],
+  "node": [
+    "(system: /usr/local/bin/node)",
+    "node"
+  ],
+  "base32": [
+    "(system: /usr/bin/base32)",
+    "base32"
+  ],
+  "chg": [
+    "(system: /usr/bin/chg)",
+    "chg"
+  ],
+  "import": [
+    "(system: /usr/bin/import)",
+    "import"
+  ],
+  "timeout": [
+    "(system: /usr/bin/timeout)",
+    "timeout-cli"
+  ],
+  "cp": [
+    "(system: /usr/bin/cp)",
+    "cash-cp"
+  ],
+  "rm": [
+    "(system: /usr/bin/rm)",
+    "cash-rm"
+  ],
+  "clear": [
+    "(system: /usr/bin/clear)",
+    "clear-cli"
+  ],
+  "dd": [
+    "(system: /usr/bin/dd)",
+    "dd"
+  ],
+  "link": [
+    "(system: /usr/bin/link)",
+    "link"
+  ],
+  "convert": [
+    "(system: /usr/bin/convert)",
+    "@activeprospect/integration-dev-dependencies"
+  ],
+  "scalar": [
+    "(system: /usr/bin/scalar)",
+    "@scalar/cli"
+  ],
+  "true": [
+    "(system: /usr/bin/true)",
+    "true"
+  ]
+}
