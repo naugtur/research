@@ -114,6 +114,42 @@ async function fetchPackageVersion(name, version, targetDir) {
   fs.unlinkSync(path.join(targetDir, tarballName));
 }
 
+function parseDiffIntoFiles(diffOutput) {
+  const lines = diffOutput.split('\n');
+  const fileDiffs = new Map();
+  let currentFile = null;
+  let currentDiff = [];
+  
+  for (const line of lines) {
+    // Check for diff header lines like "diff -ruNw /tmp/... /tmp/..."
+    if (line.startsWith('diff -')) {
+      if (currentFile && currentDiff.length > 0) {
+        fileDiffs.set(currentFile, currentDiff.join('\n'));
+      }
+      currentDiff = [line];
+      currentFile = null;
+    } else if (line.startsWith('---') || line.startsWith('+++')) {
+      currentDiff.push(line);
+      // Extract filename from "--- /tmp/.../versionA/path/to/file.js"
+      if (line.startsWith('---')) {
+        const match = line.match(/---\s+[^\s]+\/[^\/]+\/(.+?)(?:\s|$)/);
+        if (match) {
+          currentFile = match[1];
+        }
+      }
+    } else {
+      currentDiff.push(line);
+    }
+  }
+  
+  // Don't forget the last file
+  if (currentFile && currentDiff.length > 0) {
+    fileDiffs.set(currentFile, currentDiff.join('\n'));
+  }
+  
+  return fileDiffs;
+}
+
 async function main() {
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'versiondiff-'));
   const dirA = path.join(tempDir, versionA);
@@ -128,33 +164,51 @@ async function main() {
   preprocessDirectory(dirA, unminify);
   preprocessDirectory(dirB, unminify);
 
-  // Create output filename from package name and versions
+  // Create output directory from package name and versions
   const safePackageName = packageName.replace(/[@/]/g, '-');
-  const outputFile = path.join(process.cwd(), `${safePackageName}-${versionA}-to-${versionB}.diff`);
+  const outputDir = path.join(process.cwd(), `${safePackageName}-${versionA}-to-${versionB}`);
+  
+  if (fs.existsSync(outputDir)) {
+    fs.rmSync(outputDir, { recursive: true, force: true });
+  }
+  fs.mkdirSync(outputDir, { recursive: true });
 
   console.log(`Diffing versions ${versionA} and ${versionB} of ${packageName}:`);
-  console.log(`Writing diff to: ${outputFile}`);
+  console.log(`Writing diffs to: ${outputDir}`);
   
   try {
     const diffOutput = execSync(`diff -ruNw ${dirA} ${dirB}`, { 
       encoding: 'utf8',
       maxBuffer: 50 * 1024 * 1024, // 50MB buffer for large diffs
     });
-    fs.writeFileSync(outputFile, diffOutput, 'utf8');
+    
+    const fileDiffs = parseDiffIntoFiles(diffOutput);
+    saveDiffsToFiles(fileDiffs, outputDir);
   } catch (e) {
     // diff exits with code 1 when differences are found
-    if (e.status === 1) {
-      // Write the diff output (available in e.stdout)
-      fs.writeFileSync(outputFile, e.stdout, 'utf8');
+    if (e.status === 1 && e.stdout) {
+      const fileDiffs = parseDiffIntoFiles(e.stdout);
+      saveDiffsToFiles(fileDiffs, outputDir);
     } else {
       throw e;
     }
   }
 
-  console.log(`Diff saved to: ${outputFile}`);
+  console.log(`Diffs saved to: ${outputDir}`);
+  console.log(`Total files changed: ${fs.readdirSync(outputDir).length}`);
 
   // Cleanup
   fs.rmSync(tempDir, { recursive: true, force: true });
+}
+
+function saveDiffsToFiles(fileDiffs, outputDir) {
+  for (const [filePath, diff] of fileDiffs) {
+    // Create safe filename by replacing path separators
+    const safeName = filePath.replace(/\//g, '_') + '.diff';
+    const outputPath = path.join(outputDir, safeName);
+    fs.writeFileSync(outputPath, diff, 'utf8');
+    console.log(`  - ${filePath}`);
+  }
 }
 
 main().catch(err => {
