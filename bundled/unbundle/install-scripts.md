@@ -1,8 +1,8 @@
 # Bundled Dependencies with Install/Build Scripts
 
-Generated: 2026-02-09T18:33:18.539Z
+Generated: 2026-02-09T20:48:48.935Z
 
-Total parent packages analyzed: 73
+Total parent packages analyzed: 74
 
 ## Summary
 
