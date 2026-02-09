@@ -46,6 +46,7 @@ async function analyzePackageJson(pkgJsonPath) {
     const pkg = JSON.parse(content);
     
     const findings = {
+      path: path.dirname(pkgJsonPath),
       name: pkg.name || 'unknown',
       installScripts: [],
       buildScripts: [],
@@ -85,6 +86,31 @@ async function analyzePackageJson(pkgJsonPath) {
 
 function getRelativePath(fullPath) {
   return path.relative(EXTRACTED_DIR, fullPath);
+}
+
+async function checkNpmRegistry(packageName) {
+  try {
+    const res = await fetch(`https://registry.npmjs.org/${packageName}/latest`);
+    if (!res.ok) {
+      return { exists: false, hasInstallScripts: false };
+    }
+    const packument = await res.json();
+    
+    // Check for install/postinstall/preinstall scripts
+    const hasInstallScripts = packument.scripts && (
+      packument.scripts.install ||
+      packument.scripts.postinstall ||
+      packument.scripts.preinstall
+    );
+    
+    return { 
+      exists: true, 
+      hasInstallScripts: !!hasInstallScripts,
+      packumentUrl: `https://registry.npmjs.org/${packageName}/latest`
+    };
+  } catch (error) {
+    return { exists: false, hasInstallScripts: false };
+  }
 }
 
 function generateMarkdown(results) {
@@ -139,7 +165,7 @@ function generateMarkdown(results) {
     }
     
     for (const finding of uniqueFindings) {
-      md += `### ${finding.name}\n\n`;
+      md += `### ${finding.name}\n\n path: ${getRelativePath(finding.path)}\n\n`;
       
       if (finding.installScripts.length > 0) {
         md += '**Install Scripts:**\n\n';
@@ -151,6 +177,21 @@ function generateMarkdown(results) {
       
       if (finding.hasGypFile) {
         md += '**Native Module:** Contains `binding.gyp`\n\n';
+      }
+      
+      // Add NPM registry information
+      if (finding.npmInfo) {
+        if (finding.npmInfo.exists) {
+          md += `**NPM:** [packument](${finding.npmInfo.packumentUrl})`;
+          if (finding.npmInfo.hasInstallScripts) {
+            md += ' - Has install scripts on npm too';
+          } else {
+            md += ' - ⚠️ No install scripts on npm';
+          }
+          md += '\n\n';
+        } else {
+          md += '**NPM:** Package not found on npm\n\n';
+        }
       }
     }
   }
@@ -186,6 +227,9 @@ async function main() {
     for (const pkgJsonPath of packageJsonFiles) {
       const analysis = await analyzePackageJson(pkgJsonPath);
       if (analysis) {
+        // Check NPM registry for this package
+        const npmInfo = await checkNpmRegistry(analysis.name);
+        analysis.npmInfo = npmInfo;
         findings.push(analysis);
       }
     }
