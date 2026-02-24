@@ -14,17 +14,11 @@ It looks like this:
 More details can be found starting from here: https://github.com/evanw/esbuild/issues/4100
 
 
-I want to find out how popular the pattern `0 && (module.exports = ` is among npm packages. 
+Research question: how popular the pattern `0 && (module.exports = ` is among npm packages?
 
-The plan is to search for it in every package's exports
+The exports-data.json file above contains packages and the paths they export. 
+I checked each path to see whether it contains the sequence.
 
+Results:
 
-- use ../exports-data.json as the source for a list of packages to check.
-- for each package, do the following:
-  - download the tarball,
-  - pass it to ugrep with `-z` option and use `--include` option to only include files with `js` or `cjs` extension that were mentioned in the exports field for that package as listed in exports-data.json
-  - if anything is found, append it to ./cjs-zero.md with a h3 heading with the package name.
-  - avoid acumulating tarballs on disk
-- make a node.js script.
-- take a careful look at reference material to mimic the progress tracking 
-- put the script in ./search.js file
+[cjs-zero.md](./cjs-zero.md)
