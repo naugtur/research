@@ -1,0 +1,34 @@
+{
+  "name": "here",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ls",
+    "test": "npm run lint && npm run check",
+    "lint": "prettier . --check",
+    "fix": "prettier . --write",
+    "check": "git-safe-dependencies"
+  },
+  "lavamoat": {
+    "scripts": {
+      "lint": "cwd:read",
+      "fix": "cwd:read",
+      "check": "cwd:reaed"
+    }
+  },
+  "keywords": [
+    "scripts",
+    "security",
+    "permissions"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@lavamoat/allow-scripts": "^5.0.2",
+    "@lavamoat/git-safe-dependencies": "^1.0.0",
+    "@lavamoat/preinstall-always-fail": "^3.0.0",
+    "prettier": "^3.8.3"
+  }
+}
