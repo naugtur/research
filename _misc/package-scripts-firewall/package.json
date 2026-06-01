@@ -7,15 +7,17 @@
     "start": "ls",
     "test": "npm run lint && npm run check",
     "lint": "prettier . --check",
+    "lintstrict": "prettier . --check",
     "fix": "prettier . --write",
-    "check": "git-safe-dependencies"
+    "check": "git-safe-dependencies",
+    "online": "is-online"
   },
-  "lavamoat": {
-    "scripts": {
-      "lint": "cwd:read",
-      "fix": "cwd:read",
-      "check": "cwd:reaed"
-    }
+  "scriptsConfig": {
+    "#default": "conf-cwd-read",
+    "lint": "conf-cwd-read",
+    "lintstrict": "conf-strict",
+    "fix": "conf-cwd-read",
+    "online": "conf-cwd"
   },
   "keywords": [
     "scripts",
@@ -28,7 +30,11 @@
   "devDependencies": {
     "@lavamoat/allow-scripts": "^5.0.2",
     "@lavamoat/git-safe-dependencies": "^1.0.0",
-    "@lavamoat/preinstall-always-fail": "^3.0.0",
+    "@lavamoat/node-guard": "file:pkg/node-guard",
+    "is-online-cli": "^3.0.0",
     "prettier": "^3.8.3"
+  },
+  "dependencies": {
+    "ses": "^2.1.0"
   }
 }
