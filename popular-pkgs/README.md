@@ -9,9 +9,6 @@
   [top 50k packages sorted by dependents count](./per-dependents_count.md)
 
 
-----
-Note to self, the latest version of fetch.js is not what produced the data, so there might be bugs I introduced when improving.
-
 
 # Usage
 

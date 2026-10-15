@@ -48,6 +48,19 @@ async function promptUser(text) {
   return answer.toLowerCase() === "y";
 }
 
+/**
+ * 
+ * @param {object} opts 
+ * @param {string} [opts.targetPath]
+ * @param {Array} opts.seed
+ * @param {string} opts.name
+ * @param {Function} opts.dataCallback
+ * @param {number} [opts.parallel]
+ * @param {boolean} [opts.cache]
+ * @param {boolean} [opts.forceSeed]
+ * @param {boolean} [opts.recursive]
+ * @returns 
+ */
 async function recursiveScan({
   targetPath = ".",
   seed,
@@ -56,6 +69,7 @@ async function recursiveScan({
   parallel = 3,
   cache,
   forceSeed = true,
+  recursive = true,
 }) {
   if (
     typeof cache === "undefined" &&
@@ -95,7 +109,7 @@ async function recursiveScan({
       process.stdout.write("" + matches.length);
       fs.writeFileSync(
         path.join(targetPath, `./${name}-data.json`),
-        JSON.stringify(Array.from(matches))
+        JSON.stringify(Array.from(matches), null, 2)
       );
     }
     fs.writeFileSync(
@@ -126,7 +140,7 @@ async function recursiveScan({
             return Promise.allSettled(
               group.map((i) => {
                 if (!visited.has(i)) {
-                  return getPackageJson(i).then(cb, (err) => {
+                  return getPackageJson(i).then(cb).catch((err) => {
                     errors.push({ name: i, error: err.message });
                     process.stdout.write(`X${err.status || ""}`);
                   });
@@ -147,11 +161,13 @@ async function recursiveScan({
     currentPass = Array.from(nextPass);
     nextPass = new Set();
 
-    await scan(currentPass, (pkg) => {
-      Object.keys(pkg.dependencies || {}).forEach((a) => nextPass.add(a));
-      Object.keys(pkg.devDependencies || {}).forEach((a) => nextPass.add(a));
+    await scan(currentPass, async (pkg) => {
+      if (recursive) {
+        Object.keys(pkg.dependencies || {}).forEach((a) => nextPass.add(a));
+        Object.keys(pkg.devDependencies || {}).forEach((a) => nextPass.add(a));
+      }
+      const match = await dataCallback(pkg);
       visited.add(pkg.name);
-      const match = dataCallback(pkg);
       if (match) {
         matches.push(match);
         process.stdout.write("+");

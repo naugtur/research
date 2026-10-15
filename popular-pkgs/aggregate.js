@@ -13,8 +13,13 @@ const sorted = Object.values(results).sort((a, b) => b.dp - a.dp);
 sortedDL.splice(cutoff);
 sorted.splice(cutoff);
 
-const thead =
-  "| Package | Dependents | Monthly Downloads | Weekly Downloads |\n| --- | --- | --- | --- |\n";
+const thead =`
+> generated before ${new Date().toISOString()}
+
+| Package | Dependents | Monthly Downloads | Weekly Downloads |
+| --- | --- | --- | --- |
+`;
+
 fs.writeFileSync(
   path.join(__dirname, "per-monthly_dl.md"),
   thead +
