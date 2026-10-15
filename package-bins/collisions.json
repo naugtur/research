@@ -7,7 +7,8 @@
     "sheetjs-style",
     "js-xlsx",
     "@e965/xlsx",
-    "xlsx-style-vite"
+    "xlsx-style-vite",
+    "styled-exceljs"
   ],
   "lint": [
     "lint",
@@ -18,6 +19,16 @@
     "@diplodoc/lint",
     "@leonzalion/configs",
     "@patrickhulce/lint"
+  ],
+  "release": [
+    "@uirouter/publish-scripts",
+    "@ossjs/release",
+    "twilio-release-tool",
+    "@daybrush/release",
+    "yarn-release",
+    "lionconfig",
+    "@leonzalion/configs",
+    "@nan0web/release"
   ],
   "eslint": [
     "eslint",
@@ -45,15 +56,6 @@
     "playwright-firefox",
     "@playwright/experimental-ct-react",
     "@playwright/experimental-ct-vue"
-  ],
-  "release": [
-    "@uirouter/publish-scripts",
-    "@ossjs/release",
-    "twilio-release-tool",
-    "@daybrush/release",
-    "yarn-release",
-    "lionconfig",
-    "@leonzalion/configs"
   ],
   "tsc": [
     "typescript",
@@ -126,6 +128,20 @@
     "@diplodoc/lint",
     "@leonzalion/configs"
   ],
+  "uglifyjs": [
+    "uglify-js",
+    "@sheetjs/uglify-js",
+    "uglify-es",
+    "uglify-js-es6",
+    "uglify-js-harmony"
+  ],
+  "typedoc": [
+    "typedoc",
+    "@bitjson/typedoc",
+    "@qiwi/lint-config-infra",
+    "@qiwi/substrate-infra",
+    "@kayahr/typedoc"
+  ],
   "coffee": [
     "coffeescript",
     "coffee-script-redux",
@@ -182,6 +198,20 @@
     "protoc-gen-ts",
     "@wangshijun/ts-protoc-gen"
   ],
+  "build-storybook": [
+    "@open-wc/demoing-storybook",
+    "@kadira/storybook",
+    "@beisen/storybook-react",
+    "@web/dev-server-storybook",
+    "@storybook/polymer"
+  ],
+  "readme": [
+    "readme-md-generator",
+    "markserv",
+    "@appnest/readme",
+    "package-json-to-readme",
+    "readme"
+  ],
   "istanbul": [
     "sc-istanbul",
     "istanbul",
@@ -219,12 +249,6 @@
     "@isaacs/ts-node-temp-fork-for-pr-2009",
     "@leondreamed/ts-node"
   ],
-  "uglifyjs": [
-    "uglify-js",
-    "@sheetjs/uglify-js",
-    "uglify-es",
-    "uglify-js-es6"
-  ],
   "babel-node": [
     "babel-cli",
     "@babel/node",
@@ -252,12 +276,6 @@
   "jest": [
     "jest-cli",
     "jest-expo",
-    "@qiwi/lint-config-infra",
-    "@qiwi/substrate-infra"
-  ],
-  "typedoc": [
-    "typedoc",
-    "@bitjson/typedoc",
     "@qiwi/lint-config-infra",
     "@qiwi/substrate-infra"
   ],
@@ -345,11 +363,11 @@
     "bob-the-bundler",
     "@bconnorwhite/bob"
   ],
-  "build-storybook": [
+  "start-storybook": [
     "@open-wc/demoing-storybook",
     "@kadira/storybook",
     "@beisen/storybook-react",
-    "@web/dev-server-storybook"
+    "@storybook/polymer"
   ],
   "changelog": [
     "generate-changelog",
@@ -357,11 +375,17 @@
     "changelog",
     "@appliedblockchain/changelog"
   ],
-  "readme": [
-    "readme-md-generator",
-    "markserv",
-    "@appnest/readme",
-    "package-json-to-readme"
+  "storybook-server": [
+    "@kadira/storybook",
+    "@storybook/react-native-server",
+    "@beisen/storybook-react",
+    "@storybook/polymer"
+  ],
+  "i18n": [
+    "@plone/scripts",
+    "@orderly.network/i18n",
+    "@kodiak-finance/orderly-i18n",
+    "@nan0web/i18n"
   ],
   "lefthook": [
     "lefthook",
@@ -404,6 +428,11 @@
     "react-native-cli",
     "react-native-macos"
   ],
+  "esbuild": [
+    "esbuild",
+    "esbuild-wasm",
+    "@ohos-ports/esbuild"
+  ],
   "babel": [
     "@babel/cli",
     "babel-cli",
@@ -418,6 +447,11 @@
     "vite",
     "rolldown-vite",
     "oc-vite"
+  ],
+  "grunt": [
+    "grunt",
+    "grunt-cli",
+    "lincd-cli"
   ],
   "random": [
     "mockjs",
@@ -448,6 +482,11 @@
     "crc-32",
     "crc32",
     "cyclic-32"
+  ],
+  "serve": [
+    "serve",
+    "https-localhost",
+    "@nan0web/release"
   ],
   "git-cz": [
     "commitizen",
@@ -564,6 +603,11 @@
     "@vercel/sdk",
     "unstructured-client"
   ],
+  "oe": [
+    "open-in-editor",
+    "@generalov/open-in-editor",
+    "@open-everywhere/core"
+  ],
   "relay-compiler": [
     "relay-compiler",
     "@gatsbyjs/relay-compiler",
@@ -589,16 +633,6 @@
     "wget",
     "wget-improved-2"
   ],
-  "start-storybook": [
-    "@open-wc/demoing-storybook",
-    "@kadira/storybook",
-    "@beisen/storybook-react"
-  ],
-  "storybook-server": [
-    "@kadira/storybook",
-    "@storybook/react-native-server",
-    "@beisen/storybook-react"
-  ],
   "zopflipng": [
     "node-zopfli",
     "zopflipng-bin",
@@ -614,10 +648,10 @@
     "markdown-to-html",
     "markdown-magic"
   ],
-  "i18n": [
-    "@plone/scripts",
-    "@orderly.network/i18n",
-    "@kodiak-finance/orderly-i18n"
+  "run": [
+    "mora-scripts",
+    "@mpis/run",
+    "@kayahr/npm-utils"
   ],
   "keystone": [
     "@keystone-6/core",
@@ -644,6 +678,11 @@
     "@cjbarth/github-release-notes",
     "@femessage/github-release-notes"
   ],
+  "sandbox": [
+    "@architect/sandbox",
+    "near-sandbox",
+    "disk"
+  ],
   "tsc-esm": [
     "tsc-esm",
     "typescript-esm",
@@ -658,6 +697,11 @@
     "@nuxt/cli",
     "nuxi",
     "@nuxt/cli-edge"
+  ],
+  "tap-diff": [
+    "tap-diff",
+    "@zkochan/tap-diff",
+    "@detools/tap-diff"
   ],
   "buddy": [
     "repobuddy",
@@ -725,10 +769,6 @@
     "gulp",
     "gulp-cli"
   ],
-  "esbuild": [
-    "esbuild",
-    "esbuild-wasm"
-  ],
   "json5": [
     "json5",
     "@gerhobbelt/json5"
@@ -736,6 +776,10 @@
   "markdown-it": [
     "markdown-it",
     "@gerhobbelt/markdown-it"
+  ],
+  "stencil": [
+    "@stencil/core",
+    "@stencil/cli"
   ],
   "mqtt_pub": [
     "mqtt",
@@ -764,10 +808,6 @@
   "escodegen": [
     "escodegen",
     "escodegen-wallaby"
-  ],
-  "grunt": [
-    "grunt",
-    "grunt-cli"
   ],
   "yarn": [
     "yarn",
@@ -805,6 +845,10 @@
     "showdown",
     "devextreme-showdown"
   ],
+  "jiti": [
+    "jiti",
+    "@mariozechner/jiti"
+  ],
   "karma": [
     "karma",
     "karma-cli"
@@ -824,10 +868,6 @@
   "gatsby": [
     "gatsby",
     "gatsby-cli"
-  ],
-  "serve": [
-    "serve",
-    "https-localhost"
   ],
   "cz": [
     "commitizen",
@@ -964,6 +1004,10 @@
   "jison": [
     "jison",
     "jison-gho"
+  ],
+  "ts-json-schema-generator": [
+    "ts-json-schema-generator",
+    "@kayahr/ts-json-schema-generator"
   ],
   "findup": [
     "findup",
@@ -1105,6 +1149,10 @@
     "bs-platform",
     "@bettercorp/service-base"
   ],
+  "nitro": [
+    "nitropack",
+    "nitro"
+  ],
   "gonzales": [
     "gonzales-pe",
     "gonzales-pe-sl"
@@ -1173,10 +1221,6 @@
     "@mermaid-js/mermaid-cli",
     "mermaid.cli"
   ],
-  "oe": [
-    "open-in-editor",
-    "@generalov/open-in-editor"
-  ],
   "tree": [
     "tree-node-cli",
     "tree-cli"
@@ -1229,9 +1273,17 @@
     "selenium-server",
     "selenium"
   ],
+  "togeojson": [
+    "@mapbox/togeojson",
+    "togeojson"
+  ],
   "vtkDataConverter": [
     "@kitware/vtk.js",
     "vtk.js"
+  ],
+  "cspell": [
+    "cspell",
+    "@kayahr/cspell"
   ],
   "openapi2postmanv2": [
     "openapi-to-postmanv2",
@@ -1341,6 +1393,10 @@
     "polkadot-api",
     "@polkadot-api/cli"
   ],
+  "jsonstream": [
+    "jsonstream2",
+    "jsonstream"
+  ],
   "picture-tube": [
     "picture-tube",
     "picture-tuber"
@@ -1356,10 +1412,6 @@
   "commit-msg": [
     "@plasma-platform/tm-message-hook",
     "pre-git"
-  ],
-  "run": [
-    "mora-scripts",
-    "@mpis/run"
   ],
   "tap-out": [
     "tap-out",
@@ -1377,9 +1429,17 @@
     "@serverless/components",
     "@serverless/cli"
   ],
+  "oxlint": [
+    "oxlint",
+    "@tsrx/oxc"
+  ],
   "vsce": [
     "@vscode/vsce",
     "vsce"
+  ],
+  "devtools": [
+    "@nuxt/devtools",
+    "@ai-sdk/devtools"
   ],
   "commit": [
     "@commitlint/prompt-cli",
@@ -1396,6 +1456,10 @@
   "lsklog": [
     "@lsk4/log",
     "@lskjs/log"
+  ],
+  "actionhero": [
+    "actionhero",
+    "koberious"
   ],
   "implementation-stats": [
     "formulajs",
@@ -1557,6 +1621,10 @@
     "@dword-design/base",
     "base-app"
   ],
+  "tsgo": [
+    "@typescript/native-preview",
+    "@lssm-tech/tool.typescript"
+  ],
   "gen": [
     "generate",
     "@turbo/gen"
@@ -1601,9 +1669,9 @@
     "gridsome",
     "@gridsome/cli"
   ],
-  "sandbox": [
-    "@architect/sandbox",
-    "near-sandbox"
+  "random-mac": [
+    "random-mac",
+    "tea-random-mac"
   ],
   "loki": [
     "loki",
@@ -1673,6 +1741,10 @@
     "grizzly",
     "@gooddata/grunt-grizzly"
   ],
+  "fr": [
+    "fuzz-run",
+    "@chenglou/freerange"
+  ],
   "electron-packager": [
     "@electron/packager",
     "electron-packager"
@@ -1680,6 +1752,10 @@
   "tp": [
     "tpjs",
     "testpass"
+  ],
+  "deno": [
+    "deno-bin",
+    "deno"
   ],
   "resave-snapshots": [
     "snap-shot-core",
@@ -1692,6 +1768,10 @@
   "husky": [
     "husky",
     "@diplodoc/lint"
+  ],
+  "validate-commit-msg": [
+    "validate-commit-msg",
+    "validate-commit"
   ],
   "dts": [
     "dts-cli",
@@ -1773,6 +1853,62 @@
     "@glint/core",
     "@glint/ember-tsc"
   ],
+  "package-build": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-build-only": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-clean": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-compile": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-compile-only": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-copy-assets-cjs": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-copy-assets-esm": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-fix": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-lint": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-lint-verbose": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-publint": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-recompile": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "package-relint": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
+  "xy": [
+    "@xylabs/ts-scripts-yarn3",
+    "@ariestools/toolchain"
+  ],
   "husky-run": [
     "husky-v4",
     "@moyuyc/husky"
@@ -1792,10 +1928,6 @@
   "sbl": [
     "@beisen/storybook",
     "@beisen/storybook-lib"
-  ],
-  "tap-diff": [
-    "tap-diff",
-    "@zkochan/tap-diff"
   ],
   "benchmark": [
     "@dapplion/benchmark",
@@ -1925,12 +2057,56 @@
     "@leonzalion/configs",
     "lion-git-hooks"
   ],
+  "ts-lex": [
+    "@ts-jison/lexer-generator",
+    "@atproto/lex"
+  ],
   "publisher": [
     "@kev_nz/publisher",
     "@mpis/publisher"
   ],
+  "rm": [
+    "cash-rm",
+    "@kayahr/npm-utils"
+  ],
   "bring-it": [
     "@bring-it/cli",
     "@bring-it/npm"
+  ],
+  "codex-acp": [
+    "@agentclientprotocol/codex-acp",
+    "@zed-industries/codex-acp"
+  ],
+  "react-grab": [
+    "react-grab",
+    "@react-grab/cli"
+  ],
+  "0g-compute-cli": [
+    "@0gfoundation/0g-compute-ts-sdk",
+    "@0glabs/0g-serving-broker"
+  ],
+  "pi-ai": [
+    "@open-hax/eta-mu-ai",
+    "@earendil-works/pi-ai"
+  ],
+  "oxfmt": [
+    "oxfmt",
+    "@tsrx/oxc"
+  ],
+  "intent": [
+    "@tanstack/devtools-utils",
+    "@tanstack/intent"
+  ],
+  "owlkeys": [
+    "@owlmeans/basic-keys",
+    "@owlmeans/basic-envelope"
+  ],
+  "wf": [
+    "workflow",
+    "@workflow/cli"
+  ],
+  "workflow": [
+    "workflow",
+    "@workflow/cli"
   ]
 }

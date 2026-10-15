@@ -7,20 +7,31 @@
     "@leonzalion/configs",
     "@rollup-umd/test"
   ],
-  "yarn": [
-    "(system: /usr/local/bin/yarn)",
-    "yarn",
-    "corepack"
+  "crc32": [
+    "(system: /usr/bin/crc32)",
+    "crc-32",
+    "crc32",
+    "cyclic-32"
   ],
-  "yarnpkg": [
-    "(system: /usr/local/bin/yarnpkg)",
-    "yarn",
-    "corepack"
+  "markdown-it": [
+    "(system: /usr/bin/markdown-it)",
+    "markdown-it",
+    "@gerhobbelt/markdown-it"
   ],
   "watch": [
     "(system: /usr/bin/watch)",
     "watch",
     "watch-cli"
+  ],
+  "tree": [
+    "(system: /usr/bin/tree)",
+    "tree-node-cli",
+    "tree-cli"
+  ],
+  "7z": [
+    "(system: /usr/bin/7z)",
+    "7zip",
+    "win-7zip"
   ],
   "wget": [
     "(system: /usr/bin/wget)",
@@ -42,9 +53,27 @@
     "sgsg",
     "@ast-grep/cli"
   ],
+  "tc": [
+    "(system: /usr/sbin/tc)",
+    "@jcoreio/toolchain",
+    "tc"
+  ],
+  "rm": [
+    "(system: /usr/bin/rm)",
+    "cash-rm",
+    "@kayahr/npm-utils"
+  ],
   "node": [
-    "(system: /usr/local/bin/node)",
+    "(system: /usr/local/n/bin/node)",
     "node"
+  ],
+  "livereload": [
+    "(system: /usr/bin/livereload)",
+    "livereload"
+  ],
+  "nft": [
+    "(system: /usr/sbin/nft)",
+    "@vercel/nft"
   ],
   "base32": [
     "(system: /usr/bin/base32)",
@@ -58,17 +87,105 @@
     "(system: /usr/bin/import)",
     "import"
   ],
+  "cwebp": [
+    "(system: /usr/bin/cwebp)",
+    "cwebp-bin"
+  ],
+  "optipng": [
+    "(system: /usr/bin/optipng)",
+    "optipng-bin"
+  ],
+  "js": [
+    "(system: /usr/bin/js)",
+    "js"
+  ],
+  "wasm2c": [
+    "(system: /usr/bin/wasm2c)",
+    "wabt"
+  ],
+  "wasm2wat": [
+    "(system: /usr/bin/wasm2wat)",
+    "wabt"
+  ],
+  "wat2wasm": [
+    "(system: /usr/bin/wat2wasm)",
+    "wabt"
+  ],
+  "wasm-stats": [
+    "(system: /usr/bin/wasm-stats)",
+    "wabt"
+  ],
+  "wasm-strip": [
+    "(system: /usr/bin/wasm-strip)",
+    "wabt"
+  ],
+  "wasm-interp": [
+    "(system: /usr/bin/wasm-interp)",
+    "wabt"
+  ],
+  "wasm-objdump": [
+    "(system: /usr/bin/wasm-objdump)",
+    "wabt"
+  ],
+  "wasm-validate": [
+    "(system: /usr/bin/wasm-validate)",
+    "wabt"
+  ],
+  "wasm-decompile": [
+    "(system: /usr/bin/wasm-decompile)",
+    "wabt"
+  ],
+  "jpegtran": [
+    "(system: /usr/bin/jpegtran)",
+    "jpegtran-bin"
+  ],
+  "ping": [
+    "(system: /usr/bin/ping)",
+    "abacus-request"
+  ],
+  "docker": [
+    "(system: /usr/bin/docker)",
+    "docker"
+  ],
+  "gh": [
+    "(system: /usr/bin/gh)",
+    "gh"
+  ],
+  "jq": [
+    "(system: /usr/bin/jq)",
+    "jq"
+  ],
+  "keyring": [
+    "(system: /usr/bin/keyring)",
+    "keyring"
+  ],
+  "proxy": [
+    "(system: /usr/bin/proxy)",
+    "proxy"
+  ],
+  "ip": [
+    "(system: /usr/sbin/ip)",
+    "ipaddr"
+  ],
+  "editor": [
+    "(system: /usr/bin/editor)",
+    "tiny-cli-editor"
+  ],
   "convert": [
     "(system: /usr/bin/convert)",
     "@activeprospect/integration-dev-dependencies"
   ],
-  "chg": [
-    "(system: /usr/bin/chg)",
-    "chg"
+  "red": [
+    "(system: /usr/bin/red)",
+    "@jrc03c/bash-colors"
   ],
   "scalar": [
     "(system: /usr/bin/scalar)",
     "@scalar/cli"
+  ],
+  "mt": [
+    "(system: /usr/bin/mt)",
+    "@sondr3/minitest"
   ],
   "clear": [
     "(system: /usr/bin/clear)",
@@ -78,12 +195,28 @@
     "(system: /usr/bin/true)",
     "true"
   ],
+  "init": [
+    "(system: /usr/sbin/init)",
+    "@4c/init"
+  ],
   "cmp": [
     "(system: /usr/bin/cmp)",
     "cmp"
   ],
-  "rm": [
-    "(system: /usr/bin/rm)",
-    "cash-rm"
+  "gs": [
+    "(system: /usr/bin/gs)",
+    "goldstein"
+  ],
+  "dc": [
+    "(system: /usr/bin/dc)",
+    "depcost"
+  ],
+  "browse": [
+    "(system: /usr/bin/browse)",
+    "@browserbasehq/browse-cli"
+  ],
+  "cp": [
+    "(system: /usr/bin/cp)",
+    "@kayahr/npm-utils"
   ]
 }
