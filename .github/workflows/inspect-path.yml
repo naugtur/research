@@ -13,33 +13,39 @@ jobs:
         uses: actions/setup-node@v6
         id: setup-node
 
+      - name: npm ls -g
+        run: npm ls -g
+
       - name: Print PATH
         shell: bash
         run: printf '%s\n' "$PATH"
 
-      - name: List PATH directories containing npm
+      - name: List PATH directories containing node_modules links
         shell: bash
         run: |
           IFS=: read -r -a path_entries <<< "$PATH"
           for directory in "${path_entries[@]}"; do
             echo '_______________________________________________'
             printf '%s\n' "$directory"
-            ls -al -- "$directory" || echo missing
+            ls -al -- "$directory" | grep node_modules || echo missing
           done
 
   inspect-path-empty:
     runs-on: ubuntu-latest
     steps:
+      - name: npm ls -g
+        run: npm ls -g
+
       - name: Print PATH
         shell: bash
         run: printf '%s\n' "$PATH"
 
-      - name: List PATH directories containing npm
+      - name: List PATH directories containing node_modules links
         shell: bash
         run: |
           IFS=: read -r -a path_entries <<< "$PATH"
           for directory in "${path_entries[@]}"; do
             echo '_______________________________________________'
             printf '%s\n' "$directory"
-            ls -al -- "$directory" || echo missing
+                        ls -al -- "$directory" | grep node_modules || echo missing
           done
