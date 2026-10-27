@@ -13,8 +13,11 @@ jobs:
         uses: actions/setup-node@v6
         id: setup-node
 
-      - name: npm ls -g
-        run: npm ls -g
+      - name: npm state info
+        run: |
+          which npm
+          npm --version
+          npm ls -g
 
       - name: Print PATH
         shell: bash
@@ -33,8 +36,11 @@ jobs:
   inspect-path-empty:
     runs-on: ubuntu-latest
     steps:
-      - name: npm ls -g
-        run: npm ls -g
+      - name: npm state info
+        run: |
+          which npm
+          npm --version
+          npm ls -g
 
       - name: Print PATH
         shell: bash
