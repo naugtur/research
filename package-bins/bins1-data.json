@@ -33610,5 +33610,1124 @@
     "bins": [
       "tsc6"
     ]
+  },
+  {
+    "name": "@zkochan/js-yaml",
+    "bins": [
+      "js-yaml"
+    ]
+  },
+  {
+    "name": "@cnakazawa/watch",
+    "bins": [
+      "watch"
+    ]
+  },
+  {
+    "name": "@aw-web-design/x-default-browser",
+    "bins": [
+      "x-default-browser"
+    ]
+  },
+  {
+    "name": "install-artifact-from-github",
+    "bins": [
+      "install-from-cache",
+      "save-to-github-cache"
+    ]
+  },
+  {
+    "name": "cspell-grammar",
+    "bins": [
+      "cspell-grammar"
+    ]
+  },
+  {
+    "name": "cspell-gitignore",
+    "bins": [
+      "cspell-gitignore"
+    ]
+  },
+  {
+    "name": "@nuxt/devtools-wizard",
+    "bins": [
+      "devtools-wizard"
+    ]
+  },
+  {
+    "name": "read-binary-file-arch",
+    "bins": [
+      "read-binary-file-arch"
+    ]
+  },
+  {
+    "name": "json11",
+    "bins": [
+      "json11"
+    ]
+  },
+  {
+    "name": "run-con",
+    "bins": [
+      "run-con"
+    ]
+  },
+  {
+    "name": "@snyk/github-codeowners",
+    "bins": [
+      "github-codeowners"
+    ]
+  },
+  {
+    "name": "@appium/docutils",
+    "bins": [
+      "appium-docs"
+    ]
+  },
+  {
+    "name": "@zkochan/which",
+    "bins": [
+      "node-which"
+    ]
+  },
+  {
+    "name": "azurite",
+    "bins": [
+      "azurite",
+      "azurite-blob",
+      "azurite-queue",
+      "azurite-table"
+    ]
+  },
+  {
+    "name": "package-changed",
+    "bins": [
+      "package-changed"
+    ]
+  },
+  {
+    "name": "@unocss/cli",
+    "bins": [
+      "unocss"
+    ]
+  },
+  {
+    "name": "yeoman-doctor",
+    "bins": [
+      "yodoctor",
+      "yo-doctor"
+    ]
+  },
+  {
+    "name": "@astrojs/language-server",
+    "bins": [
+      "astro-ls"
+    ]
+  },
+  {
+    "name": "create-gatsby",
+    "bins": [
+      "create-gatsby"
+    ]
+  },
+  {
+    "name": "can-bind-to-host",
+    "bins": [
+      "can-bind-to-host"
+    ]
+  },
+  {
+    "name": "browserstack-node-sdk",
+    "bins": [
+      "browserstack-node-sdk",
+      "browserstack-cli",
+      "setup"
+    ]
+  },
+  {
+    "name": "can-symlink",
+    "bins": [
+      "can-symlink"
+    ]
+  },
+  {
+    "name": "@sanity/template-validator",
+    "bins": [
+      "sanity-template-validate",
+      "template-validator"
+    ]
+  },
+  {
+    "name": "istanbul-merge",
+    "bins": [
+      "istanbul-merge"
+    ]
+  },
+  {
+    "name": "jest-preview",
+    "bins": [
+      "jest-preview"
+    ]
+  },
+  {
+    "name": "@tapjs/test",
+    "bins": [
+      "generate-tap-test-class"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-linux-x64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "is-podman",
+    "bins": [
+      "is-podman"
+    ]
+  },
+  {
+    "name": "json2module",
+    "bins": [
+      "json2module"
+    ]
+  },
+  {
+    "name": "@strapi/cloud-cli",
+    "bins": [
+      "cloud-cli"
+    ]
+  },
+  {
+    "name": "rdme",
+    "bins": [
+      "rdme"
+    ]
+  },
+  {
+    "name": "reg-cli",
+    "bins": [
+      "reg-cli"
+    ]
+  },
+  {
+    "name": "@esri/calcite-ui-icons",
+    "bins": [
+      "spriter"
+    ]
+  },
+  {
+    "name": "@expo/npm-proofread",
+    "bins": [
+      "proofread"
+    ]
+  },
+  {
+    "name": "@elastic/request-converter",
+    "bins": [
+      "es-request-converter"
+    ]
+  },
+  {
+    "name": "bundlemon",
+    "bins": [
+      "bundlemon"
+    ]
+  },
+  {
+    "name": "@11ty/eleventy-dev-server",
+    "bins": [
+      "eleventy-dev-server"
+    ]
+  },
+  {
+    "name": "addons-linter",
+    "bins": [
+      "addons-linter"
+    ]
+  },
+  {
+    "name": "ts-migrate",
+    "bins": [
+      "ts-migrate",
+      "ts-migrate-full"
+    ]
+  },
+  {
+    "name": "yarn-audit-fix",
+    "bins": [
+      "yarn-audit-fix"
+    ]
+  },
+  {
+    "name": "minify-all-cli",
+    "bins": [
+      "minify-all"
+    ]
+  },
+  {
+    "name": "@rnx-kit/align-deps",
+    "bins": [
+      "rnx-align-deps"
+    ]
+  },
+  {
+    "name": "@mintlify/scraping",
+    "bins": [
+      "mintlify-scrape"
+    ]
+  },
+  {
+    "name": "improved-yarn-audit",
+    "bins": [
+      "improved-yarn-audit"
+    ]
+  },
+  {
+    "name": "split-text-to-chunks",
+    "bins": [
+      "wordwrap"
+    ]
+  },
+  {
+    "name": "standard-json",
+    "bins": [
+      "standard-json"
+    ]
+  },
+  {
+    "name": "@applitools/eyes-cypress",
+    "bins": [
+      "eyes-setup"
+    ]
+  },
+  {
+    "name": "@lobehub/i18n-cli",
+    "bins": [
+      "lobe-i18n"
+    ]
+  },
+  {
+    "name": "cldr-data-downloader",
+    "bins": [
+      "cldr-data-downloader"
+    ]
+  },
+  {
+    "name": "mintlify",
+    "bins": [
+      "mintlify"
+    ]
+  },
+  {
+    "name": "hereby",
+    "bins": [
+      "hereby"
+    ]
+  },
+  {
+    "name": "skott",
+    "bins": [
+      "skott"
+    ]
+  },
+  {
+    "name": "mongodb-download-url",
+    "bins": [
+      "mongodb-download-url"
+    ]
+  },
+  {
+    "name": "@modern-js/app-tools",
+    "bins": [
+      "modern",
+      "modern-app"
+    ]
+  },
+  {
+    "name": "react-native-test-app",
+    "bins": [
+      "configure-test-app",
+      "init",
+      "init-test-app",
+      "install-windows-test-app"
+    ]
+  },
+  {
+    "name": "@bytecodealliance/wizer",
+    "bins": [
+      "wizer"
+    ]
+  },
+  {
+    "name": "svgo-browser",
+    "bins": [
+      "svgo"
+    ]
+  },
+  {
+    "name": "@taplo/cli",
+    "bins": [
+      "taplo"
+    ]
+  },
+  {
+    "name": "lavamoat",
+    "bins": [
+      "lavamoat",
+      "lavamoat-run-command"
+    ]
+  },
+  {
+    "name": "git-format-staged",
+    "bins": [
+      "git-format-staged"
+    ]
+  },
+  {
+    "name": "blade-formatter",
+    "bins": [
+      "blade-formatter"
+    ]
+  },
+  {
+    "name": "jasmine-browser-runner",
+    "bins": [
+      "jasmine-browser-runner"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-win32-x64",
+    "bins": [
+      "local-functions-proxy.exe"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-linux-arm64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "git-refs",
+    "bins": [
+      "git-refs"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-darwin-arm64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "libphonenumber-metadata-generator",
+    "bins": [
+      "libphonenumber-metadata-generator"
+    ]
+  },
+  {
+    "name": "devmoji",
+    "bins": [
+      "devmoji"
+    ]
+  },
+  {
+    "name": "bnf-parser",
+    "bins": [
+      "bnf-compile"
+    ]
+  },
+  {
+    "name": "svgstore-cli",
+    "bins": [
+      "svgstore"
+    ]
+  },
+  {
+    "name": "ts-interface-builder",
+    "bins": [
+      "ts-interface-builder"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-darwin-x64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-linux-ia32",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-win32-ia32",
+    "bins": [
+      "local-functions-proxy.exe"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-linux-ppc64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-openbsd-x64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "node-env-run",
+    "bins": [
+      "nodenv",
+      "node-env-run"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-freebsd-x64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "@netlify/local-functions-proxy-freebsd-arm64",
+    "bins": [
+      "local-functions-proxy"
+    ]
+  },
+  {
+    "name": "wiredep-cli",
+    "bins": [
+      "wiredep"
+    ]
+  },
+  {
+    "name": "sun-tzu-quotes",
+    "bins": [
+      "sun-tzu-quotes"
+    ]
+  },
+  {
+    "name": "@malept/electron-installer-flatpak",
+    "bins": [
+      "electron-installer-flatpak"
+    ]
+  },
+  {
+    "name": "@browserify/envify",
+    "bins": [
+      "envify"
+    ]
+  },
+  {
+    "name": "check-code-coverage",
+    "bins": [
+      "check-coverage",
+      "only-covered",
+      "check-total",
+      "update-badge",
+      "set-gh-status"
+    ]
+  },
+  {
+    "name": "dotenv-mono",
+    "bins": [
+      "dotenv"
+    ]
+  },
+  {
+    "name": "@homebridge/dbus-native",
+    "bins": [
+      "dbus2js"
+    ]
+  },
+  {
+    "name": "nodeunit-x",
+    "bins": [
+      "nodeunit"
+    ]
+  },
+  {
+    "name": "tap-junit",
+    "bins": [
+      "tap-junit"
+    ]
+  },
+  {
+    "name": "@pyramation/json-schema-to-typescript",
+    "bins": [
+      "json2ts"
+    ]
+  },
+  {
+    "name": "@iobroker/adapter-dev",
+    "bins": [
+      "build-adapter",
+      "translate-adapter"
+    ]
+  },
+  {
+    "name": "@bahmutov/print-env",
+    "bins": [
+      "print-env"
+    ]
+  },
+  {
+    "name": "perfectionist-dfd",
+    "bins": [
+      "perfectionist-dfd"
+    ]
+  },
+  {
+    "name": "semantic-release-plus",
+    "bins": [
+      "semantic-release",
+      "semantic-release-plus"
+    ]
+  },
+  {
+    "name": "@theintern/digdug",
+    "bins": [
+      "digdugEnvironments"
+    ]
+  },
+  {
+    "name": "pnpm-sync-dependencies-meta-injected",
+    "bins": [
+      "sync-dependencies-meta-injected"
+    ]
+  },
+  {
+    "name": "@prisma/mini-proxy",
+    "bins": [
+      "mini-proxy"
+    ]
+  },
+  {
+    "name": "release-script",
+    "bins": [
+      "release"
+    ]
+  },
+  {
+    "name": "runmd",
+    "bins": [
+      "runmd"
+    ]
+  },
+  {
+    "name": "cash-cp",
+    "bins": [
+      "cp"
+    ]
+  },
+  {
+    "name": "prettylint",
+    "bins": [
+      "prettylint"
+    ]
+  },
+  {
+    "name": "@markedjs/html-differ",
+    "bins": [
+      "html-differ"
+    ]
+  },
+  {
+    "name": "@aminya/cmake-ts",
+    "bins": [
+      "cmake-ts"
+    ]
+  },
+  {
+    "name": "ts-clean-built",
+    "bins": [
+      "ts-clean-built"
+    ]
+  },
+  {
+    "name": "timeout-cli",
+    "bins": [
+      "timeout"
+    ]
+  },
+  {
+    "name": "flamebearer",
+    "bins": [
+      "flamebearer"
+    ]
+  },
+  {
+    "name": "codependence",
+    "bins": [
+      "codependence",
+      "cdp"
+    ]
+  },
+  {
+    "name": "is-fork-pr",
+    "bins": [
+      "is-fork-pr"
+    ]
+  },
+  {
+    "name": "langium-cli",
+    "bins": [
+      "langium"
+    ]
+  },
+  {
+    "name": "inject-markdown",
+    "bins": [
+      "inject-markdown"
+    ]
+  },
+  {
+    "name": "lcov",
+    "bins": [
+      "lcov",
+      "get_version.sh"
+    ]
+  },
+  {
+    "name": "@modern-js/module-tools",
+    "bins": [
+      "modern",
+      "modern-module"
+    ]
+  },
+  {
+    "name": "@c4312/matcha",
+    "bins": [
+      "matcha"
+    ]
+  },
+  {
+    "name": "jenkins-mocha",
+    "bins": [
+      "jenkins-mocha"
+    ]
+  },
+  {
+    "name": "@mozilla/glean",
+    "bins": [
+      "glean"
+    ]
+  },
+  {
+    "name": "@tanstack/config",
+    "bins": [
+      "tanstack-config"
+    ]
+  },
+  {
+    "name": "spago",
+    "bins": [
+      "spago"
+    ]
+  },
+  {
+    "name": "@electron/fiddle-core",
+    "bins": [
+      "fiddle-core"
+    ]
+  },
+  {
+    "name": "bencho",
+    "bins": [
+      "bencho"
+    ]
+  },
+  {
+    "name": "@aw-web-design/tcm-cli",
+    "bins": [
+      "tcm"
+    ]
+  },
+  {
+    "name": "@cspell/cspell-tools",
+    "bins": [
+      "cspell-tools-cli"
+    ]
+  },
+  {
+    "name": "@newrelic/test-utilities",
+    "bins": [
+      "versioned-tests"
+    ]
+  },
+  {
+    "name": "zunit",
+    "bins": [
+      "zUnit"
+    ]
+  },
+  {
+    "name": "create-validator-ts",
+    "bins": [
+      "create-validator-ts"
+    ]
+  },
+  {
+    "name": "suf-cli",
+    "bins": [
+      "suf"
+    ]
+  },
+  {
+    "name": "prepend-directive",
+    "bins": [
+      "prepend-directive"
+    ]
+  },
+  {
+    "name": "pogo",
+    "bins": [
+      "pogo"
+    ]
+  },
+  {
+    "name": "iced-coffee-script-3",
+    "bins": [
+      "iced3",
+      "icake3"
+    ]
+  },
+  {
+    "name": "@node-loaders/esbuildx",
+    "bins": [
+      "esbuildx"
+    ]
+  },
+  {
+    "name": "dist-it",
+    "bins": [
+      "dist-it"
+    ]
+  },
+  {
+    "name": "reverse-test",
+    "bins": [
+      "reverse-test"
+    ]
+  },
+  {
+    "name": "kuta",
+    "bins": [
+      "kuta"
+    ]
+  },
+  {
+    "name": "md2ghp",
+    "bins": [
+      "md2ghp"
+    ]
+  },
+  {
+    "name": "tap-only",
+    "bins": [
+      "tap-only"
+    ]
+  },
+  {
+    "name": "@applitools/test-server",
+    "bins": [
+      "test-server",
+      "proxy-server"
+    ]
+  },
+  {
+    "name": "@mintlify/cli",
+    "bins": [
+      "mintlify"
+    ]
+  },
+  {
+    "name": "markdown-code-example-inserter",
+    "bins": [
+      "md-code"
+    ]
+  },
+  {
+    "name": "virmator",
+    "bins": [
+      "virmator"
+    ]
+  },
+  {
+    "name": "publie",
+    "bins": [
+      "publie"
+    ]
+  },
+  {
+    "name": "suggestion-bot",
+    "bins": [
+      "suggestion-bot"
+    ]
+  },
+  {
+    "name": "@react-native-windows/codegen",
+    "bins": [
+      "react-native-windows-codegen"
+    ]
+  },
+  {
+    "name": "@oftherivier/tools",
+    "bins": [
+      "otr"
+    ]
+  },
+  {
+    "name": "sanctuary-scripts",
+    "bins": [
+      "sanctuary-check-required-files",
+      "sanctuary-doctest",
+      "sanctuary-generate-readme",
+      "sanctuary-lint",
+      "sanctuary-lint-commit-messages",
+      "sanctuary-lint-json",
+      "sanctuary-lint-package-json",
+      "sanctuary-prepublish",
+      "sanctuary-release",
+      "sanctuary-test",
+      "sanctuary-update-copyright-year"
+    ]
+  },
+  {
+    "name": "detect-class-support",
+    "bins": [
+      "hasclass"
+    ]
+  },
+  {
+    "name": "lavamoat-core",
+    "bins": [
+      "lavamoat-sort-policy"
+    ]
+  },
+  {
+    "name": "ljs",
+    "bins": [
+      "ljs"
+    ]
+  },
+  {
+    "name": "typify-bin",
+    "bins": [
+      "typify"
+    ]
+  },
+  {
+    "name": "ferrum.doctest",
+    "bins": [
+      "ferrum.doctest"
+    ]
+  },
+  {
+    "name": "xhtml2pug",
+    "bins": [
+      "xhtml2pug"
+    ]
+  },
+  {
+    "name": "pm-exec",
+    "bins": [
+      "pm-exec"
+    ]
+  },
+  {
+    "name": "@spotify/web-scripts",
+    "bins": [
+      "web-scripts"
+    ]
+  },
+  {
+    "name": "deep-freeze-node",
+    "bins": []
+  },
+  {
+    "name": "@rnx-kit/metro-plugin-duplicates-checker",
+    "bins": [
+      "check-duplicates"
+    ]
+  },
+  {
+    "name": "fix-tsup-cjs",
+    "bins": [
+      "fix-tsup-cjs"
+    ]
+  },
+  {
+    "name": "semantic-action",
+    "bins": [
+      "semantic-action"
+    ]
+  },
+  {
+    "name": "webassembly-interpreter",
+    "bins": [
+      "wasmdump",
+      "wasmast",
+      "wasmrun",
+      "wasm",
+      "wasm2wast",
+      "wastast"
+    ]
+  },
+  {
+    "name": "lasso-require",
+    "bins": []
+  },
+  {
+    "name": "mt-changelog",
+    "bins": [
+      "changelog"
+    ]
+  },
+  {
+    "name": "tomer",
+    "bins": [
+      "tomer"
+    ]
+  },
+  {
+    "name": "atropa-jsformatter",
+    "bins": [
+      "atropa-jsformatter"
+    ]
+  },
+  {
+    "name": "atropa-jslint",
+    "bins": [
+      "atropa-jslint"
+    ]
+  },
+  {
+    "name": "@sane-fmt/wasm32-wasi",
+    "bins": [
+      "sane-fmt",
+      "sane-fmt-wasi",
+      "sane-fmt-wasm32-wasi"
+    ]
+  },
+  {
+    "name": "namy",
+    "bins": [
+      "namy"
+    ]
+  },
+  {
+    "name": "babel-preset-latest-minimal",
+    "bins": [
+      "babel-node-list-required"
+    ]
+  },
+  {
+    "name": "@electrovir/c8",
+    "bins": [
+      "c8",
+      "vir-c8"
+    ]
+  },
+  {
+    "name": "test-as-package",
+    "bins": [
+      "test-as-package"
+    ]
+  },
+  {
+    "name": "doctest",
+    "bins": [
+      "doctest"
+    ]
+  },
+  {
+    "name": "oletus",
+    "bins": [
+      "oletus"
+    ]
+  },
+  {
+    "name": "transcribe",
+    "bins": [
+      "transcribe"
+    ]
+  },
+  {
+    "name": "imocha",
+    "bins": [
+      "imocha"
+    ]
+  },
+  {
+    "name": "utils-eval",
+    "bins": [
+      "jseval"
+    ]
+  },
+  {
+    "name": "jsstana",
+    "bins": [
+      "jsgrep"
+    ]
+  },
+  {
+    "name": "lasso-loader",
+    "bins": []
+  },
+  {
+    "name": "raptor-promises",
+    "bins": []
+  },
+  {
+    "name": "rf-changelog",
+    "bins": [
+      "changelog"
+    ]
+  },
+  {
+    "name": "es-feature-detect",
+    "bins": [
+      "node-feature-detect"
+    ]
+  },
+  {
+    "name": "@electrovir/nyc",
+    "bins": [
+      "nyc",
+      "vir-nyc"
+    ]
+  },
+  {
+    "name": "mono-vir",
+    "bins": [
+      "mono-vir"
+    ]
+  },
+  {
+    "name": "vis-dev-utils",
+    "bins": [
+      "ci-utils",
+      "generate-examples-index",
+      "test-e2e-interop"
+    ]
+  },
+  {
+    "name": "docco-plus",
+    "bins": [
+      "docco-plus"
+    ]
+  },
+  {
+    "name": "execute-in-browser",
+    "bins": [
+      "b-run"
+    ]
   }
 ]

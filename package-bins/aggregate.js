@@ -1,13 +1,21 @@
 const { spawnSync } = require("child_process");
 const { realpathSync } = require("fs");
 const data = require("./bins1-data.json");
+const packages = require("../popular-pkgs/npm_packages_results.json");
 
 const index = {};
 data.forEach((entry) =>
   entry.bins.map((bin) => {
     index[bin] || (index[bin] = []);
-    index[bin].push(entry.name);
+    index[bin].push({
+      name: entry.name,
+      weekly: packages[entry.name]?.dl?.weekly ?? null,
+    });
   })
+);
+
+Object.values(index).forEach((entries) =>
+  entries.sort((a, b) => (b.weekly ?? -1) - (a.weekly ?? -1))
 );
 
 const sortIndex = (index, filter) =>

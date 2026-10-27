@@ -1,0 +1,20 @@
+{
+  "name": "binsover-npm-direct-typescript-first",
+  "private": true,
+  "packageManager": "npm@12.2.1",
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "*",
+      "onFail": "download"
+    }
+  },
+  "scripts": {
+    "test": "node ../../test.cjs npm"
+  },
+  "dependencies": {
+    "typescript": "5.7.3",
+    "tsc": "2.0.4"
+  },
+  "note": "Root .bin/tsc links to tsc@2.0.4 (npm@12.2.0)."
+}

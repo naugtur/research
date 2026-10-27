@@ -1,5 +1,5 @@
 const { recursiveScan } = require("../_tools/npmscanner");
-const seed = require("../popular-pkgs/names-per-dependents_count.json");
+const seed = require("../popular-pkgs/names-per-monthly_dl.json");
 
 recursiveScan({
   name: "bins1",

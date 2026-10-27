@@ -1,0 +1,25 @@
+name: Inspect PATH
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  inspect-path:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print PATH
+        shell: bash
+        run: printf '%s\n' "$PATH"
+
+      - name: List PATH directories containing npm
+        shell: bash
+        run: |
+          IFS=: read -r -a path_entries <<< "$PATH"
+          for directory in "${path_entries[@]}"; do
+            if [[ "$directory" == *npm* ]]; then
+              printf '%s\n' "$directory"
+              ls -al -- "$directory"
+            fi
+          done

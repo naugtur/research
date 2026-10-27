@@ -1,0 +1,20 @@
+{
+  "name": "binsover-yarn-transitive-lugga-first",
+  "private": true,
+  "packageManager": "yarn@4.18.1",
+  "devEngines": {
+    "packageManager": {
+      "name": "yarn",
+      "version": ">=2",
+      "onFail": "download"
+    }
+  },
+  "scripts": {
+    "test": "node ../../test.cjs yarn"
+  },
+  "dependencies": {
+    "lugga": "1.0.0",
+    "typescript": "5.7.3"
+  },
+  "note": "Root .bin/tsc links to typescript@5.7.3 (yarn@4.18.1). Lugga has no nested .bin/tsc entry."
+}

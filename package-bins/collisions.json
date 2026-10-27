@@ -1,2112 +1,5892 @@
 {
   "xlsx": [
-    "xlsx",
-    "xlsx-style",
-    "xlsx-js-style",
-    "xlsx-ugnis",
-    "sheetjs-style",
-    "js-xlsx",
-    "@e965/xlsx",
-    "xlsx-style-vite",
-    "styled-exceljs"
-  ],
-  "lint": [
-    "lint",
-    "@npmcli/eslint-config",
-    "@pvtnbr/eslint-config",
-    "lionconfig",
-    "@kibalabs/build",
-    "@diplodoc/lint",
-    "@leonzalion/configs",
-    "@patrickhulce/lint"
+    {
+      "name": "xlsx",
+      "weekly": 3843010
+    },
+    {
+      "name": "xlsx-js-style",
+      "weekly": 124262
+    },
+    {
+      "name": "@e965/xlsx",
+      "weekly": 116534
+    },
+    {
+      "name": "xlsx-style",
+      "weekly": 48068
+    },
+    {
+      "name": "sheetjs-style",
+      "weekly": 22542
+    },
+    {
+      "name": "styled-exceljs",
+      "weekly": 20854
+    },
+    {
+      "name": "xlsx-ugnis",
+      "weekly": 20703
+    },
+    {
+      "name": "js-xlsx",
+      "weekly": 3267
+    },
+    {
+      "name": "xlsx-style-vite",
+      "weekly": 226
+    }
   ],
   "release": [
-    "@uirouter/publish-scripts",
-    "@ossjs/release",
-    "twilio-release-tool",
-    "@daybrush/release",
-    "yarn-release",
-    "lionconfig",
-    "@leonzalion/configs",
-    "@nan0web/release"
+    {
+      "name": "twilio-release-tool",
+      "weekly": 10517
+    },
+    {
+      "name": "release-script",
+      "weekly": 8282
+    },
+    {
+      "name": "yarn-release",
+      "weekly": 158
+    },
+    {
+      "name": "@daybrush/release",
+      "weekly": 129
+    },
+    {
+      "name": "@uirouter/publish-scripts",
+      "weekly": null
+    },
+    {
+      "name": "@ossjs/release",
+      "weekly": null
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    },
+    {
+      "name": "@nan0web/release",
+      "weekly": null
+    }
+  ],
+  "local-functions-proxy": [
+    {
+      "name": "@netlify/local-functions-proxy-linux-x64",
+      "weekly": 135598
+    },
+    {
+      "name": "@netlify/local-functions-proxy-linux-arm64",
+      "weekly": 23823
+    },
+    {
+      "name": "@netlify/local-functions-proxy-darwin-arm64",
+      "weekly": 22445
+    },
+    {
+      "name": "@netlify/local-functions-proxy-darwin-x64",
+      "weekly": 20679
+    },
+    {
+      "name": "@netlify/local-functions-proxy-linux-ia32",
+      "weekly": 20104
+    },
+    {
+      "name": "@netlify/local-functions-proxy-openbsd-x64",
+      "weekly": 20019
+    },
+    {
+      "name": "@netlify/local-functions-proxy-linux-ppc64",
+      "weekly": 20008
+    },
+    {
+      "name": "@netlify/local-functions-proxy-freebsd-x64",
+      "weekly": 16131
+    },
+    {
+      "name": "@netlify/local-functions-proxy-freebsd-arm64",
+      "weekly": 16121
+    }
+  ],
+  "lint": [
+    {
+      "name": "lint",
+      "weekly": 44897
+    },
+    {
+      "name": "@npmcli/eslint-config",
+      "weekly": 22100
+    },
+    {
+      "name": "@diplodoc/lint",
+      "weekly": 207
+    },
+    {
+      "name": "@patrickhulce/lint",
+      "weekly": 16
+    },
+    {
+      "name": "@pvtnbr/eslint-config",
+      "weekly": null
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@kibalabs/build",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
   ],
   "eslint": [
-    "eslint",
-    "lionconfig",
-    "eslint-cli",
-    "@diplodoc/lint",
-    "@leonzalion/configs",
-    "@qiwi/substrate-infra",
-    "fluid-eslint"
+    {
+      "name": "eslint",
+      "weekly": 62165671
+    },
+    {
+      "name": "@diplodoc/lint",
+      "weekly": 207
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "eslint-cli",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    },
+    {
+      "name": "fluid-eslint",
+      "weekly": null
+    }
   ],
   "ts-node": [
-    "ts-node",
-    "ts-node-maintained",
-    "lionconfig",
-    "typescript-node",
-    "@isaacs/ts-node-temp-fork-for-pr-2009",
-    "@leondreamed/ts-node",
-    "@leonzalion/configs"
+    {
+      "name": "ts-node",
+      "weekly": 32137076
+    },
+    {
+      "name": "@isaacs/ts-node-temp-fork-for-pr-2009",
+      "weekly": 120312
+    },
+    {
+      "name": "ts-node-maintained",
+      "weekly": 26373
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "typescript-node",
+      "weekly": null
+    },
+    {
+      "name": "@leondreamed/ts-node",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
   ],
   "playwright": [
-    "playwright",
-    "@playwright/test",
-    "playwright-chromium",
-    "playwright-webkit",
-    "playwright-firefox",
-    "@playwright/experimental-ct-react",
-    "@playwright/experimental-ct-vue"
+    {
+      "name": "playwright",
+      "weekly": 21603145
+    },
+    {
+      "name": "@playwright/test",
+      "weekly": 12487739
+    },
+    {
+      "name": "playwright-chromium",
+      "weekly": 289095
+    },
+    {
+      "name": "@playwright/experimental-ct-react",
+      "weekly": 161232
+    },
+    {
+      "name": "playwright-webkit",
+      "weekly": 140918
+    },
+    {
+      "name": "playwright-firefox",
+      "weekly": 33480
+    },
+    {
+      "name": "@playwright/experimental-ct-vue",
+      "weekly": 23279
+    }
   ],
   "tsc": [
-    "typescript",
-    "tsc",
-    "@redwoodjs/web",
-    "@redwoodjs/api",
-    "typescript-temporary-fork-for-jsdoc",
-    "@qiwi/lint-config-infra"
+    {
+      "name": "typescript",
+      "weekly": 96515834
+    },
+    {
+      "name": "tsc",
+      "weekly": 310870
+    },
+    {
+      "name": "@redwoodjs/web",
+      "weekly": 132421
+    },
+    {
+      "name": "@redwoodjs/api",
+      "weekly": 19602
+    },
+    {
+      "name": "typescript-temporary-fork-for-jsdoc",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/lint-config-infra",
+      "weekly": null
+    }
   ],
   "rollup": [
-    "rollup",
-    "@rollup/wasm-node",
-    "pob-babel",
-    "@pob/rollup-esbuild",
-    "@pob/rollup",
-    "@pob/rollup-typescript"
+    {
+      "name": "rollup",
+      "weekly": 47386063
+    },
+    {
+      "name": "@rollup/wasm-node",
+      "weekly": 843939
+    },
+    {
+      "name": "pob-babel",
+      "weekly": 522
+    },
+    {
+      "name": "@pob/rollup-esbuild",
+      "weekly": 391
+    },
+    {
+      "name": "@pob/rollup",
+      "weekly": 384
+    },
+    {
+      "name": "@pob/rollup-typescript",
+      "weekly": null
+    }
   ],
   "run-p": [
-    "npm-run-all",
-    "npm-run-all2",
-    "yarn-run-all",
-    "@qiwi/npm-run-all",
-    "@plasmohq/rps",
-    "npm-run-all-v2"
+    {
+      "name": "npm-run-all",
+      "weekly": 4052336
+    },
+    {
+      "name": "npm-run-all2",
+      "weekly": 1136731
+    },
+    {
+      "name": "yarn-run-all",
+      "weekly": 18436
+    },
+    {
+      "name": "@plasmohq/rps",
+      "weekly": 602
+    },
+    {
+      "name": "npm-run-all-v2",
+      "weekly": 115
+    },
+    {
+      "name": "@qiwi/npm-run-all",
+      "weekly": null
+    }
   ],
   "run-s": [
-    "npm-run-all",
-    "npm-run-all2",
-    "yarn-run-all",
-    "@qiwi/npm-run-all",
-    "@plasmohq/rps",
-    "npm-run-all-v2"
+    {
+      "name": "npm-run-all",
+      "weekly": 4052336
+    },
+    {
+      "name": "npm-run-all2",
+      "weekly": 1136731
+    },
+    {
+      "name": "yarn-run-all",
+      "weekly": 18436
+    },
+    {
+      "name": "@plasmohq/rps",
+      "weekly": 602
+    },
+    {
+      "name": "npm-run-all-v2",
+      "weekly": 115
+    },
+    {
+      "name": "@qiwi/npm-run-all",
+      "weekly": null
+    }
   ],
   "npm-run-all": [
-    "npm-run-all",
-    "npm-run-all2",
-    "yarn-run-all",
-    "@qiwi/npm-run-all",
-    "npm-run-all-v2",
-    "@qiwi/substrate-infra"
+    {
+      "name": "npm-run-all",
+      "weekly": 4052336
+    },
+    {
+      "name": "npm-run-all2",
+      "weekly": 1136731
+    },
+    {
+      "name": "yarn-run-all",
+      "weekly": 18436
+    },
+    {
+      "name": "npm-run-all-v2",
+      "weekly": 115
+    },
+    {
+      "name": "@qiwi/npm-run-all",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
   ],
   "commitlint": [
-    "@commitlint/cli",
-    "commitlint",
-    "lionconfig",
-    "@leonzalion/configs",
-    "@crowdstrike/commitlint",
-    "@pob/repo-config"
-  ],
-  "wijmo-esm": [
-    "@grapecity/wijmo.angular2.directivebase",
-    "@grapecity/wijmo.angular2legacy.directivebase",
-    "@mescius/wijmo.angular2.directivebase",
-    "@mescius/wijmo.angular2legacy.directivebase",
-    "@grapecity-software/wijmo.angular2.directivebase",
-    "@grapecity-software/wijmo.angular2legacy.directivebase"
-  ],
-  "bump": [
-    "version-bump-prompt",
-    "bump-file",
-    "@jsdevtools/version-bump-prompt",
-    "bump-cli",
-    "bump",
-    "version-bump"
-  ],
-  "prettier": [
-    "prettier",
-    "prettier-elastic",
-    "@pob/root",
-    "@diplodoc/lint",
-    "@leonzalion/configs"
-  ],
-  "uglifyjs": [
-    "uglify-js",
-    "@sheetjs/uglify-js",
-    "uglify-es",
-    "uglify-js-es6",
-    "uglify-js-harmony"
-  ],
-  "typedoc": [
-    "typedoc",
-    "@bitjson/typedoc",
-    "@qiwi/lint-config-infra",
-    "@qiwi/substrate-infra",
-    "@kayahr/typedoc"
-  ],
-  "coffee": [
-    "coffeescript",
-    "coffee-script-redux",
-    "coffee-script",
-    "decaffeinate-coffeescript",
-    "decaffeinate-coffeescript2"
-  ],
-  "cake": [
-    "coffeescript",
-    "coffee-script",
-    "decaffeinate-coffeescript",
-    "decaffeinate-coffeescript2",
-    "cake"
-  ],
-  "jsonlint": [
-    "jsonlint",
-    "jsonlint-mod",
-    "jsonlint-lines-primitives",
-    "@prantlf/jsonlint",
-    "jsonlint-lines"
-  ],
-  "eslint-config": [
-    "@antfu/eslint-config",
-    "@morev/eslint-config",
-    "@isentinel/eslint-config",
-    "@mheob/eslint-config",
-    "@nirtamir2/eslint-config"
-  ],
-  "live-server": [
-    "live-server",
-    "@compodoc/live-server",
-    "five-server",
-    "@gerhobbelt/live-server",
-    "@pattern-lab/live-server"
-  ],
-  "test": [
-    "test",
-    "@jdeighan/base-utils",
-    "lionconfig",
-    "@leonzalion/configs",
-    "@rollup-umd/test"
-  ],
-  "publish": [
-    "publish",
-    "abacus-publish",
-    "publish-me-maybe",
-    "publish-cli",
-    "@invisible/publish"
-  ],
-  "protoc-gen-ts": [
-    "ts-protoc-gen",
-    "grpc_tools_node_protoc_ts",
-    "@protobuf-ts/plugin",
-    "protoc-gen-ts",
-    "@wangshijun/ts-protoc-gen"
-  ],
-  "build-storybook": [
-    "@open-wc/demoing-storybook",
-    "@kadira/storybook",
-    "@beisen/storybook-react",
-    "@web/dev-server-storybook",
-    "@storybook/polymer"
-  ],
-  "readme": [
-    "readme-md-generator",
-    "markserv",
-    "@appnest/readme",
-    "package-json-to-readme",
-    "readme"
-  ],
-  "istanbul": [
-    "sc-istanbul",
-    "istanbul",
-    "istanbul-harmony",
-    "@antv/istanbul",
-    "macaca-istanbul"
-  ],
-  "rimraf": [
-    "rimraf",
-    "@alloc/fast-rimraf",
-    "@hazae41/rimraf",
-    "@qiwi/substrate-infra"
-  ],
-  "ts-node-cwd": [
-    "ts-node",
-    "ts-node-maintained",
-    "@isaacs/ts-node-temp-fork-for-pr-2009",
-    "@leondreamed/ts-node"
-  ],
-  "ts-node-esm": [
-    "ts-node",
-    "ts-node-maintained",
-    "@isaacs/ts-node-temp-fork-for-pr-2009",
-    "@leondreamed/ts-node"
-  ],
-  "ts-node-script": [
-    "ts-node",
-    "ts-node-maintained",
-    "@isaacs/ts-node-temp-fork-for-pr-2009",
-    "@leondreamed/ts-node"
-  ],
-  "ts-node-transpile-only": [
-    "ts-node",
-    "ts-node-maintained",
-    "@isaacs/ts-node-temp-fork-for-pr-2009",
-    "@leondreamed/ts-node"
-  ],
-  "babel-node": [
-    "babel-cli",
-    "@babel/node",
-    "babel",
-    "@genx/babelnode"
-  ],
-  "esparse": [
-    "esprima",
-    "esprima-fb",
-    "esprima-next",
-    "@gerhobbelt/esprima"
-  ],
-  "esvalidate": [
-    "esprima",
-    "esprima-fb",
-    "esprima-next",
-    "@gerhobbelt/esprima"
-  ],
-  "lint-staged": [
-    "lint-staged",
-    "@diplodoc/lint",
-    "@leonzalion/configs",
-    "@pob/repo-config"
-  ],
-  "jest": [
-    "jest-cli",
-    "jest-expo",
-    "@qiwi/lint-config-infra",
-    "@qiwi/substrate-infra"
-  ],
-  "jsdoc": [
-    "jsdoc",
-    "@openpgp/jsdoc",
-    "@daybrush/jsdoc",
-    "neo-jsdoc"
-  ],
-  "nuxt": [
-    "nuxt",
-    "@nuxt/cli",
-    "nuxt-edge",
-    "nuxi"
-  ],
-  "xml2json": [
-    "xml2json",
-    "@kitware/vtk.js",
-    "vtk.js",
-    "jgexml"
-  ],
-  "node-pre-gyp": [
-    "@mapbox/node-pre-gyp",
-    "@discordjs/node-pre-gyp",
-    "node-pre-gyp",
-    "@risingstack/node-pre-gyp"
-  ],
-  "microbundle": [
-    "microbundle",
-    "@micro-web/microbundle",
-    "@kne/microbundle",
-    "@mattdesl/microbundle"
-  ],
-  "minify": [
-    "minify",
-    "babel-minify",
-    "harp-minify",
-    "minifier"
-  ],
-  "flow-remove-types": [
-    "flow-remove-types",
-    "flow-node",
-    "@mapbox/flow-remove-types",
-    "flow-remove-types-no-whitespace"
-  ],
-  "flow-node": [
-    "flow-remove-types",
-    "flow-node",
-    "@mapbox/flow-remove-types",
-    "flow-remove-types-no-whitespace"
-  ],
-  "builder": [
-    "builder",
-    "@nomiclabs/buidler",
-    "@checkdigit/typescript-config",
-    "alinex-builder"
-  ],
-  "node-pre-gyp-github": [
-    "node-pre-gyp-github",
-    "@mmomtchev/node-pre-gyp-github",
-    "@acalcutt/node-pre-gyp-github",
-    "@mathquis/node-pre-gyp-github"
-  ],
-  "gl-style-migrate": [
-    "@maplibre/maplibre-gl-style-spec",
-    "@mapbox/mapbox-gl-style-spec",
-    "mvt-basic-render",
-    "mapbox-gl-style-spec"
-  ],
-  "gl-style-validate": [
-    "@maplibre/maplibre-gl-style-spec",
-    "@mapbox/mapbox-gl-style-spec",
-    "mvt-basic-render",
-    "mapbox-gl-style-spec"
-  ],
-  "gl-style-format": [
-    "@maplibre/maplibre-gl-style-spec",
-    "@mapbox/mapbox-gl-style-spec",
-    "mvt-basic-render",
-    "mapbox-gl-style-spec"
-  ],
-  "bob": [
-    "react-native-builder-bob",
-    "@react-native-community/bob",
-    "bob-the-bundler",
-    "@bconnorwhite/bob"
-  ],
-  "start-storybook": [
-    "@open-wc/demoing-storybook",
-    "@kadira/storybook",
-    "@beisen/storybook-react",
-    "@storybook/polymer"
+    {
+      "name": "@commitlint/cli",
+      "weekly": 4596779
+    },
+    {
+      "name": "commitlint",
+      "weekly": null
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    },
+    {
+      "name": "@crowdstrike/commitlint",
+      "weekly": null
+    },
+    {
+      "name": "@pob/repo-config",
+      "weekly": null
+    }
   ],
   "changelog": [
-    "generate-changelog",
-    "keep-a-changelog",
-    "changelog",
-    "@appliedblockchain/changelog"
+    {
+      "name": "generate-changelog",
+      "weekly": 52464
+    },
+    {
+      "name": "keep-a-changelog",
+      "weekly": 8564
+    },
+    {
+      "name": "mt-changelog",
+      "weekly": 2597
+    },
+    {
+      "name": "rf-changelog",
+      "weekly": 201
+    },
+    {
+      "name": "changelog",
+      "weekly": null
+    },
+    {
+      "name": "@appliedblockchain/changelog",
+      "weekly": null
+    }
+  ],
+  "wijmo-esm": [
+    {
+      "name": "@grapecity/wijmo.angular2.directivebase",
+      "weekly": 8592
+    },
+    {
+      "name": "@mescius/wijmo.angular2.directivebase",
+      "weekly": 2392
+    },
+    {
+      "name": "@mescius/wijmo.angular2legacy.directivebase",
+      "weekly": 529
+    },
+    {
+      "name": "@grapecity-software/wijmo.angular2.directivebase",
+      "weekly": 14
+    },
+    {
+      "name": "@grapecity/wijmo.angular2legacy.directivebase",
+      "weekly": 8
+    },
+    {
+      "name": "@grapecity-software/wijmo.angular2legacy.directivebase",
+      "weekly": 1
+    }
+  ],
+  "bump": [
+    {
+      "name": "@jsdevtools/version-bump-prompt",
+      "weekly": 11735
+    },
+    {
+      "name": "version-bump-prompt",
+      "weekly": 8751
+    },
+    {
+      "name": "bump-cli",
+      "weekly": 8574
+    },
+    {
+      "name": "bump-file",
+      "weekly": 7758
+    },
+    {
+      "name": "bump",
+      "weekly": null
+    },
+    {
+      "name": "version-bump",
+      "weekly": null
+    }
+  ],
+  "prettier": [
+    {
+      "name": "prettier",
+      "weekly": 55728672
+    },
+    {
+      "name": "@pob/root",
+      "weekly": 566
+    },
+    {
+      "name": "@diplodoc/lint",
+      "weekly": 207
+    },
+    {
+      "name": "prettier-elastic",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
+  ],
+  "uglifyjs": [
+    {
+      "name": "uglify-js",
+      "weekly": 27710670
+    },
+    {
+      "name": "@sheetjs/uglify-js",
+      "weekly": 5211
+    },
+    {
+      "name": "uglify-es",
+      "weekly": null
+    },
+    {
+      "name": "uglify-js-es6",
+      "weekly": null
+    },
+    {
+      "name": "uglify-js-harmony",
+      "weekly": null
+    }
+  ],
+  "typedoc": [
+    {
+      "name": "typedoc",
+      "weekly": 2263927
+    },
+    {
+      "name": "@bitjson/typedoc",
+      "weekly": 567
+    },
+    {
+      "name": "@qiwi/lint-config-infra",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    },
+    {
+      "name": "@kayahr/typedoc",
+      "weekly": null
+    }
+  ],
+  "coffee": [
+    {
+      "name": "coffeescript",
+      "weekly": 1336366
+    },
+    {
+      "name": "decaffeinate-coffeescript",
+      "weekly": 13562
+    },
+    {
+      "name": "decaffeinate-coffeescript2",
+      "weekly": 10815
+    },
+    {
+      "name": "coffee-script-redux",
+      "weekly": 9602
+    },
+    {
+      "name": "coffee-script",
+      "weekly": null
+    }
+  ],
+  "cake": [
+    {
+      "name": "coffeescript",
+      "weekly": 1336366
+    },
+    {
+      "name": "decaffeinate-coffeescript",
+      "weekly": 13562
+    },
+    {
+      "name": "decaffeinate-coffeescript2",
+      "weekly": 10815
+    },
+    {
+      "name": "coffee-script",
+      "weekly": null
+    },
+    {
+      "name": "cake",
+      "weekly": null
+    }
+  ],
+  "jsonlint": [
+    {
+      "name": "jsonlint",
+      "weekly": 220955
+    },
+    {
+      "name": "jsonlint-mod",
+      "weekly": 53649
+    },
+    {
+      "name": "@prantlf/jsonlint",
+      "weekly": 43430
+    },
+    {
+      "name": "jsonlint-lines",
+      "weekly": 29550
+    },
+    {
+      "name": "jsonlint-lines-primitives",
+      "weekly": 5055
+    }
+  ],
+  "eslint-config": [
+    {
+      "name": "@antfu/eslint-config",
+      "weekly": 252304
+    },
+    {
+      "name": "@mheob/eslint-config",
+      "weekly": 298
+    },
+    {
+      "name": "@morev/eslint-config",
+      "weekly": null
+    },
+    {
+      "name": "@isentinel/eslint-config",
+      "weekly": null
+    },
+    {
+      "name": "@nirtamir2/eslint-config",
+      "weekly": null
+    }
+  ],
+  "live-server": [
+    {
+      "name": "@compodoc/live-server",
+      "weekly": 317390
+    },
+    {
+      "name": "live-server",
+      "weekly": 98277
+    },
+    {
+      "name": "five-server",
+      "weekly": 691
+    },
+    {
+      "name": "@gerhobbelt/live-server",
+      "weekly": 32
+    },
+    {
+      "name": "@pattern-lab/live-server",
+      "weekly": null
+    }
+  ],
+  "test": [
+    {
+      "name": "test",
+      "weekly": 77734
+    },
+    {
+      "name": "@jdeighan/base-utils",
+      "weekly": 180
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    },
+    {
+      "name": "@rollup-umd/test",
+      "weekly": null
+    }
+  ],
+  "publish": [
+    {
+      "name": "publish",
+      "weekly": 27751
+    },
+    {
+      "name": "publish-me-maybe",
+      "weekly": 14
+    },
+    {
+      "name": "abacus-publish",
+      "weekly": null
+    },
+    {
+      "name": "publish-cli",
+      "weekly": null
+    },
+    {
+      "name": "@invisible/publish",
+      "weekly": null
+    }
+  ],
+  "protoc-gen-ts": [
+    {
+      "name": "@protobuf-ts/plugin",
+      "weekly": 336339
+    },
+    {
+      "name": "protoc-gen-ts",
+      "weekly": 184204
+    },
+    {
+      "name": "ts-protoc-gen",
+      "weekly": 146667
+    },
+    {
+      "name": "grpc_tools_node_protoc_ts",
+      "weekly": 105543
+    },
+    {
+      "name": "@wangshijun/ts-protoc-gen",
+      "weekly": 51
+    }
+  ],
+  "build-storybook": [
+    {
+      "name": "@kadira/storybook",
+      "weekly": 6380
+    },
+    {
+      "name": "@web/dev-server-storybook",
+      "weekly": 3298
+    },
+    {
+      "name": "@open-wc/demoing-storybook",
+      "weekly": 2252
+    },
+    {
+      "name": "@storybook/polymer",
+      "weekly": 1214
+    },
+    {
+      "name": "@beisen/storybook-react",
+      "weekly": 27
+    }
+  ],
+  "readme": [
+    {
+      "name": "markserv",
+      "weekly": 796
+    },
+    {
+      "name": "readme-md-generator",
+      "weekly": 795
+    },
+    {
+      "name": "@appnest/readme",
+      "weekly": 701
+    },
+    {
+      "name": "package-json-to-readme",
+      "weekly": null
+    },
+    {
+      "name": "readme",
+      "weekly": null
+    }
+  ],
+  "istanbul": [
+    {
+      "name": "sc-istanbul",
+      "weekly": 156436
+    },
+    {
+      "name": "macaca-istanbul",
+      "weekly": 1689
+    },
+    {
+      "name": "@antv/istanbul",
+      "weekly": 9
+    },
+    {
+      "name": "istanbul",
+      "weekly": null
+    },
+    {
+      "name": "istanbul-harmony",
+      "weekly": null
+    }
+  ],
+  "rimraf": [
+    {
+      "name": "rimraf",
+      "weekly": 98295211
+    },
+    {
+      "name": "@alloc/fast-rimraf",
+      "weekly": null
+    },
+    {
+      "name": "@hazae41/rimraf",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
+  ],
+  "ts-node-cwd": [
+    {
+      "name": "ts-node",
+      "weekly": 32137076
+    },
+    {
+      "name": "@isaacs/ts-node-temp-fork-for-pr-2009",
+      "weekly": 120312
+    },
+    {
+      "name": "ts-node-maintained",
+      "weekly": 26373
+    },
+    {
+      "name": "@leondreamed/ts-node",
+      "weekly": null
+    }
+  ],
+  "ts-node-esm": [
+    {
+      "name": "ts-node",
+      "weekly": 32137076
+    },
+    {
+      "name": "@isaacs/ts-node-temp-fork-for-pr-2009",
+      "weekly": 120312
+    },
+    {
+      "name": "ts-node-maintained",
+      "weekly": 26373
+    },
+    {
+      "name": "@leondreamed/ts-node",
+      "weekly": null
+    }
+  ],
+  "ts-node-script": [
+    {
+      "name": "ts-node",
+      "weekly": 32137076
+    },
+    {
+      "name": "@isaacs/ts-node-temp-fork-for-pr-2009",
+      "weekly": 120312
+    },
+    {
+      "name": "ts-node-maintained",
+      "weekly": 26373
+    },
+    {
+      "name": "@leondreamed/ts-node",
+      "weekly": null
+    }
+  ],
+  "ts-node-transpile-only": [
+    {
+      "name": "ts-node",
+      "weekly": 32137076
+    },
+    {
+      "name": "@isaacs/ts-node-temp-fork-for-pr-2009",
+      "weekly": 120312
+    },
+    {
+      "name": "ts-node-maintained",
+      "weekly": 26373
+    },
+    {
+      "name": "@leondreamed/ts-node",
+      "weekly": null
+    }
+  ],
+  "babel-node": [
+    {
+      "name": "babel-cli",
+      "weekly": 489744
+    },
+    {
+      "name": "@babel/node",
+      "weekly": null
+    },
+    {
+      "name": "babel",
+      "weekly": null
+    },
+    {
+      "name": "@genx/babelnode",
+      "weekly": null
+    }
+  ],
+  "esparse": [
+    {
+      "name": "esprima",
+      "weekly": 63399871
+    },
+    {
+      "name": "esprima-fb",
+      "weekly": 620278
+    },
+    {
+      "name": "esprima-next",
+      "weekly": 506223
+    },
+    {
+      "name": "@gerhobbelt/esprima",
+      "weekly": 2062
+    }
+  ],
+  "esvalidate": [
+    {
+      "name": "esprima",
+      "weekly": 63399871
+    },
+    {
+      "name": "esprima-fb",
+      "weekly": 620278
+    },
+    {
+      "name": "esprima-next",
+      "weekly": 506223
+    },
+    {
+      "name": "@gerhobbelt/esprima",
+      "weekly": 2062
+    }
+  ],
+  "lint-staged": [
+    {
+      "name": "lint-staged",
+      "weekly": 13821540
+    },
+    {
+      "name": "@diplodoc/lint",
+      "weekly": 207
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    },
+    {
+      "name": "@pob/repo-config",
+      "weekly": null
+    }
+  ],
+  "jest": [
+    {
+      "name": "jest-cli",
+      "weekly": 31391677
+    },
+    {
+      "name": "jest-expo",
+      "weekly": 672069
+    },
+    {
+      "name": "@qiwi/lint-config-infra",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
+  ],
+  "jsdoc": [
+    {
+      "name": "jsdoc",
+      "weekly": 2110922
+    },
+    {
+      "name": "@daybrush/jsdoc",
+      "weekly": 800
+    },
+    {
+      "name": "@openpgp/jsdoc",
+      "weekly": null
+    },
+    {
+      "name": "neo-jsdoc",
+      "weekly": null
+    }
+  ],
+  "nuxt": [
+    {
+      "name": "nuxt",
+      "weekly": 989498
+    },
+    {
+      "name": "nuxt-edge",
+      "weekly": 54123
+    },
+    {
+      "name": "@nuxt/cli",
+      "weekly": null
+    },
+    {
+      "name": "nuxi",
+      "weekly": null
+    }
+  ],
+  "xml2json": [
+    {
+      "name": "xml2json",
+      "weekly": 81652
+    },
+    {
+      "name": "jgexml",
+      "weekly": 55029
+    },
+    {
+      "name": "@kitware/vtk.js",
+      "weekly": 34643
+    },
+    {
+      "name": "vtk.js",
+      "weekly": 2978
+    }
+  ],
+  "node-pre-gyp": [
+    {
+      "name": "@mapbox/node-pre-gyp",
+      "weekly": 7868812
+    },
+    {
+      "name": "@discordjs/node-pre-gyp",
+      "weekly": 11844
+    },
+    {
+      "name": "node-pre-gyp",
+      "weekly": null
+    },
+    {
+      "name": "@risingstack/node-pre-gyp",
+      "weekly": null
+    }
+  ],
+  "microbundle": [
+    {
+      "name": "microbundle",
+      "weekly": 112067
+    },
+    {
+      "name": "@micro-web/microbundle",
+      "weekly": null
+    },
+    {
+      "name": "@kne/microbundle",
+      "weekly": null
+    },
+    {
+      "name": "@mattdesl/microbundle",
+      "weekly": null
+    }
+  ],
+  "minify": [
+    {
+      "name": "babel-minify",
+      "weekly": 27606
+    },
+    {
+      "name": "minify",
+      "weekly": 27546
+    },
+    {
+      "name": "harp-minify",
+      "weekly": 170
+    },
+    {
+      "name": "minifier",
+      "weekly": null
+    }
+  ],
+  "flow-remove-types": [
+    {
+      "name": "flow-remove-types",
+      "weekly": 245671
+    },
+    {
+      "name": "flow-node",
+      "weekly": 5256
+    },
+    {
+      "name": "flow-remove-types-no-whitespace",
+      "weekly": 3311
+    },
+    {
+      "name": "@mapbox/flow-remove-types",
+      "weekly": 2728
+    }
+  ],
+  "flow-node": [
+    {
+      "name": "flow-remove-types",
+      "weekly": 245671
+    },
+    {
+      "name": "flow-node",
+      "weekly": 5256
+    },
+    {
+      "name": "flow-remove-types-no-whitespace",
+      "weekly": 3311
+    },
+    {
+      "name": "@mapbox/flow-remove-types",
+      "weekly": 2728
+    }
+  ],
+  "builder": [
+    {
+      "name": "@nomiclabs/buidler",
+      "weekly": 3199
+    },
+    {
+      "name": "builder",
+      "weekly": 2483
+    },
+    {
+      "name": "@checkdigit/typescript-config",
+      "weekly": null
+    },
+    {
+      "name": "alinex-builder",
+      "weekly": null
+    }
+  ],
+  "node-pre-gyp-github": [
+    {
+      "name": "@acalcutt/node-pre-gyp-github",
+      "weekly": 2455
+    },
+    {
+      "name": "node-pre-gyp-github",
+      "weekly": 1325
+    },
+    {
+      "name": "@mmomtchev/node-pre-gyp-github",
+      "weekly": 737
+    },
+    {
+      "name": "@mathquis/node-pre-gyp-github",
+      "weekly": 138
+    }
+  ],
+  "gl-style-migrate": [
+    {
+      "name": "@maplibre/maplibre-gl-style-spec",
+      "weekly": 1413991
+    },
+    {
+      "name": "@mapbox/mapbox-gl-style-spec",
+      "weekly": 183544
+    },
+    {
+      "name": "mvt-basic-render",
+      "weekly": 172
+    },
+    {
+      "name": "mapbox-gl-style-spec",
+      "weekly": null
+    }
+  ],
+  "gl-style-validate": [
+    {
+      "name": "@maplibre/maplibre-gl-style-spec",
+      "weekly": 1413991
+    },
+    {
+      "name": "@mapbox/mapbox-gl-style-spec",
+      "weekly": 183544
+    },
+    {
+      "name": "mvt-basic-render",
+      "weekly": 172
+    },
+    {
+      "name": "mapbox-gl-style-spec",
+      "weekly": null
+    }
+  ],
+  "gl-style-format": [
+    {
+      "name": "@maplibre/maplibre-gl-style-spec",
+      "weekly": 1413991
+    },
+    {
+      "name": "@mapbox/mapbox-gl-style-spec",
+      "weekly": 183544
+    },
+    {
+      "name": "mvt-basic-render",
+      "weekly": 172
+    },
+    {
+      "name": "mapbox-gl-style-spec",
+      "weekly": null
+    }
+  ],
+  "bob": [
+    {
+      "name": "react-native-builder-bob",
+      "weekly": 128261
+    },
+    {
+      "name": "@bconnorwhite/bob",
+      "weekly": 94
+    },
+    {
+      "name": "@react-native-community/bob",
+      "weekly": null
+    },
+    {
+      "name": "bob-the-bundler",
+      "weekly": null
+    }
+  ],
+  "start-storybook": [
+    {
+      "name": "@kadira/storybook",
+      "weekly": 6380
+    },
+    {
+      "name": "@open-wc/demoing-storybook",
+      "weekly": 2252
+    },
+    {
+      "name": "@storybook/polymer",
+      "weekly": 1214
+    },
+    {
+      "name": "@beisen/storybook-react",
+      "weekly": 27
+    }
   ],
   "storybook-server": [
-    "@kadira/storybook",
-    "@storybook/react-native-server",
-    "@beisen/storybook-react",
-    "@storybook/polymer"
+    {
+      "name": "@storybook/react-native-server",
+      "weekly": 23864
+    },
+    {
+      "name": "@kadira/storybook",
+      "weekly": 6380
+    },
+    {
+      "name": "@storybook/polymer",
+      "weekly": 1214
+    },
+    {
+      "name": "@beisen/storybook-react",
+      "weekly": 27
+    }
   ],
   "i18n": [
-    "@plone/scripts",
-    "@orderly.network/i18n",
-    "@kodiak-finance/orderly-i18n",
-    "@nan0web/i18n"
+    {
+      "name": "@plone/scripts",
+      "weekly": 4173
+    },
+    {
+      "name": "@orderly.network/i18n",
+      "weekly": 572
+    },
+    {
+      "name": "@kodiak-finance/orderly-i18n",
+      "weekly": 460
+    },
+    {
+      "name": "@nan0web/i18n",
+      "weekly": 18
+    }
   ],
   "lefthook": [
-    "lefthook",
-    "@arkweid/lefthook",
-    "@evilmartians/lefthook",
-    "lionconfig"
+    {
+      "name": "lefthook",
+      "weekly": 635436
+    },
+    {
+      "name": "@evilmartians/lefthook",
+      "weekly": 65840
+    },
+    {
+      "name": "@arkweid/lefthook",
+      "weekly": null
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    }
   ],
   "uuid": [
-    "uuid",
-    "@aigne/uuid",
-    "node-uuid"
+    {
+      "name": "uuid",
+      "weekly": 165981639
+    },
+    {
+      "name": "@aigne/uuid",
+      "weekly": 3393
+    },
+    {
+      "name": "node-uuid",
+      "weekly": null
+    }
   ],
   "webpack": [
-    "webpack",
-    "webpack-command",
-    "webpack2"
+    {
+      "name": "webpack",
+      "weekly": 32876716
+    },
+    {
+      "name": "webpack-command",
+      "weekly": 3578
+    },
+    {
+      "name": "webpack2",
+      "weekly": 6
+    }
   ],
   "mkdirp": [
-    "mkdirp",
-    "node-mkdirp",
-    "@qiwi/substrate-infra"
-  ],
-  "mocha": [
-    "mocha",
-    "mocha2",
-    "mocha-cli"
-  ],
-  "resolve": [
-    "resolve",
-    "oas-resolver",
-    "oas-resolver-browser"
-  ],
-  "cross-env": [
-    "cross-env",
-    "@redwoodjs/web",
-    "@qiwi/substrate-infra"
-  ],
-  "react-native": [
-    "react-native",
-    "react-native-cli",
-    "react-native-macos"
-  ],
-  "esbuild": [
-    "esbuild",
-    "esbuild-wasm",
-    "@ohos-ports/esbuild"
-  ],
-  "babel": [
-    "@babel/cli",
-    "babel-cli",
-    "babel"
-  ],
-  "babel-external-helpers": [
-    "@babel/cli",
-    "babel-cli",
-    "babel"
-  ],
-  "vite": [
-    "vite",
-    "rolldown-vite",
-    "oc-vite"
-  ],
-  "grunt": [
-    "grunt",
-    "grunt-cli",
-    "lincd-cli"
-  ],
-  "random": [
-    "mockjs",
-    "mockjs2",
-    "better-mock"
-  ],
-  "is-ci": [
-    "is-ci",
-    "is-ci-cli",
-    "@comandeer/is-ci"
-  ],
-  "detect": [
-    "detect-port",
-    "detect-port-alt",
-    "@timer/detect-port"
-  ],
-  "detect-port": [
-    "detect-port",
-    "detect-port-alt",
-    "@timer/detect-port"
-  ],
-  "tape": [
-    "tape",
-    "supertape",
-    "@putout/test"
-  ],
-  "crc32": [
-    "crc-32",
-    "crc32",
-    "cyclic-32"
-  ],
-  "serve": [
-    "serve",
-    "https-localhost",
-    "@nan0web/release"
-  ],
-  "git-cz": [
-    "commitizen",
-    "git-cz",
-    "@ryansonshine/commitizen"
-  ],
-  "nuxi": [
-    "nuxt",
-    "@nuxt/cli",
-    "nuxi"
-  ],
-  "rlp": [
-    "rlp",
-    "@ethereumjs/rlp",
-    "@nomicfoundation/ethereumjs-rlp"
-  ],
-  "npm-check-updates": [
-    "npm-check-updates",
-    "npm-check-updates-lite",
-    "npm4-check-updates"
-  ],
-  "ncu": [
-    "npm-check-updates",
-    "npm-check-updates-lite",
-    "npm4-check-updates"
-  ],
-  "standard": [
-    "standard",
-    "uber-standard",
-    "standard-esnext"
-  ],
-  "ansi-html": [
-    "ansi-html",
-    "ansi-html-community",
-    "ansi-html-stream"
-  ],
-  "tsc-alias": [
-    "tsc-alias",
-    "lionconfig",
-    "@leonzalion/configs"
-  ],
-  "ps-tree": [
-    "ps-tree",
-    "@apify/ps-tree",
-    "@fengmk2/ps-tree"
-  ],
-  "opencollective": [
-    "opencollective",
-    "@nuxt/opencollective",
-    "@nuxtjs/opencollective"
-  ],
-  "pkg": [
-    "pkg",
-    "@yao-pkg/pkg",
-    "@sanity/pkg-utils"
-  ],
-  "cdk": [
-    "aws-cdk",
-    "cdk",
-    "sst-aws-cdk"
-  ],
-  "json": [
-    "json",
-    "homebridge-lib",
-    "hb-lib-tools"
-  ],
-  "bsc": [
-    "rescript",
-    "bs-platform",
-    "brighterscript"
-  ],
-  "kill-port": [
-    "kill-port",
-    "cross-port-killer",
-    "kill-port-process"
-  ],
-  "sass-lint": [
-    "sass-lint",
-    "@blueprintjs/node-build-scripts",
-    "css-lint"
-  ],
-  "auto": [
-    "auto",
-    "autorepo",
-    "@auto-canary/auto"
-  ],
-  "module-deps": [
-    "module-deps",
-    "@cljs-oss/module-deps",
-    "module-deps-sortable"
-  ],
-  "wake": [
-    "wake_on_lan",
-    "wol",
-    "wake"
-  ],
-  "go-npm": [
-    "go-npm",
-    "@go-task/go-npm",
-    "@gzuidhof/go-npm"
-  ],
-  "migrate": [
-    "migrate",
-    "mjml-migrate",
-    "@entur/typography"
-  ],
-  "markdownlint": [
-    "markdownlint-cli",
-    "lionconfig",
-    "@leonzalion/configs"
-  ],
-  "mcp": [
-    "mcp-framework",
-    "@vercel/sdk",
-    "unstructured-client"
-  ],
-  "oe": [
-    "open-in-editor",
-    "@generalov/open-in-editor",
-    "@open-everywhere/core"
-  ],
-  "relay-compiler": [
-    "relay-compiler",
-    "@gatsbyjs/relay-compiler",
-    "@ardatan/relay-compiler"
-  ],
-  "ci": [
-    "ci",
-    "smokesignals",
-    "ci-scripts"
-  ],
-  "openapi": [
-    "openapi-typescript-codegen",
-    "@redocly/cli",
-    "openapi"
-  ],
-  "gl-style-composite": [
-    "@mapbox/mapbox-gl-style-spec",
-    "mvt-basic-render",
-    "mapbox-gl-style-spec"
-  ],
-  "nwget": [
-    "wget-improved",
-    "wget",
-    "wget-improved-2"
-  ],
-  "zopflipng": [
-    "node-zopfli",
-    "zopflipng-bin",
-    "node-zopfli-es"
-  ],
-  "errors": [
-    "@solana/errors",
-    "@kinobi-so/errors",
-    "@wallet-standard/errors"
-  ],
-  "markdown": [
-    "cli-markdown",
-    "markdown-to-html",
-    "markdown-magic"
-  ],
-  "run": [
-    "mora-scripts",
-    "@mpis/run",
-    "@kayahr/npm-utils"
-  ],
-  "keystone": [
-    "@keystone-6/core",
-    "@keystonejs/keystone",
-    "@open-keystone/keystone"
-  ],
-  "iconfont": [
-    "react-iconfont-cli",
-    "mini-program-iconfont-cli",
-    "react-native-iconfont-cli"
-  ],
-  "iconfont-init": [
-    "react-iconfont-cli",
-    "mini-program-iconfont-cli",
-    "react-native-iconfont-cli"
-  ],
-  "stryker": [
-    "@stryker-mutator/core",
-    "stryker",
-    "stryker-cli"
-  ],
-  "gren": [
-    "github-release-notes",
-    "@cjbarth/github-release-notes",
-    "@femessage/github-release-notes"
-  ],
-  "sandbox": [
-    "@architect/sandbox",
-    "near-sandbox",
-    "disk"
-  ],
-  "tsc-esm": [
-    "tsc-esm",
-    "typescript-esm",
-    "@digitak/tsc-esm"
-  ],
-  "dtslint": [
-    "dtslint",
-    "@definitelytyped/dtslint",
-    "@qiwi/substrate-infra"
-  ],
-  "nuxt-cli": [
-    "@nuxt/cli",
-    "nuxi",
-    "@nuxt/cli-edge"
-  ],
-  "tap-diff": [
-    "tap-diff",
-    "@zkochan/tap-diff",
-    "@detools/tap-diff"
-  ],
-  "buddy": [
-    "repobuddy",
-    "buddy",
-    "buddy-cli"
-  ],
-  "lionp": [
-    "lionconfig",
-    "lionp",
-    "@leonzalion/configs"
-  ],
-  "tsdoc": [
-    "tsdoc-markdown",
-    "@gitzone/tsdoc",
-    "@git.zone/tsdoc"
-  ],
-  "build": [
-    "xyvcard-wechat-build",
-    "@4c/build",
-    "@rollup-umd/build"
-  ],
-  "buildstamp": [
-    "@qiwi/lint-config-infra",
-    "@qiwi/substrate-infra",
-    "buildstamp"
-  ],
-  "nice-move": [
-    "@nice-move/cli",
-    "@nice-move/all-in-web",
-    "@nice-move/all-in-base"
-  ],
-  "tsserver": [
-    "typescript",
-    "typescript-temporary-fork-for-jsdoc"
-  ],
-  "semver": [
-    "semver",
-    "@storybook/semver"
+    {
+      "name": "mkdirp",
+      "weekly": 98277408
+    },
+    {
+      "name": "node-mkdirp",
+      "weekly": 114
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
   ],
   "js-yaml": [
-    "js-yaml",
-    "@gerhobbelt/js-yaml"
+    {
+      "name": "js-yaml",
+      "weekly": 126671039
+    },
+    {
+      "name": "@zkochan/js-yaml",
+      "weekly": 4551387
+    },
+    {
+      "name": "@gerhobbelt/js-yaml",
+      "weekly": null
+    }
   ],
-  "ts-script": [
-    "ts-node",
-    "ts-node-maintained"
+  "mocha": [
+    {
+      "name": "mocha",
+      "weekly": 11713567
+    },
+    {
+      "name": "mocha-cli",
+      "weekly": 1931
+    },
+    {
+      "name": "mocha2",
+      "weekly": 30
+    }
   ],
-  "figlet": [
-    "figlet",
-    "figlet-cli"
+  "resolve": [
+    {
+      "name": "resolve",
+      "weekly": 111426001
+    },
+    {
+      "name": "oas-resolver",
+      "weekly": 2449182
+    },
+    {
+      "name": "oas-resolver-browser",
+      "weekly": 110377
+    }
   ],
-  "npx": [
-    "npm",
-    "npx"
+  "cross-env": [
+    {
+      "name": "cross-env",
+      "weekly": 11048300
+    },
+    {
+      "name": "@redwoodjs/web",
+      "weekly": 132421
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
   ],
-  "sass": [
-    "sass",
-    "sass-embedded"
+  "react-native": [
+    {
+      "name": "react-native",
+      "weekly": 3851153
+    },
+    {
+      "name": "react-native-macos",
+      "weekly": 62033
+    },
+    {
+      "name": "react-native-cli",
+      "weekly": 33582
+    }
   ],
-  "_mocha": [
-    "mocha",
-    "mocha2"
+  "esbuild": [
+    {
+      "name": "esbuild",
+      "weekly": 66498584
+    },
+    {
+      "name": "esbuild-wasm",
+      "weekly": 3583143
+    },
+    {
+      "name": "@ohos-ports/esbuild",
+      "weekly": null
+    }
   ],
-  "gulp": [
-    "gulp",
-    "gulp-cli"
+  "babel": [
+    {
+      "name": "@babel/cli",
+      "weekly": 3132083
+    },
+    {
+      "name": "babel-cli",
+      "weekly": 489744
+    },
+    {
+      "name": "babel",
+      "weekly": null
+    }
   ],
-  "json5": [
-    "json5",
-    "@gerhobbelt/json5"
+  "babel-external-helpers": [
+    {
+      "name": "@babel/cli",
+      "weekly": 3132083
+    },
+    {
+      "name": "babel-cli",
+      "weekly": 489744
+    },
+    {
+      "name": "babel",
+      "weekly": null
+    }
   ],
-  "markdown-it": [
-    "markdown-it",
-    "@gerhobbelt/markdown-it"
+  "vite": [
+    {
+      "name": "vite",
+      "weekly": 36278975
+    },
+    {
+      "name": "rolldown-vite",
+      "weekly": 272067
+    },
+    {
+      "name": "oc-vite",
+      "weekly": 1377
+    }
   ],
-  "stencil": [
-    "@stencil/core",
-    "@stencil/cli"
+  "grunt": [
+    {
+      "name": "grunt-cli",
+      "weekly": 915245
+    },
+    {
+      "name": "grunt",
+      "weekly": 849122
+    },
+    {
+      "name": "lincd-cli",
+      "weekly": null
+    }
   ],
-  "mqtt_pub": [
-    "mqtt",
-    "@taoqf/react-native-mqtt"
+  "random": [
+    {
+      "name": "mockjs",
+      "weekly": 73534
+    },
+    {
+      "name": "mockjs2",
+      "weekly": 903
+    },
+    {
+      "name": "better-mock",
+      "weekly": 288
+    }
   ],
-  "mqtt_sub": [
-    "mqtt",
-    "@taoqf/react-native-mqtt"
+  "is-ci": [
+    {
+      "name": "is-ci",
+      "weekly": 17168783
+    },
+    {
+      "name": "is-ci-cli",
+      "weekly": 58313
+    },
+    {
+      "name": "@comandeer/is-ci",
+      "weekly": null
+    }
   ],
-  "mqtt": [
-    "mqtt",
-    "@taoqf/react-native-mqtt"
+  "detect": [
+    {
+      "name": "detect-port",
+      "weekly": 5256124
+    },
+    {
+      "name": "detect-port-alt",
+      "weekly": 4379725
+    },
+    {
+      "name": "@timer/detect-port",
+      "weekly": 1994
+    }
   ],
-  "terser": [
-    "terser",
-    "@qiwi/substrate-infra"
-  ],
-  "stylelint": [
-    "stylelint",
-    "@diplodoc/lint"
-  ],
-  "esgenerate": [
-    "escodegen",
-    "escodegen-wallaby"
-  ],
-  "escodegen": [
-    "escodegen",
-    "escodegen-wallaby"
-  ],
-  "yarn": [
-    "yarn",
-    "corepack"
-  ],
-  "yarnpkg": [
-    "yarn",
-    "corepack"
-  ],
-  "json2yaml": [
-    "yamljs",
-    "json2yaml"
-  ],
-  "concurrently": [
-    "concurrently",
-    "@qiwi/substrate-infra"
-  ],
-  "fingerprint": [
-    "expo",
-    "@expo/fingerprint"
-  ],
-  "expo-modules-autolinking": [
-    "expo",
-    "expo-modules-autolinking"
-  ],
-  "json2csv": [
-    "json2csv",
-    "d3-dsv"
-  ],
-  "electron": [
-    "electron",
-    "electron-prebuilt"
-  ],
-  "showdown": [
-    "showdown",
-    "devextreme-showdown"
-  ],
-  "jiti": [
-    "jiti",
-    "@mariozechner/jiti"
-  ],
-  "karma": [
-    "karma",
-    "karma-cli"
-  ],
-  "patch-package": [
-    "patch-package",
-    "@milahu/patch-package"
+  "detect-port": [
+    {
+      "name": "detect-port",
+      "weekly": 5256124
+    },
+    {
+      "name": "detect-port-alt",
+      "weekly": 4379725
+    },
+    {
+      "name": "@timer/detect-port",
+      "weekly": 1994
+    }
   ],
   "watch": [
-    "watch",
-    "watch-cli"
+    {
+      "name": "@cnakazawa/watch",
+      "weekly": 3446830
+    },
+    {
+      "name": "watch",
+      "weekly": 824856
+    },
+    {
+      "name": "watch-cli",
+      "weekly": 9101
+    }
   ],
-  "jshint": [
-    "jshint",
-    "test-support"
+  "tape": [
+    {
+      "name": "tape",
+      "weekly": 782801
+    },
+    {
+      "name": "supertape",
+      "weekly": 226
+    },
+    {
+      "name": "@putout/test",
+      "weekly": null
+    }
   ],
-  "gatsby": [
-    "gatsby",
-    "gatsby-cli"
+  "crc32": [
+    {
+      "name": "crc-32",
+      "weekly": 15356786
+    },
+    {
+      "name": "crc32",
+      "weekly": 60415
+    },
+    {
+      "name": "cyclic-32",
+      "weekly": 7498
+    }
   ],
-  "cz": [
-    "commitizen",
-    "@ryansonshine/commitizen"
+  "serve": [
+    {
+      "name": "serve",
+      "weekly": 2065396
+    },
+    {
+      "name": "https-localhost",
+      "weekly": 32378
+    },
+    {
+      "name": "@nan0web/release",
+      "weekly": null
+    }
   ],
-  "commitizen": [
-    "commitizen",
-    "@ryansonshine/commitizen"
+  "git-cz": [
+    {
+      "name": "commitizen",
+      "weekly": 1222610
+    },
+    {
+      "name": "git-cz",
+      "weekly": 64725
+    },
+    {
+      "name": "@ryansonshine/commitizen",
+      "weekly": 7258
+    }
   ],
-  "degit": [
-    "degit",
-    "tiged"
-  ],
-  "lerna": [
-    "lerna",
-    "@lerna-lite/cli"
-  ],
-  "conventional-changelog": [
-    "conventional-changelog",
-    "conventional-changelog-cli"
+  "nuxi": [
+    {
+      "name": "nuxt",
+      "weekly": 989498
+    },
+    {
+      "name": "@nuxt/cli",
+      "weekly": null
+    },
+    {
+      "name": "nuxi",
+      "weekly": null
+    }
   ],
   "json2ts": [
-    "json-schema-to-typescript",
-    "@kickstartds/json-schema-to-typescript"
-  ],
-  "cowsay": [
-    "cowsay",
-    "cowsay-browser"
-  ],
-  "cowthink": [
-    "cowsay",
-    "cowsay-browser"
-  ],
-  "coveralls": [
-    "coveralls",
-    "coveralls-next"
-  ],
-  "rollup-plugin-visualizer": [
-    "rollup-plugin-visualizer",
-    "@aklinker1/rollup-plugin-visualizer"
-  ],
-  "sequelize": [
-    "sequelize-cli",
-    "sequelize-cli-typescript"
-  ],
-  "replace": [
-    "replace",
-    "node-replace"
-  ],
-  "search": [
-    "replace",
-    "node-replace"
-  ],
-  "static": [
-    "node-static",
-    "static-cling"
-  ],
-  "chromedriver": [
-    "chromedriver",
-    "electron-chromedriver"
-  ],
-  "ngrok": [
-    "ngrok",
-    "@expo/ngrok-bin"
-  ],
-  "ot": [
-    "opentype.js",
-    "@shuding/opentype.js"
-  ],
-  "msw": [
-    "msw",
-    "@redwoodjs/web"
-  ],
-  "craco": [
-    "@craco/craco",
-    "@tilework/mosaic-craco"
-  ],
-  "release-it": [
-    "release-it",
-    "@uploadcare/release-it"
-  ],
-  "csv2json": [
-    "d3-dsv",
-    "csv2json"
-  ],
-  "csv2tsv": [
-    "d3-dsv",
-    "dsv"
-  ],
-  "cpx": [
-    "cpx",
-    "cpx2"
-  ],
-  "typescript-json-schema": [
-    "typescript-json-schema",
-    "@mark.probst/typescript-json-schema"
-  ],
-  "parcel": [
-    "parcel",
-    "parcel-bundler"
-  ],
-  "nr": [
-    "@antfu/ni",
-    "fuzz-run"
-  ],
-  "nd": [
-    "@antfu/ni",
-    "@favware/npm-deprecate"
-  ],
-  "gql-gen": [
-    "@graphql-codegen/cli",
-    "graphql-code-generator"
-  ],
-  "json-refs": [
-    "json-refs",
-    "@axway/json-refs"
-  ],
-  "pnpm": [
-    "pnpm",
-    "corepack"
-  ],
-  "pnpx": [
-    "pnpm",
-    "corepack"
-  ],
-  "cucumber-js": [
-    "@cucumber/cucumber",
-    "cucumber"
-  ],
-  "syncfusion-license": [
-    "@syncfusion/ej2-base",
-    "@syncfusion/react-base"
-  ],
-  "jison": [
-    "jison",
-    "jison-gho"
-  ],
-  "ts-json-schema-generator": [
-    "ts-json-schema-generator",
-    "@kayahr/ts-json-schema-generator"
-  ],
-  "findup": [
-    "findup",
-    "@choojs/findup"
-  ],
-  "ttf2woff2": [
-    "ttf2woff2",
-    "ttf2woff2-no-gyp"
-  ],
-  "tailwindcss": [
-    "@tailwindcss/cli",
-    "@tailwindcss/postcss7-compat"
-  ],
-  "html": [
-    "html",
-    "cli-html"
-  ],
-  "markdown-toc": [
-    "markdown-toc",
-    "@effect/markdown-toc"
-  ],
-  "biome": [
-    "@biomejs/biome",
-    "biome"
-  ],
-  "bstracing": [
-    "rescript",
-    "bs-platform"
-  ],
-  "vue": [
-    "@vue/cli",
-    "vue-cli"
-  ],
-  "geckodriver": [
-    "geckodriver",
-    "@testplane/geckodriver"
-  ],
-  "rdfjs-data-model-test": [
-    "@rdfjs/data-model",
-    "@rdf-esm/data-model"
-  ],
-  "documentation": [
-    "documentation",
-    "documentation-custom-markdown"
-  ],
-  "buble": [
-    "buble",
-    "@philpl/buble"
-  ],
-  "hap": [
-    "homebridge-lib",
-    "hb-lib-tools"
-  ],
-  "sysinfo": [
-    "homebridge-lib",
-    "hb-lib-tools"
-  ],
-  "upnp": [
-    "homebridge-lib",
-    "hb-lib-tools"
-  ],
-  "svg-sprite": [
-    "svg-sprite",
-    "@vusion/svg-sprite"
-  ],
-  "ncc": [
-    "@vercel/ncc",
-    "@zeit/ncc"
-  ],
-  "nx-cloud": [
-    "nx",
-    "nx-cloud"
-  ],
-  "migrate-oz-cli-project": [
-    "@openzeppelin/hardhat-upgrades",
-    "@openzeppelin/truffle-upgrades"
-  ],
-  "ui": [
-    "@hanzo/ui",
-    "@shadcn/ui"
-  ],
-  "tap-parser": [
-    "tap-parser",
-    "tap-parser-yaml"
-  ],
-  "geojson-rewind": [
-    "@mapbox/geojson-rewind",
-    "geojson-rewind"
-  ],
-  "cpy": [
-    "cpy-cli",
-    "@qiwi/substrate-infra"
-  ],
-  "chroma": [
-    "chromatic",
-    "chromadb"
-  ],
-  "webdriver-manager": [
-    "webdriver-manager",
-    "protractor"
-  ],
-  "ttsc": [
-    "ttypescript",
-    "ttsc"
-  ],
-  "ttsserver": [
-    "ttypescript",
-    "ttsc"
-  ],
-  "shp2json": [
-    "shapefile",
-    "shp2json"
-  ],
-  "hexo": [
-    "hexo",
-    "hexo-cli"
-  ],
-  "node-minify": [
-    "node-minify",
-    "@node-minify/cli"
-  ],
-  "geojson-normalize": [
-    "@mapbox/geojson-normalize",
-    "geojson-normalize"
-  ],
-  "lsc": [
-    "livescript",
-    "LiveScript"
-  ],
-  "dox": [
-    "dox",
-    "doxxx"
-  ],
-  "lookpath": [
-    "lookpath",
-    "find-bin"
-  ],
-  "bsb": [
-    "bs-platform",
-    "@bettercorp/service-base"
-  ],
-  "nitro": [
-    "nitropack",
-    "nitro"
-  ],
-  "gonzales": [
-    "gonzales-pe",
-    "gonzales-pe-sl"
-  ],
-  "turbo": [
-    "turbo",
-    "@ardrive/turbo-sdk"
-  ],
-  "esno": [
-    "esno",
-    "esmo"
-  ],
-  "asciify": [
-    "asciify",
-    "asciify-image"
-  ],
-  "sonar-scanner": [
-    "sonarqube-scanner",
-    "sonar-scanner"
-  ],
-  "storybook-to-ghpages": [
-    "@storybook/storybook-deployer",
-    "@kadira/storybook-deployer"
-  ],
-  "wasm-opt": [
-    "binaryen",
-    "wasm-opt"
+    {
+      "name": "json-schema-to-typescript",
+      "weekly": 1277704
+    },
+    {
+      "name": "@pyramation/json-schema-to-typescript",
+      "weekly": 9916
+    },
+    {
+      "name": "@kickstartds/json-schema-to-typescript",
+      "weekly": null
+    }
+  ],
+  "rlp": [
+    {
+      "name": "@ethereumjs/rlp",
+      "weekly": 1699179
+    },
+    {
+      "name": "rlp",
+      "weekly": 1048557
+    },
+    {
+      "name": "@nomicfoundation/ethereumjs-rlp",
+      "weekly": 278313
+    }
+  ],
+  "npm-check-updates": [
+    {
+      "name": "npm-check-updates",
+      "weekly": 556504
+    },
+    {
+      "name": "npm-check-updates-lite",
+      "weekly": null
+    },
+    {
+      "name": "npm4-check-updates",
+      "weekly": null
+    }
+  ],
+  "ncu": [
+    {
+      "name": "npm-check-updates",
+      "weekly": 556504
+    },
+    {
+      "name": "npm-check-updates-lite",
+      "weekly": null
+    },
+    {
+      "name": "npm4-check-updates",
+      "weekly": null
+    }
+  ],
+  "standard": [
+    {
+      "name": "standard",
+      "weekly": 564531
+    },
+    {
+      "name": "uber-standard",
+      "weekly": null
+    },
+    {
+      "name": "standard-esnext",
+      "weekly": null
+    }
+  ],
+  "ansi-html": [
+    {
+      "name": "ansi-html-community",
+      "weekly": 13473292
+    },
+    {
+      "name": "ansi-html",
+      "weekly": 5911653
+    },
+    {
+      "name": "ansi-html-stream",
+      "weekly": 2315
+    }
+  ],
+  "tsc-alias": [
+    {
+      "name": "tsc-alias",
+      "weekly": 1343034
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
+  ],
+  "ps-tree": [
+    {
+      "name": "ps-tree",
+      "weekly": 3065938
+    },
+    {
+      "name": "@apify/ps-tree",
+      "weekly": 53699
+    },
+    {
+      "name": "@fengmk2/ps-tree",
+      "weekly": 1828
+    }
+  ],
+  "opencollective": [
+    {
+      "name": "@nuxtjs/opencollective",
+      "weekly": 3045332
+    },
+    {
+      "name": "@nuxt/opencollective",
+      "weekly": 2831128
+    },
+    {
+      "name": "opencollective",
+      "weekly": 88430
+    }
+  ],
+  "pkg": [
+    {
+      "name": "pkg",
+      "weekly": 227900
+    },
+    {
+      "name": "@yao-pkg/pkg",
+      "weekly": 81075
+    },
+    {
+      "name": "@sanity/pkg-utils",
+      "weekly": 35002
+    }
+  ],
+  "cdk": [
+    {
+      "name": "aws-cdk",
+      "weekly": 2351893
+    },
+    {
+      "name": "cdk",
+      "weekly": 131933
+    },
+    {
+      "name": "sst-aws-cdk",
+      "weekly": 41671
+    }
+  ],
+  "json": [
+    {
+      "name": "json",
+      "weekly": 729011
+    },
+    {
+      "name": "homebridge-lib",
+      "weekly": 3928
+    },
+    {
+      "name": "hb-lib-tools",
+      "weekly": 3885
+    }
+  ],
+  "bsc": [
+    {
+      "name": "rescript",
+      "weekly": 20294
+    },
+    {
+      "name": "brighterscript",
+      "weekly": 5471
+    },
+    {
+      "name": "bs-platform",
+      "weekly": 5086
+    }
+  ],
+  "kill-port": [
+    {
+      "name": "kill-port",
+      "weekly": 715597
+    },
+    {
+      "name": "kill-port-process",
+      "weekly": 78302
+    },
+    {
+      "name": "cross-port-killer",
+      "weekly": 37227
+    }
+  ],
+  "sass-lint": [
+    {
+      "name": "sass-lint",
+      "weekly": 87453
+    },
+    {
+      "name": "@blueprintjs/node-build-scripts",
+      "weekly": null
+    },
+    {
+      "name": "css-lint",
+      "weekly": null
+    }
+  ],
+  "auto": [
+    {
+      "name": "auto",
+      "weekly": 66703
+    },
+    {
+      "name": "@auto-canary/auto",
+      "weekly": 1309
+    },
+    {
+      "name": "autorepo",
+      "weekly": null
+    }
+  ],
+  "module-deps": [
+    {
+      "name": "module-deps",
+      "weekly": 1254943
+    },
+    {
+      "name": "module-deps-sortable",
+      "weekly": 52451
+    },
+    {
+      "name": "@cljs-oss/module-deps",
+      "weekly": 5990
+    }
+  ],
+  "wake": [
+    {
+      "name": "wake_on_lan",
+      "weekly": 3187
+    },
+    {
+      "name": "wol",
+      "weekly": 661
+    },
+    {
+      "name": "wake",
+      "weekly": null
+    }
+  ],
+  "go-npm": [
+    {
+      "name": "@go-task/go-npm",
+      "weekly": 21447
+    },
+    {
+      "name": "go-npm",
+      "weekly": 658
+    },
+    {
+      "name": "@gzuidhof/go-npm",
+      "weekly": 33
+    }
   ],
   "tcm": [
-    "typed-css-modules",
-    "@beisen/typed-css-modules"
-  ],
-  "ganache-cli": [
-    "ganache",
-    "ganache-cli"
-  ],
-  "tspec": [
-    "tap-spec",
-    "@randomgoods/tap-spec"
-  ],
-  "tap-spec": [
-    "tap-spec",
-    "@randomgoods/tap-spec"
-  ],
-  "adbkit": [
-    "adbkit",
-    "@devicefarmer/adbkit"
-  ],
-  "static-server": [
-    "static-server",
-    "server-static"
-  ],
-  "lzmajs": [
-    "lzma-native",
-    "lzma-purejs"
-  ],
-  "codecov": [
-    "codecov.io",
-    "codecov"
-  ],
-  "ember": [
-    "ember-cli",
-    "ember"
-  ],
-  "mmdc": [
-    "@mermaid-js/mermaid-cli",
-    "mermaid.cli"
-  ],
-  "tree": [
-    "tree-node-cli",
-    "tree-cli"
-  ],
-  "treee": [
-    "tree-node-cli",
-    "tree-cli"
-  ],
-  "sloc": [
-    "sloc",
-    "node-sloc"
-  ],
-  "bodiless": [
-    "@bodiless/cli",
-    "@asemirsk/cli"
-  ],
-  "graph": [
-    "@graphprotocol/graph-cli",
-    "@nevermined-io/graph-cli"
-  ],
-  "geojsonhint": [
-    "@mapbox/geojsonhint",
-    "geojsonhint"
-  ],
-  "ray": [
-    "@raycast/api",
-    "@ray-js/cli"
-  ],
-  "qunit": [
-    "qunit",
-    "qunitjs"
-  ],
-  "7z": [
-    "7zip",
-    "win-7zip"
-  ],
-  "velocity": [
-    "velocity",
-    "amplify-velocity-template"
-  ],
-  "node-dev": [
-    "node-dev",
-    "dev"
-  ],
-  "puml": [
-    "node-plantuml",
-    "node-plantuml-latest"
-  ],
-  "selenium": [
-    "selenium-server",
-    "selenium"
-  ],
-  "togeojson": [
-    "@mapbox/togeojson",
-    "togeojson"
-  ],
-  "vtkDataConverter": [
-    "@kitware/vtk.js",
-    "vtk.js"
-  ],
-  "cspell": [
-    "cspell",
-    "@kayahr/cspell"
-  ],
-  "openapi2postmanv2": [
-    "openapi-to-postmanv2",
-    "@paloaltonetworks/openapi-to-postmanv2"
-  ],
-  "nf": [
-    "foreman",
-    "@heroku/foreman"
-  ],
-  "run-node": [
-    "run-node",
-    "mora-scripts"
-  ],
-  "ntl": [
-    "netlify-cli",
-    "ntl"
-  ],
-  "nps": [
-    "nps",
-    "p-s"
-  ],
-  "paragon": [
-    "@edx/paragon",
-    "@openedx/paragon"
-  ],
-  "open-cli": [
-    "open-cli",
-    "opn-cli"
-  ],
-  "faucet": [
-    "faucet",
-    "faucet-pipeline-core"
-  ],
-  "zopfli": [
-    "node-zopfli",
-    "node-zopfli-es"
-  ],
-  "wget": [
-    "node-wget",
-    "node-wget-fetch"
-  ],
-  "tslint": [
-    "ts-lint",
-    "tslint"
-  ],
-  "gh-release": [
-    "gh-release",
-    "changesets-github-release"
-  ],
-  "bundlesize": [
-    "bundlesize",
-    "bundlesize2"
-  ],
-  "win-spawn": [
-    "win-fork",
-    "win-spawn"
-  ],
-  "pkg-fetch": [
-    "pkg-fetch",
-    "@yao-pkg/pkg-fetch"
-  ],
-  "dtsgen": [
-    "dtsgenerator",
-    "@anttiviljami/dtsgenerator"
-  ],
-  "eslint-find-rules": [
-    "eslint-find-rules",
-    "@xotic750/eslint-find-rules"
-  ],
-  "eslint-diff-rules": [
-    "eslint-find-rules",
-    "@xotic750/eslint-find-rules"
-  ],
-  "egg-bin": [
-    "egg-bin",
-    "@eggjs/bin"
-  ],
-  "badge": [
-    "badge-maker",
-    "gh-badges"
-  ],
-  "fixpack": [
-    "fixpack",
-    "@oclif/fixpack"
-  ],
-  "build-i18n-src": [
-    "scratch-l10n",
-    "openblock-l10n"
-  ],
-  "tx-push-src": [
-    "scratch-l10n",
-    "openblock-l10n"
-  ],
-  "protoc-gen-connect-es": [
-    "@connectrpc/protoc-gen-connect-es",
-    "@bufbuild/protoc-gen-connect-es"
-  ],
-  "electron-rebuild": [
-    "@electron/rebuild",
-    "electron-rebuild"
-  ],
-  "papi": [
-    "polkadot-api",
-    "@polkadot-api/cli"
-  ],
-  "polkadot-api": [
-    "polkadot-api",
-    "@polkadot-api/cli"
-  ],
-  "jsonstream": [
-    "jsonstream2",
-    "jsonstream"
-  ],
-  "picture-tube": [
-    "picture-tube",
-    "picture-tuber"
-  ],
-  "s3urls": [
-    "@mapbox/s3urls",
-    "s3urls"
-  ],
-  "esrun": [
-    "esrun",
-    "@digitak/esrun"
-  ],
-  "commit-msg": [
-    "@plasma-platform/tm-message-hook",
-    "pre-git"
-  ],
-  "tap-out": [
-    "tap-out",
-    "@randomgoods/tap-out"
-  ],
-  "tsc-esm-fix": [
-    "tsc-esm-fix",
-    "@qiwi/substrate-infra"
-  ],
-  "pkgfiles": [
-    "ypkgfiles",
-    "pkgfiles"
-  ],
-  "components": [
-    "@serverless/components",
-    "@serverless/cli"
-  ],
-  "oxlint": [
-    "oxlint",
-    "@tsrx/oxc"
-  ],
-  "vsce": [
-    "@vscode/vsce",
-    "vsce"
-  ],
-  "devtools": [
-    "@nuxt/devtools",
-    "@ai-sdk/devtools"
-  ],
-  "commit": [
-    "@commitlint/prompt-cli",
-    "alvamind-tools"
-  ],
-  "solium": [
-    "solium",
-    "ethlint"
-  ],
-  "readability": [
-    "node-readability",
-    "readabilitySAX"
-  ],
-  "lsklog": [
-    "@lsk4/log",
-    "@lskjs/log"
-  ],
-  "actionhero": [
-    "actionhero",
-    "koberious"
-  ],
-  "implementation-stats": [
-    "formulajs",
-    "@handsontable/formulajs"
-  ],
-  "wp": [
-    "webpack-command",
-    "webpack-nano"
-  ],
-  "vm2": [
-    "@n8n/vm2",
-    "vm2"
-  ],
-  "browser-launcher": [
-    "browser-launcher",
-    "@httptoolkit/browser-launcher"
-  ],
-  "gherkin-javascript": [
-    "@cucumber/gherkin-streams",
-    "gherkin"
-  ],
-  "make": [
-    "gnumake",
-    "make"
-  ],
-  "standard-changelog": [
-    "standard-changelog",
-    "pob-release"
-  ],
-  "lab": [
-    "@hapi/lab",
-    "lab"
-  ],
-  "mcp-adapter": [
-    "@vercel/mcp-adapter",
-    "mcp-handler"
-  ],
-  "create-mcp-route": [
-    "@vercel/mcp-adapter",
-    "mcp-handler"
-  ],
-  "polkadot-ci-ghact-build": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-ci-ghact-docs": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-ci-ghpages-force": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-build-docs": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-build-ts": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-circular": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-clean-build": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-copy-to": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-run-lint": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-run-test": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-version": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-dev-yarn-only": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-exec-eslint": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-exec-ghpages": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-exec-ghrelease": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-exec-tsc": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "polkadot-exec-webpack": [
-    "@polkadot/dev",
-    "@open-web3/dev-config"
-  ],
-  "mrm": [
-    "manta",
-    "mrm"
-  ],
-  "mrmdir": [
-    "manta",
-    "monaco-plugin-helpers"
-  ],
-  "maz": [
-    "maz-ui",
-    "@maz-ui/cli"
-  ],
-  "maz-ui": [
-    "maz-ui",
-    "@maz-ui/cli"
-  ],
-  "telescope": [
-    "@cosmology/telescope",
-    "@osmonauts/telescope"
-  ],
-  "cat": [
-    "cat",
-    "cross-cat"
-  ],
-  "npm-publish": [
-    "@jsdevtools/npm-publish",
-    "npm-publish"
-  ],
-  "sg": [
-    "sgsg",
-    "@ast-grep/cli"
-  ],
-  "gemini": [
-    "@google/gemini-cli",
-    "gemini"
-  ],
-  "versions": [
-    "versions",
-    "available-versions"
-  ],
-  "mdm": [
-    "markdown-magic",
-    "mdmanifest"
-  ],
-  "swagger-cli": [
-    "swagger-cli",
-    "@apidevtools/swagger-cli"
-  ],
-  "base": [
-    "@dword-design/base",
-    "base-app"
-  ],
-  "tsgo": [
-    "@typescript/native-preview",
-    "@lssm-tech/tool.typescript"
-  ],
-  "gen": [
-    "generate",
-    "@turbo/gen"
-  ],
-  "generate": [
-    "generate",
-    "abi-wan-kanabi"
-  ],
-  "foundry": [
-    "@sumup/foundry",
-    "foundry"
-  ],
-  "wunderctl": [
-    "@wundergraph/sdk",
-    "@wundergraph/wunderctl"
-  ],
-  "edgedriver": [
-    "edgedriver",
-    "@testplane/edgedriver"
-  ],
-  "hsd-cli": [
-    "hs-client",
-    "hsd"
-  ],
-  "hsd-rpc": [
-    "hs-client",
-    "hsd"
-  ],
-  "hsw-cli": [
-    "hs-client",
-    "hsd"
-  ],
-  "hsw-rpc": [
-    "hs-client",
-    "hsd"
-  ],
-  "webiny": [
-    "@webiny/cli",
-    "@webiny/system-requirements"
-  ],
-  "gridsome": [
-    "gridsome",
-    "@gridsome/cli"
-  ],
-  "random-mac": [
-    "random-mac",
-    "tea-random-mac"
-  ],
-  "loki": [
-    "loki",
-    "@loki/runner"
-  ],
-  "mm": [
-    "moments",
-    "mongodb-migrations"
-  ],
-  "tc": [
-    "@jcoreio/toolchain",
-    "tc"
-  ],
-  "mqpacker": [
-    "mqpacker",
-    "css-mqpacker"
-  ],
-  "node-sass": [
-    "node-sass-china",
-    "node-sass"
-  ],
-  "remax": [
-    "remax",
-    "@ray-core/ray"
-  ],
-  "ipfs": [
-    "kubo",
-    "go-ipfs"
-  ],
-  "dns-discovery": [
-    "dns-discovery",
-    "ut-dns-discovery"
-  ],
-  "antd-tools": [
-    "@ant-design/tools",
-    "antd-tools"
-  ],
-  "abi-gen": [
-    "@0xproject/abi-gen",
-    "@0x/abi-gen"
-  ],
-  "watch-tree": [
-    "watch-tree-maintained",
-    "fl-watch-tree"
-  ],
-  "rw": [
-    "@redwoodjs/web",
-    "@redwoodjs/api"
-  ],
-  "rwfw": [
-    "@redwoodjs/web",
-    "@redwoodjs/api"
-  ],
-  "redwood": [
-    "@redwoodjs/web",
-    "@redwoodjs/api"
-  ],
-  "npm-scripts-info": [
-    "npm-scripts-info",
-    "@bitjson/npm-scripts-info"
-  ],
-  "multi-semantic-release": [
-    "multi-semantic-release",
-    "@dylanvann/multi-semantic-release"
-  ],
-  "grizzly": [
-    "grizzly",
-    "@gooddata/grunt-grizzly"
-  ],
-  "fr": [
-    "fuzz-run",
-    "@chenglou/freerange"
-  ],
-  "electron-packager": [
-    "@electron/packager",
-    "electron-packager"
-  ],
-  "tp": [
-    "tpjs",
-    "testpass"
-  ],
-  "deno": [
-    "deno-bin",
-    "deno"
-  ],
-  "resave-snapshots": [
-    "snap-shot-core",
-    "@smpx/snap-shot-core"
-  ],
-  "alloy": [
-    "alloy",
-    "@alloy-js/cli"
-  ],
-  "husky": [
-    "husky",
-    "@diplodoc/lint"
-  ],
-  "validate-commit-msg": [
-    "validate-commit-msg",
-    "validate-commit"
-  ],
-  "dts": [
-    "dts-cli",
-    "@hyrious/dts"
+    {
+      "name": "typed-css-modules",
+      "weekly": 110288
+    },
+    {
+      "name": "@aw-web-design/tcm-cli",
+      "weekly": 183
+    },
+    {
+      "name": "@beisen/typed-css-modules",
+      "weekly": null
+    }
+  ],
+  "migrate": [
+    {
+      "name": "mjml-migrate",
+      "weekly": 861421
+    },
+    {
+      "name": "migrate",
+      "weekly": 50399
+    },
+    {
+      "name": "@entur/typography",
+      "weekly": 4283
+    }
+  ],
+  "markdownlint": [
+    {
+      "name": "markdownlint-cli",
+      "weekly": 615087
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
+  ],
+  "mcp": [
+    {
+      "name": "unstructured-client",
+      "weekly": 95435
+    },
+    {
+      "name": "@vercel/sdk",
+      "weekly": 86400
+    },
+    {
+      "name": "mcp-framework",
+      "weekly": 58168
+    }
+  ],
+  "oe": [
+    {
+      "name": "open-in-editor",
+      "weekly": 10949
+    },
+    {
+      "name": "@open-everywhere/core",
+      "weekly": 754
+    },
+    {
+      "name": "@generalov/open-in-editor",
+      "weekly": null
+    }
+  ],
+  "relay-compiler": [
+    {
+      "name": "@ardatan/relay-compiler",
+      "weekly": 4939707
+    },
+    {
+      "name": "relay-compiler",
+      "weekly": 319677
+    },
+    {
+      "name": "@gatsbyjs/relay-compiler",
+      "weekly": 4962
+    }
+  ],
+  "ci": [
+    {
+      "name": "ci",
+      "weekly": 103773
+    },
+    {
+      "name": "smokesignals",
+      "weekly": 194
+    },
+    {
+      "name": "ci-scripts",
+      "weekly": 172
+    }
+  ],
+  "openapi": [
+    {
+      "name": "@redocly/cli",
+      "weekly": 752281
+    },
+    {
+      "name": "openapi-typescript-codegen",
+      "weekly": 301975
+    },
+    {
+      "name": "openapi",
+      "weekly": 13635
+    }
+  ],
+  "gl-style-composite": [
+    {
+      "name": "@mapbox/mapbox-gl-style-spec",
+      "weekly": 183544
+    },
+    {
+      "name": "mvt-basic-render",
+      "weekly": 172
+    },
+    {
+      "name": "mapbox-gl-style-spec",
+      "weekly": null
+    }
+  ],
+  "nwget": [
+    {
+      "name": "wget-improved-2",
+      "weekly": 18355
+    },
+    {
+      "name": "wget-improved",
+      "weekly": 8776
+    },
+    {
+      "name": "wget",
+      "weekly": 3007
+    }
+  ],
+  "zopflipng": [
+    {
+      "name": "node-zopfli",
+      "weekly": 7308
+    },
+    {
+      "name": "zopflipng-bin",
+      "weekly": 5450
+    },
+    {
+      "name": "node-zopfli-es",
+      "weekly": 2897
+    }
+  ],
+  "errors": [
+    {
+      "name": "@solana/errors",
+      "weekly": 1681808
+    },
+    {
+      "name": "@wallet-standard/errors",
+      "weekly": 202805
+    },
+    {
+      "name": "@kinobi-so/errors",
+      "weekly": 546
+    }
+  ],
+  "markdown": [
+    {
+      "name": "markdown-magic",
+      "weekly": 10648
+    },
+    {
+      "name": "markdown-to-html",
+      "weekly": 2577
+    },
+    {
+      "name": "cli-markdown",
+      "weekly": 1031
+    }
+  ],
+  "run": [
+    {
+      "name": "mora-scripts",
+      "weekly": 23
+    },
+    {
+      "name": "@kayahr/npm-utils",
+      "weekly": 15
+    },
+    {
+      "name": "@mpis/run",
+      "weekly": null
+    }
+  ],
+  "keystone": [
+    {
+      "name": "@keystone-6/core",
+      "weekly": 3828
+    },
+    {
+      "name": "@open-keystone/keystone",
+      "weekly": 331
+    },
+    {
+      "name": "@keystonejs/keystone",
+      "weekly": 328
+    }
+  ],
+  "iconfont": [
+    {
+      "name": "react-iconfont-cli",
+      "weekly": 341
+    },
+    {
+      "name": "react-native-iconfont-cli",
+      "weekly": 336
+    },
+    {
+      "name": "mini-program-iconfont-cli",
+      "weekly": 169
+    }
+  ],
+  "iconfont-init": [
+    {
+      "name": "react-iconfont-cli",
+      "weekly": 341
+    },
+    {
+      "name": "react-native-iconfont-cli",
+      "weekly": 336
+    },
+    {
+      "name": "mini-program-iconfont-cli",
+      "weekly": 169
+    }
+  ],
+  "stryker": [
+    {
+      "name": "@stryker-mutator/core",
+      "weekly": 152958
+    },
+    {
+      "name": "stryker",
+      "weekly": null
+    },
+    {
+      "name": "stryker-cli",
+      "weekly": null
+    }
+  ],
+  "gren": [
+    {
+      "name": "github-release-notes",
+      "weekly": 8179
+    },
+    {
+      "name": "@cjbarth/github-release-notes",
+      "weekly": 1395
+    },
+    {
+      "name": "@femessage/github-release-notes",
+      "weekly": 11
+    }
+  ],
+  "sandbox": [
+    {
+      "name": "@architect/sandbox",
+      "weekly": 2610
+    },
+    {
+      "name": "near-sandbox",
+      "weekly": null
+    },
+    {
+      "name": "disk",
+      "weekly": null
+    }
+  ],
+  "tsc-esm": [
+    {
+      "name": "@digitak/tsc-esm",
+      "weekly": 1815
+    },
+    {
+      "name": "tsc-esm",
+      "weekly": 708
+    },
+    {
+      "name": "typescript-esm",
+      "weekly": null
+    }
+  ],
+  "mintlify": [
+    {
+      "name": "mintlify",
+      "weekly": 57526
+    },
+    {
+      "name": "mint",
+      "weekly": 12693
+    },
+    {
+      "name": "@mintlify/cli",
+      "weekly": null
+    }
+  ],
+  "dtslint": [
+    {
+      "name": "@definitelytyped/dtslint",
+      "weekly": 14557
+    },
+    {
+      "name": "dtslint",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
   ],
   "nodeunit": [
-    "nodeunit",
-    "nodeunit-v1"
+    {
+      "name": "nodeunit-x",
+      "weekly": 13093
+    },
+    {
+      "name": "nodeunit-v1",
+      "weekly": 1101
+    },
+    {
+      "name": "nodeunit",
+      "weekly": null
+    }
+  ],
+  "nuxt-cli": [
+    {
+      "name": "@nuxt/cli",
+      "weekly": null
+    },
+    {
+      "name": "nuxi",
+      "weekly": null
+    },
+    {
+      "name": "@nuxt/cli-edge",
+      "weekly": null
+    }
+  ],
+  "tap-diff": [
+    {
+      "name": "@detools/tap-diff",
+      "weekly": 102
+    },
+    {
+      "name": "tap-diff",
+      "weekly": null
+    },
+    {
+      "name": "@zkochan/tap-diff",
+      "weekly": null
+    }
+  ],
+  "buddy": [
+    {
+      "name": "buddy",
+      "weekly": 92
+    },
+    {
+      "name": "repobuddy",
+      "weekly": null
+    },
+    {
+      "name": "buddy-cli",
+      "weekly": null
+    }
+  ],
+  "lionp": [
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "lionp",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
+  ],
+  "tsdoc": [
+    {
+      "name": "tsdoc-markdown",
+      "weekly": null
+    },
+    {
+      "name": "@gitzone/tsdoc",
+      "weekly": null
+    },
+    {
+      "name": "@git.zone/tsdoc",
+      "weekly": null
+    }
+  ],
+  "build": [
+    {
+      "name": "@4c/build",
+      "weekly": 782
+    },
+    {
+      "name": "xyvcard-wechat-build",
+      "weekly": null
+    },
+    {
+      "name": "@rollup-umd/build",
+      "weekly": null
+    }
+  ],
+  "buildstamp": [
+    {
+      "name": "buildstamp",
+      "weekly": 211
+    },
+    {
+      "name": "@qiwi/lint-config-infra",
+      "weekly": null
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
+  ],
+  "nice-move": [
+    {
+      "name": "@nice-move/cli",
+      "weekly": null
+    },
+    {
+      "name": "@nice-move/all-in-web",
+      "weekly": null
+    },
+    {
+      "name": "@nice-move/all-in-base",
+      "weekly": null
+    }
+  ],
+  "tsserver": [
+    {
+      "name": "typescript",
+      "weekly": 96515834
+    },
+    {
+      "name": "typescript-temporary-fork-for-jsdoc",
+      "weekly": null
+    }
+  ],
+  "semver": [
+    {
+      "name": "semver",
+      "weekly": 444394285
+    },
+    {
+      "name": "@storybook/semver",
+      "weekly": 943685
+    }
+  ],
+  "ts-script": [
+    {
+      "name": "ts-node",
+      "weekly": 32137076
+    },
+    {
+      "name": "ts-node-maintained",
+      "weekly": 26373
+    }
+  ],
+  "figlet": [
+    {
+      "name": "figlet",
+      "weekly": 1540059
+    },
+    {
+      "name": "figlet-cli",
+      "weekly": 5545
+    }
+  ],
+  "npx": [
+    {
+      "name": "npm",
+      "weekly": 8769153
+    },
+    {
+      "name": "npx",
+      "weekly": null
+    }
+  ],
+  "sass": [
+    {
+      "name": "sass",
+      "weekly": 19162323
+    },
+    {
+      "name": "sass-embedded",
+      "weekly": 2926979
+    }
+  ],
+  "_mocha": [
+    {
+      "name": "mocha",
+      "weekly": 11713567
+    },
+    {
+      "name": "mocha2",
+      "weekly": 30
+    }
+  ],
+  "gulp": [
+    {
+      "name": "gulp",
+      "weekly": 1707032
+    },
+    {
+      "name": "gulp-cli",
+      "weekly": 1516253
+    }
+  ],
+  "json5": [
+    {
+      "name": "json5",
+      "weekly": 98759433
+    },
+    {
+      "name": "@gerhobbelt/json5",
+      "weekly": null
+    }
+  ],
+  "markdown-it": [
+    {
+      "name": "markdown-it",
+      "weekly": 10527956
+    },
+    {
+      "name": "@gerhobbelt/markdown-it",
+      "weekly": 9
+    }
+  ],
+  "node-which": [
+    {
+      "name": "which",
+      "weekly": 137769260
+    },
+    {
+      "name": "@zkochan/which",
+      "weekly": 328922
+    }
+  ],
+  "stencil": [
+    {
+      "name": "@stencil/core",
+      "weekly": 840732
+    },
+    {
+      "name": "@stencil/cli",
+      "weekly": null
+    }
+  ],
+  "mqtt_pub": [
+    {
+      "name": "mqtt",
+      "weekly": 1390282
+    },
+    {
+      "name": "@taoqf/react-native-mqtt",
+      "weekly": 176
+    }
+  ],
+  "mqtt_sub": [
+    {
+      "name": "mqtt",
+      "weekly": 1390282
+    },
+    {
+      "name": "@taoqf/react-native-mqtt",
+      "weekly": 176
+    }
+  ],
+  "mqtt": [
+    {
+      "name": "mqtt",
+      "weekly": 1390282
+    },
+    {
+      "name": "@taoqf/react-native-mqtt",
+      "weekly": 176
+    }
+  ],
+  "terser": [
+    {
+      "name": "terser",
+      "weekly": 40804230
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
+  ],
+  "stylelint": [
+    {
+      "name": "stylelint",
+      "weekly": 6130938
+    },
+    {
+      "name": "@diplodoc/lint",
+      "weekly": 207
+    }
+  ],
+  "esgenerate": [
+    {
+      "name": "escodegen",
+      "weekly": 37161223
+    },
+    {
+      "name": "escodegen-wallaby",
+      "weekly": null
+    }
+  ],
+  "escodegen": [
+    {
+      "name": "escodegen",
+      "weekly": 37161223
+    },
+    {
+      "name": "escodegen-wallaby",
+      "weekly": null
+    }
+  ],
+  "yarn": [
+    {
+      "name": "yarn",
+      "weekly": 6641838
+    },
+    {
+      "name": "corepack",
+      "weekly": 2353224
+    }
+  ],
+  "yarnpkg": [
+    {
+      "name": "yarn",
+      "weekly": 6641838
+    },
+    {
+      "name": "corepack",
+      "weekly": 2353224
+    }
+  ],
+  "json2yaml": [
+    {
+      "name": "yamljs",
+      "weekly": 2028338
+    },
+    {
+      "name": "json2yaml",
+      "weekly": 39802
+    }
+  ],
+  "concurrently": [
+    {
+      "name": "concurrently",
+      "weekly": 9139730
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
+  ],
+  "fingerprint": [
+    {
+      "name": "expo",
+      "weekly": 1841040
+    },
+    {
+      "name": "@expo/fingerprint",
+      "weekly": 1658189
+    }
+  ],
+  "expo-modules-autolinking": [
+    {
+      "name": "expo-modules-autolinking",
+      "weekly": 1974370
+    },
+    {
+      "name": "expo",
+      "weekly": 1841040
+    }
+  ],
+  "json2csv": [
+    {
+      "name": "d3-dsv",
+      "weekly": 5307211
+    },
+    {
+      "name": "json2csv",
+      "weekly": 1156669
+    }
+  ],
+  "electron": [
+    {
+      "name": "electron",
+      "weekly": 1681011
+    },
+    {
+      "name": "electron-prebuilt",
+      "weekly": null
+    }
+  ],
+  "nyc": [
+    {
+      "name": "nyc",
+      "weekly": 6167589
+    },
+    {
+      "name": "@electrovir/nyc",
+      "weekly": null
+    }
+  ],
+  "showdown": [
+    {
+      "name": "showdown",
+      "weekly": 917873
+    },
+    {
+      "name": "devextreme-showdown",
+      "weekly": 40343
+    }
+  ],
+  "jiti": [
+    {
+      "name": "jiti",
+      "weekly": 44481744
+    },
+    {
+      "name": "@mariozechner/jiti",
+      "weekly": 264540
+    }
+  ],
+  "karma": [
+    {
+      "name": "karma",
+      "weekly": 3136870
+    },
+    {
+      "name": "karma-cli",
+      "weekly": 256835
+    }
+  ],
+  "patch-package": [
+    {
+      "name": "patch-package",
+      "weekly": 3392040
+    },
+    {
+      "name": "@milahu/patch-package",
+      "weekly": 10106
+    }
+  ],
+  "semantic-release": [
+    {
+      "name": "semantic-release",
+      "weekly": 1981035
+    },
+    {
+      "name": "semantic-release-plus",
+      "weekly": 9431
+    }
+  ],
+  "jshint": [
+    {
+      "name": "jshint",
+      "weekly": 710808
+    },
+    {
+      "name": "test-support",
+      "weekly": null
+    }
+  ],
+  "gatsby": [
+    {
+      "name": "gatsby",
+      "weekly": 365860
+    },
+    {
+      "name": "gatsby-cli",
+      "weekly": 328617
+    }
+  ],
+  "cz": [
+    {
+      "name": "commitizen",
+      "weekly": 1222610
+    },
+    {
+      "name": "@ryansonshine/commitizen",
+      "weekly": 7258
+    }
+  ],
+  "commitizen": [
+    {
+      "name": "commitizen",
+      "weekly": 1222610
+    },
+    {
+      "name": "@ryansonshine/commitizen",
+      "weekly": 7258
+    }
+  ],
+  "degit": [
+    {
+      "name": "degit",
+      "weekly": 270087
+    },
+    {
+      "name": "tiged",
+      "weekly": 15501
+    }
+  ],
+  "lerna": [
+    {
+      "name": "lerna",
+      "weekly": 1449691
+    },
+    {
+      "name": "@lerna-lite/cli",
+      "weekly": 35877
+    }
+  ],
+  "conventional-changelog": [
+    {
+      "name": "conventional-changelog",
+      "weekly": 1594663
+    },
+    {
+      "name": "conventional-changelog-cli",
+      "weekly": 382424
+    }
+  ],
+  "cowsay": [
+    {
+      "name": "cowsay",
+      "weekly": 41674
+    },
+    {
+      "name": "cowsay-browser",
+      "weekly": 717
+    }
+  ],
+  "cowthink": [
+    {
+      "name": "cowsay",
+      "weekly": 41674
+    },
+    {
+      "name": "cowsay-browser",
+      "weekly": 717
+    }
+  ],
+  "coveralls": [
+    {
+      "name": "coveralls",
+      "weekly": 739618
+    },
+    {
+      "name": "coveralls-next",
+      "weekly": 16353
+    }
+  ],
+  "rollup-plugin-visualizer": [
+    {
+      "name": "rollup-plugin-visualizer",
+      "weekly": 2868295
+    },
+    {
+      "name": "@aklinker1/rollup-plugin-visualizer",
+      "weekly": 51754
+    }
+  ],
+  "envify": [
+    {
+      "name": "envify",
+      "weekly": 555529
+    },
+    {
+      "name": "@browserify/envify",
+      "weekly": 11862
+    }
+  ],
+  "sequelize": [
+    {
+      "name": "sequelize-cli",
+      "weekly": 756936
+    },
+    {
+      "name": "sequelize-cli-typescript",
+      "weekly": 1775
+    }
+  ],
+  "replace": [
+    {
+      "name": "replace",
+      "weekly": 288274
+    },
+    {
+      "name": "node-replace",
+      "weekly": 1840
+    }
+  ],
+  "search": [
+    {
+      "name": "replace",
+      "weekly": 288274
+    },
+    {
+      "name": "node-replace",
+      "weekly": 1840
+    }
+  ],
+  "static": [
+    {
+      "name": "node-static",
+      "weekly": 57403
+    },
+    {
+      "name": "static-cling",
+      "weekly": 4718
+    }
+  ],
+  "chromedriver": [
+    {
+      "name": "chromedriver",
+      "weekly": 710881
+    },
+    {
+      "name": "electron-chromedriver",
+      "weekly": 17491
+    }
+  ],
+  "ngrok": [
+    {
+      "name": "ngrok",
+      "weekly": 165816
+    },
+    {
+      "name": "@expo/ngrok-bin",
+      "weekly": null
+    }
+  ],
+  "ot": [
+    {
+      "name": "@shuding/opentype.js",
+      "weekly": 415094
+    },
+    {
+      "name": "opentype.js",
+      "weekly": 352794
+    }
+  ],
+  "msw": [
+    {
+      "name": "msw",
+      "weekly": 6986329
+    },
+    {
+      "name": "@redwoodjs/web",
+      "weekly": 132421
+    }
+  ],
+  "craco": [
+    {
+      "name": "@craco/craco",
+      "weekly": 430565
+    },
+    {
+      "name": "@tilework/mosaic-craco",
+      "weekly": 724
+    }
+  ],
+  "release-it": [
+    {
+      "name": "release-it",
+      "weekly": 627969
+    },
+    {
+      "name": "@uploadcare/release-it",
+      "weekly": null
+    }
+  ],
+  "csv2json": [
+    {
+      "name": "d3-dsv",
+      "weekly": 5307211
+    },
+    {
+      "name": "csv2json",
+      "weekly": 14918
+    }
+  ],
+  "csv2tsv": [
+    {
+      "name": "d3-dsv",
+      "weekly": 5307211
+    },
+    {
+      "name": "dsv",
+      "weekly": 219
+    }
+  ],
+  "cpx": [
+    {
+      "name": "cpx",
+      "weekly": 352478
+    },
+    {
+      "name": "cpx2",
+      "weekly": 133374
+    }
+  ],
+  "typescript-json-schema": [
+    {
+      "name": "typescript-json-schema",
+      "weekly": 596351
+    },
+    {
+      "name": "@mark.probst/typescript-json-schema",
+      "weekly": 94571
+    }
+  ],
+  "parcel": [
+    {
+      "name": "parcel",
+      "weekly": 249826
+    },
+    {
+      "name": "parcel-bundler",
+      "weekly": null
+    }
+  ],
+  "nr": [
+    {
+      "name": "@antfu/ni",
+      "weekly": 676396
+    },
+    {
+      "name": "fuzz-run",
+      "weekly": 2431
+    }
+  ],
+  "nd": [
+    {
+      "name": "@antfu/ni",
+      "weekly": 676396
+    },
+    {
+      "name": "@favware/npm-deprecate",
+      "weekly": 3060
+    }
+  ],
+  "gql-gen": [
+    {
+      "name": "@graphql-codegen/cli",
+      "weekly": 3711647
+    },
+    {
+      "name": "graphql-code-generator",
+      "weekly": null
+    }
+  ],
+  "json-refs": [
+    {
+      "name": "json-refs",
+      "weekly": 1084916
+    },
+    {
+      "name": "@axway/json-refs",
+      "weekly": 388
+    }
+  ],
+  "pnpm": [
+    {
+      "name": "pnpm",
+      "weekly": 33057627
+    },
+    {
+      "name": "corepack",
+      "weekly": 2353224
+    }
+  ],
+  "pnpx": [
+    {
+      "name": "pnpm",
+      "weekly": 33057627
+    },
+    {
+      "name": "corepack",
+      "weekly": 2353224
+    }
+  ],
+  "dotenv": [
+    {
+      "name": "dotenv-cli",
+      "weekly": 2259723
+    },
+    {
+      "name": "dotenv-mono",
+      "weekly": 13922
+    }
+  ],
+  "cucumber-js": [
+    {
+      "name": "@cucumber/cucumber",
+      "weekly": 1502404
+    },
+    {
+      "name": "cucumber",
+      "weekly": null
+    }
+  ],
+  "syncfusion-license": [
+    {
+      "name": "@syncfusion/ej2-base",
+      "weekly": 239573
+    },
+    {
+      "name": "@syncfusion/react-base",
+      "weekly": 79
+    }
+  ],
+  "jison": [
+    {
+      "name": "jison",
+      "weekly": 69368
+    },
+    {
+      "name": "jison-gho",
+      "weekly": null
+    }
+  ],
+  "ts-json-schema-generator": [
+    {
+      "name": "ts-json-schema-generator",
+      "weekly": 377966
+    },
+    {
+      "name": "@kayahr/ts-json-schema-generator",
+      "weekly": null
+    }
+  ],
+  "findup": [
+    {
+      "name": "@choojs/findup",
+      "weekly": 414441
+    },
+    {
+      "name": "findup",
+      "weekly": 307141
+    }
+  ],
+  "ttf2woff2": [
+    {
+      "name": "ttf2woff2",
+      "weekly": 261606
+    },
+    {
+      "name": "ttf2woff2-no-gyp",
+      "weekly": 1690
+    }
+  ],
+  "tailwindcss": [
+    {
+      "name": "@tailwindcss/cli",
+      "weekly": 412912
+    },
+    {
+      "name": "@tailwindcss/postcss7-compat",
+      "weekly": 69523
+    }
+  ],
+  "html": [
+    {
+      "name": "html",
+      "weekly": 261794
+    },
+    {
+      "name": "cli-html",
+      "weekly": 1299
+    }
+  ],
+  "markdown-toc": [
+    {
+      "name": "markdown-toc",
+      "weekly": 115956
+    },
+    {
+      "name": "@effect/markdown-toc",
+      "weekly": 1254
+    }
+  ],
+  "biome": [
+    {
+      "name": "@biomejs/biome",
+      "weekly": 3215025
+    },
+    {
+      "name": "biome",
+      "weekly": 35219
+    }
+  ],
+  "bstracing": [
+    {
+      "name": "rescript",
+      "weekly": 20294
+    },
+    {
+      "name": "bs-platform",
+      "weekly": 5086
+    }
+  ],
+  "vue": [
+    {
+      "name": "@vue/cli",
+      "weekly": 49606
+    },
+    {
+      "name": "vue-cli",
+      "weekly": null
+    }
+  ],
+  "geckodriver": [
+    {
+      "name": "geckodriver",
+      "weekly": 1396755
+    },
+    {
+      "name": "@testplane/geckodriver",
+      "weekly": 956
+    }
+  ],
+  "rdfjs-data-model-test": [
+    {
+      "name": "@rdfjs/data-model",
+      "weekly": 71556
+    },
+    {
+      "name": "@rdf-esm/data-model",
+      "weekly": 4536
+    }
+  ],
+  "documentation": [
+    {
+      "name": "documentation",
+      "weekly": 98534
+    },
+    {
+      "name": "documentation-custom-markdown",
+      "weekly": null
+    }
+  ],
+  "buble": [
+    {
+      "name": "buble",
+      "weekly": 245412
+    },
+    {
+      "name": "@philpl/buble",
+      "weekly": 19445
+    }
+  ],
+  "hap": [
+    {
+      "name": "homebridge-lib",
+      "weekly": 3928
+    },
+    {
+      "name": "hb-lib-tools",
+      "weekly": 3885
+    }
+  ],
+  "sysinfo": [
+    {
+      "name": "homebridge-lib",
+      "weekly": 3928
+    },
+    {
+      "name": "hb-lib-tools",
+      "weekly": 3885
+    }
+  ],
+  "upnp": [
+    {
+      "name": "homebridge-lib",
+      "weekly": 3928
+    },
+    {
+      "name": "hb-lib-tools",
+      "weekly": 3885
+    }
+  ],
+  "svg-sprite": [
+    {
+      "name": "svg-sprite",
+      "weekly": 162956
+    },
+    {
+      "name": "@vusion/svg-sprite",
+      "weekly": null
+    }
+  ],
+  "ncc": [
+    {
+      "name": "@vercel/ncc",
+      "weekly": 616409
+    },
+    {
+      "name": "@zeit/ncc",
+      "weekly": null
+    }
+  ],
+  "nx-cloud": [
+    {
+      "name": "nx",
+      "weekly": 6282929
+    },
+    {
+      "name": "nx-cloud",
+      "weekly": 194964
+    }
+  ],
+  "migrate-oz-cli-project": [
+    {
+      "name": "@openzeppelin/hardhat-upgrades",
+      "weekly": 75897
+    },
+    {
+      "name": "@openzeppelin/truffle-upgrades",
+      "weekly": null
+    }
+  ],
+  "c8": [
+    {
+      "name": "c8",
+      "weekly": 2483117
+    },
+    {
+      "name": "@electrovir/c8",
+      "weekly": null
+    }
+  ],
+  "ui": [
+    {
+      "name": "@shadcn/ui",
+      "weekly": 80604
+    },
+    {
+      "name": "@hanzo/ui",
+      "weekly": 357
+    }
+  ],
+  "tap-parser": [
+    {
+      "name": "tap-parser",
+      "weekly": 892395
+    },
+    {
+      "name": "tap-parser-yaml",
+      "weekly": null
+    }
+  ],
+  "geojson-rewind": [
+    {
+      "name": "@mapbox/geojson-rewind",
+      "weekly": 1412841
+    },
+    {
+      "name": "geojson-rewind",
+      "weekly": 53045
+    }
+  ],
+  "cpy": [
+    {
+      "name": "cpy-cli",
+      "weekly": 318176
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
+  ],
+  "chroma": [
+    {
+      "name": "chromatic",
+      "weekly": 3872382
+    },
+    {
+      "name": "chromadb",
+      "weekly": 81306
+    }
+  ],
+  "webdriver-manager": [
+    {
+      "name": "webdriver-manager",
+      "weekly": 715782
+    },
+    {
+      "name": "protractor",
+      "weekly": null
+    }
+  ],
+  "ttsc": [
+    {
+      "name": "ttypescript",
+      "weekly": 124782
+    },
+    {
+      "name": "ttsc",
+      "weekly": 26934
+    }
+  ],
+  "ttsserver": [
+    {
+      "name": "ttypescript",
+      "weekly": 124782
+    },
+    {
+      "name": "ttsc",
+      "weekly": 26934
+    }
+  ],
+  "shp2json": [
+    {
+      "name": "shapefile",
+      "weekly": 220410
+    },
+    {
+      "name": "shp2json",
+      "weekly": 58
+    }
+  ],
+  "hexo": [
+    {
+      "name": "hexo",
+      "weekly": 36231
+    },
+    {
+      "name": "hexo-cli",
+      "weekly": 21062
+    }
+  ],
+  "node-minify": [
+    {
+      "name": "node-minify",
+      "weekly": 10579
+    },
+    {
+      "name": "@node-minify/cli",
+      "weekly": 757
+    }
+  ],
+  "geojson-normalize": [
+    {
+      "name": "@mapbox/geojson-normalize",
+      "weekly": 292795
+    },
+    {
+      "name": "geojson-normalize",
+      "weekly": null
+    }
+  ],
+  "lsc": [
+    {
+      "name": "livescript",
+      "weekly": 5319
+    },
+    {
+      "name": "LiveScript",
+      "weekly": null
+    }
+  ],
+  "dox": [
+    {
+      "name": "dox",
+      "weekly": 27534
+    },
+    {
+      "name": "doxxx",
+      "weekly": 64
+    }
+  ],
+  "lookpath": [
+    {
+      "name": "lookpath",
+      "weekly": 58012
+    },
+    {
+      "name": "find-bin",
+      "weekly": 293
+    }
+  ],
+  "bsb": [
+    {
+      "name": "bs-platform",
+      "weekly": 5086
+    },
+    {
+      "name": "@bettercorp/service-base",
+      "weekly": 511
+    }
+  ],
+  "nitro": [
+    {
+      "name": "nitropack",
+      "weekly": 924602
+    },
+    {
+      "name": "nitro",
+      "weekly": 4455
+    }
+  ],
+  "gonzales": [
+    {
+      "name": "gonzales-pe",
+      "weekly": 3505109
+    },
+    {
+      "name": "gonzales-pe-sl",
+      "weekly": 81018
+    }
+  ],
+  "turbo": [
+    {
+      "name": "turbo",
+      "weekly": 5486021
+    },
+    {
+      "name": "@ardrive/turbo-sdk",
+      "weekly": 4623
+    }
+  ],
+  "esno": [
+    {
+      "name": "esno",
+      "weekly": 39256
+    },
+    {
+      "name": "esmo",
+      "weekly": null
+    }
+  ],
+  "asciify": [
+    {
+      "name": "asciify",
+      "weekly": 5989
+    },
+    {
+      "name": "asciify-image",
+      "weekly": 496
+    }
+  ],
+  "sonar-scanner": [
+    {
+      "name": "sonarqube-scanner",
+      "weekly": 437038
+    },
+    {
+      "name": "sonar-scanner",
+      "weekly": 137745
+    }
+  ],
+  "storybook-to-ghpages": [
+    {
+      "name": "@storybook/storybook-deployer",
+      "weekly": 102570
+    },
+    {
+      "name": "@kadira/storybook-deployer",
+      "weekly": 3765
+    }
+  ],
+  "wasm-opt": [
+    {
+      "name": "binaryen",
+      "weekly": 152048
+    },
+    {
+      "name": "wasm-opt",
+      "weekly": 1047
+    }
+  ],
+  "ganache-cli": [
+    {
+      "name": "ganache",
+      "weekly": 128950
+    },
+    {
+      "name": "ganache-cli",
+      "weekly": null
+    }
+  ],
+  "tspec": [
+    {
+      "name": "tap-spec",
+      "weekly": 69136
+    },
+    {
+      "name": "@randomgoods/tap-spec",
+      "weekly": 71
+    }
+  ],
+  "tap-spec": [
+    {
+      "name": "tap-spec",
+      "weekly": 69136
+    },
+    {
+      "name": "@randomgoods/tap-spec",
+      "weekly": 71
+    }
+  ],
+  "adbkit": [
+    {
+      "name": "@devicefarmer/adbkit",
+      "weekly": 116097
+    },
+    {
+      "name": "adbkit",
+      "weekly": 15771
+    }
+  ],
+  "static-server": [
+    {
+      "name": "static-server",
+      "weekly": 39352
+    },
+    {
+      "name": "server-static",
+      "weekly": 92
+    }
+  ],
+  "lzmajs": [
+    {
+      "name": "lzma-native",
+      "weekly": 89833
+    },
+    {
+      "name": "lzma-purejs",
+      "weekly": 485
+    }
+  ],
+  "codecov": [
+    {
+      "name": "codecov.io",
+      "weekly": 28979
+    },
+    {
+      "name": "codecov",
+      "weekly": null
+    }
+  ],
+  "ember": [
+    {
+      "name": "ember-cli",
+      "weekly": 214654
+    },
+    {
+      "name": "ember",
+      "weekly": 2010
+    }
+  ],
+  "mmdc": [
+    {
+      "name": "@mermaid-js/mermaid-cli",
+      "weekly": 170463
+    },
+    {
+      "name": "mermaid.cli",
+      "weekly": null
+    }
+  ],
+  "tree": [
+    {
+      "name": "tree-cli",
+      "weekly": 123027
+    },
+    {
+      "name": "tree-node-cli",
+      "weekly": 52278
+    }
+  ],
+  "treee": [
+    {
+      "name": "tree-cli",
+      "weekly": 123027
+    },
+    {
+      "name": "tree-node-cli",
+      "weekly": 52278
+    }
+  ],
+  "sloc": [
+    {
+      "name": "sloc",
+      "weekly": 41513
+    },
+    {
+      "name": "node-sloc",
+      "weekly": 7024
+    }
+  ],
+  "bodiless": [
+    {
+      "name": "@bodiless/cli",
+      "weekly": 537
+    },
+    {
+      "name": "@asemirsk/cli",
+      "weekly": 1
+    }
+  ],
+  "graph": [
+    {
+      "name": "@graphprotocol/graph-cli",
+      "weekly": 45266
+    },
+    {
+      "name": "@nevermined-io/graph-cli",
+      "weekly": null
+    }
+  ],
+  "geojsonhint": [
+    {
+      "name": "@mapbox/geojsonhint",
+      "weekly": 28396
+    },
+    {
+      "name": "geojsonhint",
+      "weekly": null
+    }
+  ],
+  "ray": [
+    {
+      "name": "@raycast/api",
+      "weekly": 14208
+    },
+    {
+      "name": "@ray-js/cli",
+      "weekly": null
+    }
+  ],
+  "dbus2js": [
+    {
+      "name": "@homebridge/dbus-native",
+      "weekly": 12347
+    },
+    {
+      "name": "dbus-native",
+      "weekly": 4712
+    }
+  ],
+  "qunit": [
+    {
+      "name": "qunit",
+      "weekly": 334184
+    },
+    {
+      "name": "qunitjs",
+      "weekly": null
+    }
+  ],
+  "7z": [
+    {
+      "name": "7zip",
+      "weekly": 26643
+    },
+    {
+      "name": "win-7zip",
+      "weekly": 131
+    }
+  ],
+  "velocity": [
+    {
+      "name": "amplify-velocity-template",
+      "weekly": 61582
+    },
+    {
+      "name": "velocity",
+      "weekly": 1422
+    }
+  ],
+  "node-dev": [
+    {
+      "name": "node-dev",
+      "weekly": 64768
+    },
+    {
+      "name": "dev",
+      "weekly": 9847
+    }
+  ],
+  "puml": [
+    {
+      "name": "node-plantuml",
+      "weekly": 2812
+    },
+    {
+      "name": "node-plantuml-latest",
+      "weekly": 233
+    }
+  ],
+  "selenium": [
+    {
+      "name": "selenium-server",
+      "weekly": 30429
+    },
+    {
+      "name": "selenium",
+      "weekly": 2158
+    }
+  ],
+  "togeojson": [
+    {
+      "name": "@mapbox/togeojson",
+      "weekly": 24523
+    },
+    {
+      "name": "togeojson",
+      "weekly": null
+    }
+  ],
+  "vtkDataConverter": [
+    {
+      "name": "@kitware/vtk.js",
+      "weekly": 34643
+    },
+    {
+      "name": "vtk.js",
+      "weekly": 2978
+    }
+  ],
+  "cspell": [
+    {
+      "name": "cspell",
+      "weekly": 888597
+    },
+    {
+      "name": "@kayahr/cspell",
+      "weekly": null
+    }
+  ],
+  "openapi2postmanv2": [
+    {
+      "name": "openapi-to-postmanv2",
+      "weekly": 115025
+    },
+    {
+      "name": "@paloaltonetworks/openapi-to-postmanv2",
+      "weekly": 1877
+    }
+  ],
+  "nf": [
+    {
+      "name": "foreman",
+      "weekly": 100415
+    },
+    {
+      "name": "@heroku/foreman",
+      "weekly": 1187
+    }
+  ],
+  "run-node": [
+    {
+      "name": "run-node",
+      "weekly": 465513
+    },
+    {
+      "name": "mora-scripts",
+      "weekly": 23
+    }
+  ],
+  "ntl": [
+    {
+      "name": "netlify-cli",
+      "weekly": 217096
+    },
+    {
+      "name": "ntl",
+      "weekly": 9953
+    }
+  ],
+  "nps": [
+    {
+      "name": "nps",
+      "weekly": 34879
+    },
+    {
+      "name": "p-s",
+      "weekly": null
+    }
+  ],
+  "paragon": [
+    {
+      "name": "@edx/paragon",
+      "weekly": 15974
+    },
+    {
+      "name": "@openedx/paragon",
+      "weekly": 8023
+    }
+  ],
+  "open-cli": [
+    {
+      "name": "open-cli",
+      "weekly": 156978
+    },
+    {
+      "name": "opn-cli",
+      "weekly": null
+    }
+  ],
+  "faucet": [
+    {
+      "name": "faucet",
+      "weekly": 47009
+    },
+    {
+      "name": "faucet-pipeline-core",
+      "weekly": 775
+    }
+  ],
+  "zopfli": [
+    {
+      "name": "node-zopfli",
+      "weekly": 7308
+    },
+    {
+      "name": "node-zopfli-es",
+      "weekly": 2897
+    }
+  ],
+  "wget": [
+    {
+      "name": "node-wget",
+      "weekly": 1516
+    },
+    {
+      "name": "node-wget-fetch",
+      "weekly": 545
+    }
+  ],
+  "tslint": [
+    {
+      "name": "ts-lint",
+      "weekly": 7956
+    },
+    {
+      "name": "tslint",
+      "weekly": null
+    }
+  ],
+  "gh-release": [
+    {
+      "name": "gh-release",
+      "weekly": 7651
+    },
+    {
+      "name": "changesets-github-release",
+      "weekly": null
+    }
+  ],
+  "bundlesize": [
+    {
+      "name": "bundlesize",
+      "weekly": 80173
+    },
+    {
+      "name": "bundlesize2",
+      "weekly": 28718
+    }
+  ],
+  "win-spawn": [
+    {
+      "name": "win-fork",
+      "weekly": 20260
+    },
+    {
+      "name": "win-spawn",
+      "weekly": null
+    }
+  ],
+  "pkg-fetch": [
+    {
+      "name": "pkg-fetch",
+      "weekly": 226042
+    },
+    {
+      "name": "@yao-pkg/pkg-fetch",
+      "weekly": 81384
+    }
+  ],
+  "dtsgen": [
+    {
+      "name": "dtsgenerator",
+      "weekly": 31512
+    },
+    {
+      "name": "@anttiviljami/dtsgenerator",
+      "weekly": 19862
+    }
+  ],
+  "eslint-find-rules": [
+    {
+      "name": "eslint-find-rules",
+      "weekly": 12485
+    },
+    {
+      "name": "@xotic750/eslint-find-rules",
+      "weekly": null
+    }
+  ],
+  "eslint-diff-rules": [
+    {
+      "name": "eslint-find-rules",
+      "weekly": 12485
+    },
+    {
+      "name": "@xotic750/eslint-find-rules",
+      "weekly": null
+    }
+  ],
+  "egg-bin": [
+    {
+      "name": "egg-bin",
+      "weekly": 22128
+    },
+    {
+      "name": "@eggjs/bin",
+      "weekly": 547
+    }
+  ],
+  "badge": [
+    {
+      "name": "badge-maker",
+      "weekly": 37052
+    },
+    {
+      "name": "gh-badges",
+      "weekly": null
+    }
+  ],
+  "fixpack": [
+    {
+      "name": "fixpack",
+      "weekly": 345898
+    },
+    {
+      "name": "@oclif/fixpack",
+      "weekly": 14331
+    }
+  ],
+  "build-i18n-src": [
+    {
+      "name": "scratch-l10n",
+      "weekly": 54076
+    },
+    {
+      "name": "openblock-l10n",
+      "weekly": 422
+    }
+  ],
+  "tx-push-src": [
+    {
+      "name": "scratch-l10n",
+      "weekly": 54076
+    },
+    {
+      "name": "openblock-l10n",
+      "weekly": 422
+    }
+  ],
+  "protoc-gen-connect-es": [
+    {
+      "name": "@connectrpc/protoc-gen-connect-es",
+      "weekly": 74110
+    },
+    {
+      "name": "@bufbuild/protoc-gen-connect-es",
+      "weekly": null
+    }
+  ],
+  "electron-rebuild": [
+    {
+      "name": "@electron/rebuild",
+      "weekly": 820546
+    },
+    {
+      "name": "electron-rebuild",
+      "weekly": null
+    }
+  ],
+  "papi": [
+    {
+      "name": "polkadot-api",
+      "weekly": 7163
+    },
+    {
+      "name": "@polkadot-api/cli",
+      "weekly": 6025
+    }
+  ],
+  "polkadot-api": [
+    {
+      "name": "polkadot-api",
+      "weekly": 7163
+    },
+    {
+      "name": "@polkadot-api/cli",
+      "weekly": 6025
+    }
+  ],
+  "jsonstream": [
+    {
+      "name": "jsonstream2",
+      "weekly": 56720
+    },
+    {
+      "name": "jsonstream",
+      "weekly": null
+    }
+  ],
+  "picture-tube": [
+    {
+      "name": "picture-tuber",
+      "weekly": 62862
+    },
+    {
+      "name": "picture-tube",
+      "weekly": 1991
+    }
+  ],
+  "s3urls": [
+    {
+      "name": "s3urls",
+      "weekly": 19121
+    },
+    {
+      "name": "@mapbox/s3urls",
+      "weekly": 4339
+    }
+  ],
+  "esrun": [
+    {
+      "name": "esrun",
+      "weekly": 17355
+    },
+    {
+      "name": "@digitak/esrun",
+      "weekly": 15247
+    }
+  ],
+  "commit-msg": [
+    {
+      "name": "pre-git",
+      "weekly": 4633
+    },
+    {
+      "name": "@plasma-platform/tm-message-hook",
+      "weekly": 14
+    }
+  ],
+  "tap-out": [
+    {
+      "name": "tap-out",
+      "weekly": 75663
+    },
+    {
+      "name": "@randomgoods/tap-out",
+      "weekly": 60
+    }
+  ],
+  "tsc-esm-fix": [
+    {
+      "name": "tsc-esm-fix",
+      "weekly": 28496
+    },
+    {
+      "name": "@qiwi/substrate-infra",
+      "weekly": null
+    }
+  ],
+  "pkgfiles": [
+    {
+      "name": "ypkgfiles",
+      "weekly": 19117
+    },
+    {
+      "name": "pkgfiles",
+      "weekly": 10857
+    }
+  ],
+  "components": [
+    {
+      "name": "@serverless/components",
+      "weekly": 81124
+    },
+    {
+      "name": "@serverless/cli",
+      "weekly": 80974
+    }
+  ],
+  "oxlint": [
+    {
+      "name": "oxlint",
+      "weekly": 540119
+    },
+    {
+      "name": "@tsrx/oxc",
+      "weekly": null
+    }
+  ],
+  "vsce": [
+    {
+      "name": "@vscode/vsce",
+      "weekly": 552942
+    },
+    {
+      "name": "vsce",
+      "weekly": null
+    }
+  ],
+  "devtools": [
+    {
+      "name": "@nuxt/devtools",
+      "weekly": 811036
+    },
+    {
+      "name": "@ai-sdk/devtools",
+      "weekly": 507407
+    }
+  ],
+  "commit": [
+    {
+      "name": "@commitlint/prompt-cli",
+      "weekly": 136950
+    },
+    {
+      "name": "alvamind-tools",
+      "weekly": 2755
+    }
+  ],
+  "solium": [
+    {
+      "name": "solium",
+      "weekly": 3874
+    },
+    {
+      "name": "ethlint",
+      "weekly": null
+    }
+  ],
+  "readability": [
+    {
+      "name": "readabilitySAX",
+      "weekly": 32575
+    },
+    {
+      "name": "node-readability",
+      "weekly": 1087
+    }
+  ],
+  "lsklog": [
+    {
+      "name": "@lskjs/log",
+      "weekly": 1695
+    },
+    {
+      "name": "@lsk4/log",
+      "weekly": 668
+    }
+  ],
+  "actionhero": [
+    {
+      "name": "actionhero",
+      "weekly": 2428
+    },
+    {
+      "name": "koberious",
+      "weekly": null
+    }
+  ],
+  "implementation-stats": [
+    {
+      "name": "@handsontable/formulajs",
+      "weekly": 67577
+    },
+    {
+      "name": "formulajs",
+      "weekly": 2601
+    }
+  ],
+  "wp": [
+    {
+      "name": "webpack-nano",
+      "weekly": 9987
+    },
+    {
+      "name": "webpack-command",
+      "weekly": 3578
+    }
+  ],
+  "vm2": [
+    {
+      "name": "@n8n/vm2",
+      "weekly": 108899
+    },
+    {
+      "name": "vm2",
+      "weekly": null
+    }
+  ],
+  "browser-launcher": [
+    {
+      "name": "browser-launcher",
+      "weekly": 5917
+    },
+    {
+      "name": "@httptoolkit/browser-launcher",
+      "weekly": 426
+    }
+  ],
+  "gherkin-javascript": [
+    {
+      "name": "@cucumber/gherkin-streams",
+      "weekly": 1279878
+    },
+    {
+      "name": "gherkin",
+      "weekly": null
+    }
+  ],
+  "make": [
+    {
+      "name": "make",
+      "weekly": 3809
+    },
+    {
+      "name": "gnumake",
+      "weekly": 112
+    }
+  ],
+  "standard-changelog": [
+    {
+      "name": "standard-changelog",
+      "weekly": 7772
+    },
+    {
+      "name": "pob-release",
+      "weekly": null
+    }
+  ],
+  "lab": [
+    {
+      "name": "@hapi/lab",
+      "weekly": 21777
+    },
+    {
+      "name": "lab",
+      "weekly": null
+    }
+  ],
+  "x-default-browser": [
+    {
+      "name": "@aw-web-design/x-default-browser",
+      "weekly": 1161399
+    },
+    {
+      "name": "x-default-browser",
+      "weekly": 509932
+    }
+  ],
+  "mcp-adapter": [
+    {
+      "name": "mcp-handler",
+      "weekly": 60184
+    },
+    {
+      "name": "@vercel/mcp-adapter",
+      "weekly": 31032
+    }
+  ],
+  "create-mcp-route": [
+    {
+      "name": "mcp-handler",
+      "weekly": 60184
+    },
+    {
+      "name": "@vercel/mcp-adapter",
+      "weekly": 31032
+    }
+  ],
+  "polkadot-ci-ghact-build": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-ci-ghact-docs": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-ci-ghpages-force": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-build-docs": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-build-ts": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-circular": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-clean-build": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-copy-to": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-run-lint": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-run-test": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-version": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-dev-yarn-only": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-exec-eslint": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-exec-ghpages": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-exec-ghrelease": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-exec-tsc": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "polkadot-exec-webpack": [
+    {
+      "name": "@polkadot/dev",
+      "weekly": 24949
+    },
+    {
+      "name": "@open-web3/dev-config",
+      "weekly": 252
+    }
+  ],
+  "mrm": [
+    {
+      "name": "manta",
+      "weekly": 604
+    },
+    {
+      "name": "mrm",
+      "weekly": null
+    }
+  ],
+  "mrmdir": [
+    {
+      "name": "manta",
+      "weekly": 604
+    },
+    {
+      "name": "monaco-plugin-helpers",
+      "weekly": null
+    }
+  ],
+  "maz": [
+    {
+      "name": "maz-ui",
+      "weekly": 23198
+    },
+    {
+      "name": "@maz-ui/cli",
+      "weekly": 1214
+    }
+  ],
+  "maz-ui": [
+    {
+      "name": "maz-ui",
+      "weekly": 23198
+    },
+    {
+      "name": "@maz-ui/cli",
+      "weekly": 1214
+    }
+  ],
+  "telescope": [
+    {
+      "name": "@cosmology/telescope",
+      "weekly": 5837
+    },
+    {
+      "name": "@osmonauts/telescope",
+      "weekly": null
+    }
+  ],
+  "cat": [
+    {
+      "name": "cross-cat",
+      "weekly": 1419
+    },
+    {
+      "name": "cat",
+      "weekly": 1385
+    }
+  ],
+  "npm-publish": [
+    {
+      "name": "@jsdevtools/npm-publish",
+      "weekly": 1688
+    },
+    {
+      "name": "npm-publish",
+      "weekly": 52
+    }
+  ],
+  "sg": [
+    {
+      "name": "@ast-grep/cli",
+      "weekly": 184967
+    },
+    {
+      "name": "sgsg",
+      "weekly": 19
+    }
+  ],
+  "gemini": [
+    {
+      "name": "@google/gemini-cli",
+      "weekly": 250859
+    },
+    {
+      "name": "gemini",
+      "weekly": 3343
+    }
+  ],
+  "versions": [
+    {
+      "name": "versions",
+      "weekly": 8924
+    },
+    {
+      "name": "available-versions",
+      "weekly": 1290
+    }
+  ],
+  "mdm": [
+    {
+      "name": "markdown-magic",
+      "weekly": 10648
+    },
+    {
+      "name": "mdmanifest",
+      "weekly": 72
+    }
+  ],
+  "swagger-cli": [
+    {
+      "name": "swagger-cli",
+      "weekly": 152703
+    },
+    {
+      "name": "@apidevtools/swagger-cli",
+      "weekly": null
+    }
+  ],
+  "base": [
+    {
+      "name": "@dword-design/base",
+      "weekly": 1389
+    },
+    {
+      "name": "base-app",
+      "weekly": null
+    }
+  ],
+  "tsgo": [
+    {
+      "name": "@typescript/native-preview",
+      "weekly": 531392
+    },
+    {
+      "name": "@lssm-tech/tool.typescript",
+      "weekly": null
+    }
+  ],
+  "gen": [
+    {
+      "name": "@turbo/gen",
+      "weekly": 695471
+    },
+    {
+      "name": "generate",
+      "weekly": 2525
+    }
+  ],
+  "generate": [
+    {
+      "name": "abi-wan-kanabi",
+      "weekly": 79510
+    },
+    {
+      "name": "generate",
+      "weekly": 2525
+    }
+  ],
+  "foundry": [
+    {
+      "name": "@sumup/foundry",
+      "weekly": 3137
+    },
+    {
+      "name": "foundry",
+      "weekly": null
+    }
+  ],
+  "wunderctl": [
+    {
+      "name": "@wundergraph/sdk",
+      "weekly": 2570
+    },
+    {
+      "name": "@wundergraph/wunderctl",
+      "weekly": 2544
+    }
+  ],
+  "edgedriver": [
+    {
+      "name": "edgedriver",
+      "weekly": 1103062
+    },
+    {
+      "name": "@testplane/edgedriver",
+      "weekly": null
+    }
+  ],
+  "hsd-cli": [
+    {
+      "name": "hs-client",
+      "weekly": 177
+    },
+    {
+      "name": "hsd",
+      "weekly": 108
+    }
+  ],
+  "hsd-rpc": [
+    {
+      "name": "hs-client",
+      "weekly": 177
+    },
+    {
+      "name": "hsd",
+      "weekly": 108
+    }
+  ],
+  "hsw-cli": [
+    {
+      "name": "hs-client",
+      "weekly": 177
+    },
+    {
+      "name": "hsd",
+      "weekly": 108
+    }
+  ],
+  "hsw-rpc": [
+    {
+      "name": "hs-client",
+      "weekly": 177
+    },
+    {
+      "name": "hsd",
+      "weekly": 108
+    }
+  ],
+  "webiny": [
+    {
+      "name": "@webiny/cli",
+      "weekly": 329
+    },
+    {
+      "name": "@webiny/system-requirements",
+      "weekly": null
+    }
+  ],
+  "gridsome": [
+    {
+      "name": "@gridsome/cli",
+      "weekly": 5790
+    },
+    {
+      "name": "gridsome",
+      "weekly": 5248
+    }
+  ],
+  "random-mac": [
+    {
+      "name": "random-mac",
+      "weekly": 1010
+    },
+    {
+      "name": "tea-random-mac",
+      "weekly": 54
+    }
+  ],
+  "loki": [
+    {
+      "name": "loki",
+      "weekly": 60267
+    },
+    {
+      "name": "@loki/runner",
+      "weekly": null
+    }
+  ],
+  "mm": [
+    {
+      "name": "mongodb-migrations",
+      "weekly": 1127
+    },
+    {
+      "name": "moments",
+      "weekly": 627
+    }
+  ],
+  "tc": [
+    {
+      "name": "@jcoreio/toolchain",
+      "weekly": 797
+    },
+    {
+      "name": "tc",
+      "weekly": 18
+    }
+  ],
+  "mqpacker": [
+    {
+      "name": "mqpacker",
+      "weekly": 1390
+    },
+    {
+      "name": "css-mqpacker",
+      "weekly": null
+    }
+  ],
+  "node-sass": [
+    {
+      "name": "node-sass-china",
+      "weekly": 48
+    },
+    {
+      "name": "node-sass",
+      "weekly": null
+    }
+  ],
+  "remax": [
+    {
+      "name": "remax",
+      "weekly": 688
+    },
+    {
+      "name": "@ray-core/ray",
+      "weekly": null
+    }
+  ],
+  "ipfs": [
+    {
+      "name": "kubo",
+      "weekly": 1125
+    },
+    {
+      "name": "go-ipfs",
+      "weekly": null
+    }
+  ],
+  "dns-discovery": [
+    {
+      "name": "dns-discovery",
+      "weekly": 349
+    },
+    {
+      "name": "ut-dns-discovery",
+      "weekly": null
+    }
+  ],
+  "antd-tools": [
+    {
+      "name": "@ant-design/tools",
+      "weekly": 23396
+    },
+    {
+      "name": "antd-tools",
+      "weekly": null
+    }
+  ],
+  "abi-gen": [
+    {
+      "name": "@0x/abi-gen",
+      "weekly": 1076
+    },
+    {
+      "name": "@0xproject/abi-gen",
+      "weekly": 284
+    }
+  ],
+  "watch-tree": [
+    {
+      "name": "watch-tree-maintained",
+      "weekly": 445
+    },
+    {
+      "name": "fl-watch-tree",
+      "weekly": null
+    }
+  ],
+  "rw": [
+    {
+      "name": "@redwoodjs/web",
+      "weekly": 132421
+    },
+    {
+      "name": "@redwoodjs/api",
+      "weekly": 19602
+    }
+  ],
+  "rwfw": [
+    {
+      "name": "@redwoodjs/web",
+      "weekly": 132421
+    },
+    {
+      "name": "@redwoodjs/api",
+      "weekly": 19602
+    }
+  ],
+  "redwood": [
+    {
+      "name": "@redwoodjs/web",
+      "weekly": 132421
+    },
+    {
+      "name": "@redwoodjs/api",
+      "weekly": 19602
+    }
+  ],
+  "npm-scripts-info": [
+    {
+      "name": "@bitjson/npm-scripts-info",
+      "weekly": 7492
+    },
+    {
+      "name": "npm-scripts-info",
+      "weekly": 7423
+    }
+  ],
+  "multi-semantic-release": [
+    {
+      "name": "multi-semantic-release",
+      "weekly": 6980
+    },
+    {
+      "name": "@dylanvann/multi-semantic-release",
+      "weekly": 414
+    }
+  ],
+  "grizzly": [
+    {
+      "name": "grizzly",
+      "weekly": 16300
+    },
+    {
+      "name": "@gooddata/grunt-grizzly",
+      "weekly": null
+    }
+  ],
+  "fr": [
+    {
+      "name": "fuzz-run",
+      "weekly": 2431
+    },
+    {
+      "name": "@chenglou/freerange",
+      "weekly": null
+    }
+  ],
+  "electron-packager": [
+    {
+      "name": "@electron/packager",
+      "weekly": 288548
+    },
+    {
+      "name": "electron-packager",
+      "weekly": null
+    }
+  ],
+  "tp": [
+    {
+      "name": "tpjs",
+      "weekly": 20
+    },
+    {
+      "name": "testpass",
+      "weekly": null
+    }
+  ],
+  "deno": [
+    {
+      "name": "deno",
+      "weekly": 20093
+    },
+    {
+      "name": "deno-bin",
+      "weekly": 7622
+    }
+  ],
+  "resave-snapshots": [
+    {
+      "name": "snap-shot-core",
+      "weekly": 30284
+    },
+    {
+      "name": "@smpx/snap-shot-core",
+      "weekly": 109
+    }
+  ],
+  "alloy": [
+    {
+      "name": "alloy",
+      "weekly": 7750
+    },
+    {
+      "name": "@alloy-js/cli",
+      "weekly": null
+    }
+  ],
+  "husky": [
+    {
+      "name": "@diplodoc/lint",
+      "weekly": 207
+    },
+    {
+      "name": "husky",
+      "weekly": null
+    }
+  ],
+  "matcha": [
+    {
+      "name": "@c4312/matcha",
+      "weekly": 5226
+    },
+    {
+      "name": "matcha",
+      "weekly": null
+    }
+  ],
+  "validate-commit-msg": [
+    {
+      "name": "validate-commit-msg",
+      "weekly": null
+    },
+    {
+      "name": "validate-commit",
+      "weekly": null
+    }
+  ],
+  "dts": [
+    {
+      "name": "@hyrious/dts",
+      "weekly": 267
+    },
+    {
+      "name": "dts-cli",
+      "weekly": null
+    }
   ],
   "mochify": [
-    "@mochify/cli",
-    "mochify"
+    {
+      "name": "mochify",
+      "weekly": 1802
+    },
+    {
+      "name": "@mochify/cli",
+      "weekly": null
+    }
   ],
   "node-tick-processor": [
-    "node-tick-processor",
-    "tick"
+    {
+      "name": "node-tick-processor",
+      "weekly": 4629
+    },
+    {
+      "name": "tick",
+      "weekly": 3939
+    }
   ],
   "test-runner": [
-    "test-runner",
-    "@b08/test-runner"
+    {
+      "name": "@b08/test-runner",
+      "weekly": 49
+    },
+    {
+      "name": "test-runner",
+      "weekly": null
+    }
   ],
   "phantomjs": [
-    "phantomjs-prebuilt",
-    "phantomjs"
+    {
+      "name": "phantomjs-prebuilt",
+      "weekly": null
+    },
+    {
+      "name": "phantomjs",
+      "weekly": null
+    }
   ],
   "ts-ignore-import": [
-    "ts-ignore-import",
-    "@hdsydsvenskan/ts-ignore-import"
+    {
+      "name": "ts-ignore-import",
+      "weekly": 184
+    },
+    {
+      "name": "@hdsydsvenskan/ts-ignore-import",
+      "weekly": null
+    }
   ],
   "swig": [
-    "swig",
-    "swig-templates"
+    {
+      "name": "swig",
+      "weekly": null
+    },
+    {
+      "name": "swig-templates",
+      "weekly": null
+    }
   ],
   "buster": [
-    "buster",
-    "test-support"
+    {
+      "name": "buster",
+      "weekly": null
+    },
+    {
+      "name": "test-support",
+      "weekly": null
+    }
   ],
   "buster-static": [
-    "buster",
-    "buster-static"
+    {
+      "name": "buster",
+      "weekly": null
+    },
+    {
+      "name": "buster-static",
+      "weekly": null
+    }
   ],
   "precommit": [
-    "precommit",
-    "@mongodb-js/monorepo-tools"
+    {
+      "name": "precommit",
+      "weekly": 2067
+    },
+    {
+      "name": "@mongodb-js/monorepo-tools",
+      "weekly": null
+    }
   ],
   "nuxi-ng": [
-    "@nuxt/cli",
-    "nuxi"
+    {
+      "name": "@nuxt/cli",
+      "weekly": null
+    },
+    {
+      "name": "nuxi",
+      "weekly": null
+    }
   ],
   "docdown": [
-    "docdown",
-    "@gerhobbelt/docdown"
+    {
+      "name": "docdown",
+      "weekly": null
+    },
+    {
+      "name": "@gerhobbelt/docdown",
+      "weekly": null
+    }
   ],
   "torch": [
-    "@antv/torch",
-    "torchjs"
+    {
+      "name": "torchjs",
+      "weekly": 121
+    },
+    {
+      "name": "@antv/torch",
+      "weekly": 10
+    }
   ],
   "torch-coverage": [
-    "@antv/torch",
-    "torchjs"
+    {
+      "name": "torchjs",
+      "weekly": 121
+    },
+    {
+      "name": "@antv/torch",
+      "weekly": 10
+    }
   ],
   "prettier-standard": [
-    "prettier-standard",
-    "@ksmithut/prettier-standard"
+    {
+      "name": "prettier-standard",
+      "weekly": null
+    },
+    {
+      "name": "@ksmithut/prettier-standard",
+      "weekly": null
+    }
   ],
   "gitbook": [
-    "gitbook",
-    "gitbook-cli"
+    {
+      "name": "gitbook",
+      "weekly": null
+    },
+    {
+      "name": "gitbook-cli",
+      "weekly": null
+    }
   ],
   "repo-tools": [
-    "repo-tools",
-    "js-data-repo-tools"
+    {
+      "name": "js-data-repo-tools",
+      "weekly": 26
+    },
+    {
+      "name": "repo-tools",
+      "weekly": null
+    }
   ],
   "download": [
-    "download-cli",
-    "whisper-node"
+    {
+      "name": "download-cli",
+      "weekly": 5030
+    },
+    {
+      "name": "whisper-node",
+      "weekly": 1623
+    }
   ],
   "glint-language-server": [
-    "@glint/core",
-    "@glint/ember-tsc"
+    {
+      "name": "@glint/core",
+      "weekly": 23276
+    },
+    {
+      "name": "@glint/ember-tsc",
+      "weekly": 11634
+    }
   ],
   "package-build": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-build-only": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-clean": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-compile": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-compile-only": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-copy-assets-cjs": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-copy-assets-esm": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-fix": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-lint": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-lint-verbose": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-publint": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-recompile": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "package-relint": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "xy": [
-    "@xylabs/ts-scripts-yarn3",
-    "@ariestools/toolchain"
+    {
+      "name": "@ariestools/toolchain",
+      "weekly": 2886
+    },
+    {
+      "name": "@xylabs/ts-scripts-yarn3",
+      "weekly": null
+    }
   ],
   "husky-run": [
-    "husky-v4",
-    "@moyuyc/husky"
+    {
+      "name": "husky-v4",
+      "weekly": 805
+    },
+    {
+      "name": "@moyuyc/husky",
+      "weekly": null
+    }
   ],
   "husky-upgrade": [
-    "husky-v4",
-    "@moyuyc/husky"
+    {
+      "name": "husky-v4",
+      "weekly": 805
+    },
+    {
+      "name": "@moyuyc/husky",
+      "weekly": null
+    }
   ],
   "jsx": [
-    "react-tools",
-    "@a-la/jsx"
+    {
+      "name": "@a-la/jsx",
+      "weekly": 162
+    },
+    {
+      "name": "react-tools",
+      "weekly": null
+    }
   ],
   "smokestack": [
-    "smokestack",
-    "@mattdesl/smokestack-webgl2"
+    {
+      "name": "smokestack",
+      "weekly": null
+    },
+    {
+      "name": "@mattdesl/smokestack-webgl2",
+      "weekly": null
+    }
   ],
   "sbl": [
-    "@beisen/storybook",
-    "@beisen/storybook-lib"
+    {
+      "name": "@beisen/storybook",
+      "weekly": 8
+    },
+    {
+      "name": "@beisen/storybook-lib",
+      "weekly": 6
+    }
   ],
   "benchmark": [
-    "@dapplion/benchmark",
-    "@chainsafe/benchmark"
+    {
+      "name": "@chainsafe/benchmark",
+      "weekly": 2395
+    },
+    {
+      "name": "@dapplion/benchmark",
+      "weekly": 221
+    }
   ],
   "lerna-helper": [
-    "@daybrush/release",
-    "@egjs/release-helper"
+    {
+      "name": "@daybrush/release",
+      "weekly": 129
+    },
+    {
+      "name": "@egjs/release-helper",
+      "weekly": null
+    }
   ],
   "babel-env": [
-    "babel-env",
-    "generic-js-env"
+    {
+      "name": "babel-env",
+      "weekly": null
+    },
+    {
+      "name": "generic-js-env",
+      "weekly": null
+    }
   ],
   "android-emu-travis-post": [
-    "@appium/test-support",
-    "appium-test-support"
+    {
+      "name": "@appium/test-support",
+      "weekly": 3134
+    },
+    {
+      "name": "appium-test-support",
+      "weekly": null
+    }
   ],
   "android-emu-travis-pre": [
-    "@appium/test-support",
-    "appium-test-support"
+    {
+      "name": "@appium/test-support",
+      "weekly": 3134
+    },
+    {
+      "name": "appium-test-support",
+      "weekly": null
+    }
   ],
   "donejs": [
-    "donejs-cli",
-    "donejs"
+    {
+      "name": "donejs",
+      "weekly": 175
+    },
+    {
+      "name": "donejs-cli",
+      "weekly": null
+    }
   ],
   "tsbuild": [
-    "@git.zone/tsbuild",
-    "@gitzone/tsbuild"
+    {
+      "name": "@git.zone/tsbuild",
+      "weekly": null
+    },
+    {
+      "name": "@gitzone/tsbuild",
+      "weekly": null
+    }
   ],
   "tsrun": [
-    "@git.zone/tsrun",
-    "@gitzone/tsrun"
+    {
+      "name": "@git.zone/tsrun",
+      "weekly": 156
+    },
+    {
+      "name": "@gitzone/tsrun",
+      "weekly": null
+    }
   ],
   "tstest": [
-    "@git.zone/tstest",
-    "@gitzone/tstest"
+    {
+      "name": "@git.zone/tstest",
+      "weekly": 560
+    },
+    {
+      "name": "@gitzone/tstest",
+      "weekly": null
+    }
   ],
   "run-scripts": [
-    "run-scripts",
-    "run-scripts-util"
+    {
+      "name": "run-scripts",
+      "weekly": 213
+    },
+    {
+      "name": "run-scripts-util",
+      "weekly": null
+    }
   ],
   "tsbundle": [
-    "@gitzone/tsbundle",
-    "@git.zone/tsbundle"
+    {
+      "name": "@gitzone/tsbundle",
+      "weekly": null
+    },
+    {
+      "name": "@git.zone/tsbundle",
+      "weekly": null
+    }
   ],
   "lint-trap": [
-    "lint-trap",
-    "uber-standard"
+    {
+      "name": "lint-trap",
+      "weekly": null
+    },
+    {
+      "name": "uber-standard",
+      "weekly": null
+    }
   ],
   "start": [
-    "travis-multirunner",
-    "@4c/start"
+    {
+      "name": "travis-multirunner",
+      "weekly": 721
+    },
+    {
+      "name": "@4c/start",
+      "weekly": 707
+    }
   ],
   "find-dev-deps": [
-    "@telerik/semantic-prerelease",
-    "@progress/semantic-prerelease"
+    {
+      "name": "@telerik/semantic-prerelease",
+      "weekly": 45
+    },
+    {
+      "name": "@progress/semantic-prerelease",
+      "weekly": null
+    }
   ],
   "semantic-prerelease": [
-    "@telerik/semantic-prerelease",
-    "@progress/semantic-prerelease"
+    {
+      "name": "@telerik/semantic-prerelease",
+      "weekly": 45
+    },
+    {
+      "name": "@progress/semantic-prerelease",
+      "weekly": null
+    }
   ],
   "release-master": [
-    "@telerik/semantic-prerelease",
-    "@progress/semantic-prerelease"
+    {
+      "name": "@telerik/semantic-prerelease",
+      "weekly": 45
+    },
+    {
+      "name": "@progress/semantic-prerelease",
+      "weekly": null
+    }
   ],
   "yankee": [
-    "yankee",
-    "@postman/yankee"
+    {
+      "name": "yankee",
+      "weekly": 1810
+    },
+    {
+      "name": "@postman/yankee",
+      "weekly": 760
+    }
   ],
   "run-bin": [
-    "lionconfig",
-    "@leonzalion/configs"
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
   ],
   "typecheck": [
-    "lionconfig",
-    "@leonzalion/configs"
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
   ],
   "precise-commits": [
-    "precise-commits",
-    "@softwareventures/precise-commits"
+    {
+      "name": "precise-commits",
+      "weekly": 5971
+    },
+    {
+      "name": "@softwareventures/precise-commits",
+      "weekly": 439
+    }
+  ],
+  "eyes-setup": [
+    {
+      "name": "@applitools/eyes-storybook",
+      "weekly": 107216
+    },
+    {
+      "name": "@applitools/eyes-cypress",
+      "weekly": 54549
+    }
   ],
   "typal": [
-    "documentary",
-    "typal"
+    {
+      "name": "typal",
+      "weekly": 310
+    },
+    {
+      "name": "documentary",
+      "weekly": null
+    }
   ],
   "simplifyify": [
-    "@jsdevtools/simplifyify",
-    "simplifyify"
+    {
+      "name": "simplifyify",
+      "weekly": 838
+    },
+    {
+      "name": "@jsdevtools/simplifyify",
+      "weekly": 72
+    }
   ],
   "commitlint-circle": [
-    "@ls-age/commitlint-circle",
-    "commitlint-circle"
+    {
+      "name": "commitlint-circle",
+      "weekly": 693
+    },
+    {
+      "name": "@ls-age/commitlint-circle",
+      "weekly": 303
+    }
   ],
   "format": [
-    "@magic/format",
-    "@leonzalion/configs"
+    {
+      "name": "@magic/format",
+      "weekly": 77
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    }
+  ],
+  "update-badge": [
+    {
+      "name": "check-code-coverage",
+      "weekly": 12537
+    },
+    {
+      "name": "dependency-version-badge",
+      "weekly": 6490
+    }
   ],
   "license-check": [
-    "@js-soft/license-check",
-    "license-check"
+    {
+      "name": "@js-soft/license-check",
+      "weekly": 822
+    },
+    {
+      "name": "license-check",
+      "weekly": null
+    }
   ],
   "webtest": [
-    "web-test",
-    "webtest"
+    {
+      "name": "webtest",
+      "weekly": 98
+    },
+    {
+      "name": "web-test",
+      "weekly": null
+    }
   ],
   "ethereumjs-config-lint": [
-    "@ethereumjs/config-tslint",
-    "@ethereumjs/eslint-config-defaults"
+    {
+      "name": "@ethereumjs/eslint-config-defaults",
+      "weekly": 163
+    },
+    {
+      "name": "@ethereumjs/config-tslint",
+      "weekly": null
+    }
   ],
   "ethereumjs-config-lint-fix": [
-    "@ethereumjs/config-tslint",
-    "@ethereumjs/eslint-config-defaults"
+    {
+      "name": "@ethereumjs/eslint-config-defaults",
+      "weekly": 163
+    },
+    {
+      "name": "@ethereumjs/config-tslint",
+      "weekly": null
+    }
   ],
   "ethereumjs-config-coverage": [
-    "@ethereumjs/config-nyc",
-    "@ethereumjs/config-coverage"
+    {
+      "name": "@ethereumjs/config-nyc",
+      "weekly": null
+    },
+    {
+      "name": "@ethereumjs/config-coverage",
+      "weekly": null
+    }
+  ],
+  "svgo": [
+    {
+      "name": "svgo-browser",
+      "weekly": 35437
+    },
+    {
+      "name": "@diplodoc/lint",
+      "weekly": 207
+    }
   ],
   "bump-version": [
-    "@ls-age/bump-version",
-    "@dschau/bump-version-ci"
+    {
+      "name": "@ls-age/bump-version",
+      "weekly": null
+    },
+    {
+      "name": "@dschau/bump-version-ci",
+      "weekly": null
+    }
   ],
   "pob-esbuild-clean-out": [
-    "@pob/rollup-esbuild",
-    "@pob/esbuild"
+    {
+      "name": "@pob/rollup-esbuild",
+      "weekly": 391
+    },
+    {
+      "name": "@pob/esbuild",
+      "weekly": null
+    }
+  ],
+  "ci-utils": [
+    {
+      "name": "@progress/kendo-common-tasks",
+      "weekly": null
+    },
+    {
+      "name": "vis-dev-utils",
+      "weekly": null
+    }
+  ],
+  "init": [
+    {
+      "name": "react-native-test-app",
+      "weekly": 33308
+    },
+    {
+      "name": "@4c/init",
+      "weekly": 783
+    }
   ],
   "lion-git-hooks": [
-    "@leonzalion/configs",
-    "lion-git-hooks"
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    },
+    {
+      "name": "lion-git-hooks",
+      "weekly": null
+    }
   ],
   "ts-lex": [
-    "@ts-jison/lexer-generator",
-    "@atproto/lex"
+    {
+      "name": "@atproto/lex",
+      "weekly": 42401
+    },
+    {
+      "name": "@ts-jison/lexer-generator",
+      "weekly": 1276
+    }
   ],
   "publisher": [
-    "@kev_nz/publisher",
-    "@mpis/publisher"
+    {
+      "name": "@kev_nz/publisher",
+      "weekly": 128
+    },
+    {
+      "name": "@mpis/publisher",
+      "weekly": 2
+    }
   ],
   "rm": [
-    "cash-rm",
-    "@kayahr/npm-utils"
+    {
+      "name": "cash-rm",
+      "weekly": 2283
+    },
+    {
+      "name": "@kayahr/npm-utils",
+      "weekly": 15
+    }
   ],
   "bring-it": [
-    "@bring-it/cli",
-    "@bring-it/npm"
+    {
+      "name": "@bring-it/npm",
+      "weekly": 16
+    },
+    {
+      "name": "@bring-it/cli",
+      "weekly": 10
+    }
   ],
   "codex-acp": [
-    "@agentclientprotocol/codex-acp",
-    "@zed-industries/codex-acp"
+    {
+      "name": "@agentclientprotocol/codex-acp",
+      "weekly": 798164
+    },
+    {
+      "name": "@zed-industries/codex-acp",
+      "weekly": null
+    }
   ],
   "react-grab": [
-    "react-grab",
-    "@react-grab/cli"
+    {
+      "name": "react-grab",
+      "weekly": 1518962
+    },
+    {
+      "name": "@react-grab/cli",
+      "weekly": null
+    }
   ],
   "0g-compute-cli": [
-    "@0gfoundation/0g-compute-ts-sdk",
-    "@0glabs/0g-serving-broker"
+    {
+      "name": "@0gfoundation/0g-compute-ts-sdk",
+      "weekly": 776
+    },
+    {
+      "name": "@0glabs/0g-serving-broker",
+      "weekly": 194
+    }
   ],
   "pi-ai": [
-    "@open-hax/eta-mu-ai",
-    "@earendil-works/pi-ai"
+    {
+      "name": "@open-hax/eta-mu-ai",
+      "weekly": 81
+    },
+    {
+      "name": "@earendil-works/pi-ai",
+      "weekly": null
+    }
   ],
   "oxfmt": [
-    "oxfmt",
-    "@tsrx/oxc"
+    {
+      "name": "oxfmt",
+      "weekly": null
+    },
+    {
+      "name": "@tsrx/oxc",
+      "weekly": null
+    }
   ],
   "intent": [
-    "@tanstack/devtools-utils",
-    "@tanstack/intent"
+    {
+      "name": "@tanstack/devtools-utils",
+      "weekly": null
+    },
+    {
+      "name": "@tanstack/intent",
+      "weekly": null
+    }
+  ],
+  "doctest": [
+    {
+      "name": "doctest",
+      "weekly": 4259
+    },
+    {
+      "name": "@dotdo/types",
+      "weekly": null
+    }
+  ],
+  "cp": [
+    {
+      "name": "cash-cp",
+      "weekly": 8374
+    },
+    {
+      "name": "@kayahr/npm-utils",
+      "weekly": 15
+    }
   ],
   "owlkeys": [
-    "@owlmeans/basic-keys",
-    "@owlmeans/basic-envelope"
+    {
+      "name": "@owlmeans/basic-keys",
+      "weekly": null
+    },
+    {
+      "name": "@owlmeans/basic-envelope",
+      "weekly": null
+    }
   ],
   "wf": [
-    "workflow",
-    "@workflow/cli"
+    {
+      "name": "workflow",
+      "weekly": 103
+    },
+    {
+      "name": "@workflow/cli",
+      "weekly": null
+    }
   ],
   "workflow": [
-    "workflow",
-    "@workflow/cli"
+    {
+      "name": "workflow",
+      "weekly": 103
+    },
+    {
+      "name": "@workflow/cli",
+      "weekly": null
+    }
+  ],
+  "modern": [
+    {
+      "name": "@modern-js/app-tools",
+      "weekly": 50192
+    },
+    {
+      "name": "@modern-js/module-tools",
+      "weekly": 10822
+    }
+  ],
+  "local-functions-proxy.exe": [
+    {
+      "name": "@netlify/local-functions-proxy-win32-x64",
+      "weekly": 23466
+    },
+    {
+      "name": "@netlify/local-functions-proxy-win32-ia32",
+      "weekly": 20105
+    }
   ]
 }

@@ -1,222 +1,474 @@
 {
   "test": [
     "(system: /usr/bin/test)",
-    "test",
-    "@jdeighan/base-utils",
-    "lionconfig",
-    "@leonzalion/configs",
-    "@rollup-umd/test"
-  ],
-  "crc32": [
-    "(system: /usr/bin/crc32)",
-    "crc-32",
-    "crc32",
-    "cyclic-32"
-  ],
-  "markdown-it": [
-    "(system: /usr/bin/markdown-it)",
-    "markdown-it",
-    "@gerhobbelt/markdown-it"
+    {
+      "name": "test",
+      "weekly": 77734
+    },
+    {
+      "name": "@jdeighan/base-utils",
+      "weekly": 180
+    },
+    {
+      "name": "lionconfig",
+      "weekly": null
+    },
+    {
+      "name": "@leonzalion/configs",
+      "weekly": null
+    },
+    {
+      "name": "@rollup-umd/test",
+      "weekly": null
+    }
   ],
   "watch": [
     "(system: /usr/bin/watch)",
-    "watch",
-    "watch-cli"
+    {
+      "name": "@cnakazawa/watch",
+      "weekly": 3446830
+    },
+    {
+      "name": "watch",
+      "weekly": 824856
+    },
+    {
+      "name": "watch-cli",
+      "weekly": 9101
+    }
+  ],
+  "crc32": [
+    "(system: /usr/bin/crc32)",
+    {
+      "name": "crc-32",
+      "weekly": 15356786
+    },
+    {
+      "name": "crc32",
+      "weekly": 60415
+    },
+    {
+      "name": "cyclic-32",
+      "weekly": 7498
+    }
+  ],
+  "markdown-it": [
+    "(system: /usr/bin/markdown-it)",
+    {
+      "name": "markdown-it",
+      "weekly": 10527956
+    },
+    {
+      "name": "@gerhobbelt/markdown-it",
+      "weekly": 9
+    }
+  ],
+  "geckodriver": [
+    "(system: /snap/bin/geckodriver)",
+    {
+      "name": "geckodriver",
+      "weekly": 1396755
+    },
+    {
+      "name": "@testplane/geckodriver",
+      "weekly": 956
+    }
   ],
   "tree": [
     "(system: /usr/bin/tree)",
-    "tree-node-cli",
-    "tree-cli"
+    {
+      "name": "tree-cli",
+      "weekly": 123027
+    },
+    {
+      "name": "tree-node-cli",
+      "weekly": 52278
+    }
   ],
   "7z": [
     "(system: /usr/bin/7z)",
-    "7zip",
-    "win-7zip"
+    {
+      "name": "7zip",
+      "weekly": 26643
+    },
+    {
+      "name": "win-7zip",
+      "weekly": 131
+    }
   ],
   "wget": [
     "(system: /usr/bin/wget)",
-    "node-wget",
-    "node-wget-fetch"
+    {
+      "name": "node-wget",
+      "weekly": 1516
+    },
+    {
+      "name": "node-wget-fetch",
+      "weekly": 545
+    }
   ],
   "make": [
     "(system: /usr/bin/make)",
-    "gnumake",
-    "make"
+    {
+      "name": "make",
+      "weekly": 3809
+    },
+    {
+      "name": "gnumake",
+      "weekly": 112
+    }
   ],
   "cat": [
     "(system: /usr/bin/cat)",
-    "cat",
-    "cross-cat"
+    {
+      "name": "cross-cat",
+      "weekly": 1419
+    },
+    {
+      "name": "cat",
+      "weekly": 1385
+    }
   ],
   "sg": [
     "(system: /usr/bin/sg)",
-    "sgsg",
-    "@ast-grep/cli"
+    {
+      "name": "@ast-grep/cli",
+      "weekly": 184967
+    },
+    {
+      "name": "sgsg",
+      "weekly": 19
+    }
   ],
   "tc": [
     "(system: /usr/sbin/tc)",
-    "@jcoreio/toolchain",
-    "tc"
-  ],
-  "rm": [
-    "(system: /usr/bin/rm)",
-    "cash-rm",
-    "@kayahr/npm-utils"
-  ],
-  "node": [
-    "(system: /usr/local/n/bin/node)",
-    "node"
-  ],
-  "livereload": [
-    "(system: /usr/bin/livereload)",
-    "livereload"
-  ],
-  "nft": [
-    "(system: /usr/sbin/nft)",
-    "@vercel/nft"
-  ],
-  "base32": [
-    "(system: /usr/bin/base32)",
-    "base32"
-  ],
-  "link": [
-    "(system: /usr/bin/link)",
-    "link"
-  ],
-  "import": [
-    "(system: /usr/bin/import)",
-    "import"
-  ],
-  "cwebp": [
-    "(system: /usr/bin/cwebp)",
-    "cwebp-bin"
-  ],
-  "optipng": [
-    "(system: /usr/bin/optipng)",
-    "optipng-bin"
-  ],
-  "js": [
-    "(system: /usr/bin/js)",
-    "js"
-  ],
-  "wasm2c": [
-    "(system: /usr/bin/wasm2c)",
-    "wabt"
-  ],
-  "wasm2wat": [
-    "(system: /usr/bin/wasm2wat)",
-    "wabt"
-  ],
-  "wat2wasm": [
-    "(system: /usr/bin/wat2wasm)",
-    "wabt"
-  ],
-  "wasm-stats": [
-    "(system: /usr/bin/wasm-stats)",
-    "wabt"
-  ],
-  "wasm-strip": [
-    "(system: /usr/bin/wasm-strip)",
-    "wabt"
-  ],
-  "wasm-interp": [
-    "(system: /usr/bin/wasm-interp)",
-    "wabt"
-  ],
-  "wasm-objdump": [
-    "(system: /usr/bin/wasm-objdump)",
-    "wabt"
-  ],
-  "wasm-validate": [
-    "(system: /usr/bin/wasm-validate)",
-    "wabt"
-  ],
-  "wasm-decompile": [
-    "(system: /usr/bin/wasm-decompile)",
-    "wabt"
-  ],
-  "jpegtran": [
-    "(system: /usr/bin/jpegtran)",
-    "jpegtran-bin"
-  ],
-  "ping": [
-    "(system: /usr/bin/ping)",
-    "abacus-request"
-  ],
-  "docker": [
-    "(system: /usr/bin/docker)",
-    "docker"
-  ],
-  "gh": [
-    "(system: /usr/bin/gh)",
-    "gh"
-  ],
-  "jq": [
-    "(system: /usr/bin/jq)",
-    "jq"
-  ],
-  "keyring": [
-    "(system: /usr/bin/keyring)",
-    "keyring"
-  ],
-  "proxy": [
-    "(system: /usr/bin/proxy)",
-    "proxy"
-  ],
-  "ip": [
-    "(system: /usr/sbin/ip)",
-    "ipaddr"
-  ],
-  "editor": [
-    "(system: /usr/bin/editor)",
-    "tiny-cli-editor"
-  ],
-  "convert": [
-    "(system: /usr/bin/convert)",
-    "@activeprospect/integration-dev-dependencies"
-  ],
-  "red": [
-    "(system: /usr/bin/red)",
-    "@jrc03c/bash-colors"
-  ],
-  "scalar": [
-    "(system: /usr/bin/scalar)",
-    "@scalar/cli"
-  ],
-  "mt": [
-    "(system: /usr/bin/mt)",
-    "@sondr3/minitest"
-  ],
-  "clear": [
-    "(system: /usr/bin/clear)",
-    "clear-cli"
-  ],
-  "true": [
-    "(system: /usr/bin/true)",
-    "true"
+    {
+      "name": "@jcoreio/toolchain",
+      "weekly": 797
+    },
+    {
+      "name": "tc",
+      "weekly": 18
+    }
   ],
   "init": [
     "(system: /usr/sbin/init)",
-    "@4c/init"
+    {
+      "name": "react-native-test-app",
+      "weekly": 33308
+    },
+    {
+      "name": "@4c/init",
+      "weekly": 783
+    }
   ],
-  "cmp": [
-    "(system: /usr/bin/cmp)",
-    "cmp"
-  ],
-  "gs": [
-    "(system: /usr/bin/gs)",
-    "goldstein"
-  ],
-  "dc": [
-    "(system: /usr/bin/dc)",
-    "depcost"
-  ],
-  "browse": [
-    "(system: /usr/bin/browse)",
-    "@browserbasehq/browse-cli"
+  "rm": [
+    "(system: /usr/bin/rm)",
+    {
+      "name": "cash-rm",
+      "weekly": 2283
+    },
+    {
+      "name": "@kayahr/npm-utils",
+      "weekly": 15
+    }
   ],
   "cp": [
     "(system: /usr/bin/cp)",
-    "@kayahr/npm-utils"
+    {
+      "name": "cash-cp",
+      "weekly": 8374
+    },
+    {
+      "name": "@kayahr/npm-utils",
+      "weekly": 15
+    }
+  ],
+  "node": [
+    "(system: /usr/local/n/bin/node)",
+    {
+      "name": "node",
+      "weekly": 208435
+    }
+  ],
+  "livereload": [
+    "(system: /usr/bin/livereload)",
+    {
+      "name": "livereload",
+      "weekly": 226360
+    }
+  ],
+  "bun": [
+    "(system: /snap/bin/bun)",
+    {
+      "name": "bun",
+      "weekly": 417921
+    }
+  ],
+  "bunx": [
+    "(system: /snap/bin/bunx)",
+    {
+      "name": "bun",
+      "weekly": 417921
+    }
+  ],
+  "nft": [
+    "(system: /usr/sbin/nft)",
+    {
+      "name": "@vercel/nft",
+      "weekly": 2867669
+    }
+  ],
+  "base32": [
+    "(system: /usr/bin/base32)",
+    {
+      "name": "base32",
+      "weekly": 140772
+    }
+  ],
+  "link": [
+    "(system: /usr/bin/link)",
+    {
+      "name": "link",
+      "weekly": 37200
+    }
+  ],
+  "import": [
+    "(system: /usr/bin/import)",
+    {
+      "name": "import",
+      "weekly": 41368
+    }
+  ],
+  "cwebp": [
+    "(system: /usr/bin/cwebp)",
+    {
+      "name": "cwebp-bin",
+      "weekly": 204536
+    }
+  ],
+  "optipng": [
+    "(system: /usr/bin/optipng)",
+    {
+      "name": "optipng-bin",
+      "weekly": 525098
+    }
+  ],
+  "js": [
+    "(system: /usr/bin/js)",
+    {
+      "name": "js",
+      "weekly": 13727
+    }
+  ],
+  "wasm2c": [
+    "(system: /usr/bin/wasm2c)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wasm2wat": [
+    "(system: /usr/bin/wasm2wat)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wat2wasm": [
+    "(system: /usr/bin/wat2wasm)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wasm-stats": [
+    "(system: /usr/bin/wasm-stats)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wasm-strip": [
+    "(system: /usr/bin/wasm-strip)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wasm-interp": [
+    "(system: /usr/bin/wasm-interp)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wasm-objdump": [
+    "(system: /usr/bin/wasm-objdump)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wasm-validate": [
+    "(system: /usr/bin/wasm-validate)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "wasm-decompile": [
+    "(system: /usr/bin/wasm-decompile)",
+    {
+      "name": "wabt",
+      "weekly": 27512
+    }
+  ],
+  "jpegtran": [
+    "(system: /usr/bin/jpegtran)",
+    {
+      "name": "jpegtran-bin",
+      "weekly": 286277
+    }
+  ],
+  "ping": [
+    "(system: /usr/bin/ping)",
+    {
+      "name": "abacus-request",
+      "weekly": 35
+    }
+  ],
+  "docker": [
+    "(system: /usr/bin/docker)",
+    {
+      "name": "docker",
+      "weekly": 7992
+    }
+  ],
+  "gh": [
+    "(system: /usr/bin/gh)",
+    {
+      "name": "gh",
+      "weekly": 11039
+    }
+  ],
+  "jq": [
+    "(system: /usr/bin/jq)",
+    {
+      "name": "jq",
+      "weekly": 31715
+    }
+  ],
+  "keyring": [
+    "(system: /usr/bin/keyring)",
+    {
+      "name": "keyring",
+      "weekly": 115
+    }
+  ],
+  "proxy": [
+    "(system: /usr/bin/proxy)",
+    {
+      "name": "proxy",
+      "weekly": 129508
+    }
+  ],
+  "ip": [
+    "(system: /usr/sbin/ip)",
+    {
+      "name": "ipaddr",
+      "weekly": 1265
+    }
+  ],
+  "editor": [
+    "(system: /usr/bin/editor)",
+    {
+      "name": "tiny-cli-editor",
+      "weekly": 113
+    }
+  ],
+  "convert": [
+    "(system: /usr/bin/convert)",
+    {
+      "name": "@activeprospect/integration-dev-dependencies",
+      "weekly": null
+    }
+  ],
+  "red": [
+    "(system: /usr/bin/red)",
+    {
+      "name": "@jrc03c/bash-colors",
+      "weekly": 32
+    }
+  ],
+  "scalar": [
+    "(system: /usr/bin/scalar)",
+    {
+      "name": "@scalar/cli",
+      "weekly": null
+    }
+  ],
+  "mt": [
+    "(system: /usr/bin/mt)",
+    {
+      "name": "@sondr3/minitest",
+      "weekly": 223
+    }
+  ],
+  "clear": [
+    "(system: /usr/bin/clear)",
+    {
+      "name": "clear-cli",
+      "weekly": null
+    }
+  ],
+  "true": [
+    "(system: /usr/bin/true)",
+    {
+      "name": "true",
+      "weekly": null
+    }
+  ],
+  "cmp": [
+    "(system: /usr/bin/cmp)",
+    {
+      "name": "cmp",
+      "weekly": null
+    }
+  ],
+  "gs": [
+    "(system: /usr/bin/gs)",
+    {
+      "name": "goldstein",
+      "weekly": 4427
+    }
+  ],
+  "dc": [
+    "(system: /usr/bin/dc)",
+    {
+      "name": "depcost",
+      "weekly": 71
+    }
+  ],
+  "browse": [
+    "(system: /usr/bin/browse)",
+    {
+      "name": "@browserbasehq/browse-cli",
+      "weekly": null
+    }
+  ],
+  "copilot": [
+    "(system: /usr/bin/copilot)",
+    {
+      "name": "@github/copilot",
+      "weekly": 69841
+    }
+  ],
+  "timeout": [
+    "(system: /usr/bin/timeout)",
+    {
+      "name": "timeout-cli",
+      "weekly": 7964
+    }
   ]
 }
