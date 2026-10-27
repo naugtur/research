@@ -6,13 +6,30 @@ on:
 permissions: {}
 
 jobs:
-  inspect-path:
+  inspect-path-node:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         id: setup-node
 
+      - name: Print PATH
+        shell: bash
+        run: printf '%s\n' "$PATH"
+
+      - name: List PATH directories containing npm
+        shell: bash
+        run: |
+          IFS=: read -r -a path_entries <<< "$PATH"
+          for directory in "${path_entries[@]}"; do
+            echo '_______________________________________________'
+            printf '%s\n' "$directory"
+            ls -al -- "$directory" || echo missing
+          done
+
+  inspect-path-empty:
+    runs-on: ubuntu-latest
+    steps:
       - name: Print PATH
         shell: bash
         run: printf '%s\n' "$PATH"
