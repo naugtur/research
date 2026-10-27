@@ -9,6 +9,10 @@ jobs:
   inspect-path:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        id: setup-node
+
       - name: Print PATH
         shell: bash
         run: printf '%s\n' "$PATH"
